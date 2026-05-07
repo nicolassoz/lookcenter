@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,111 +7,8 @@
     <title>LookCenter | Moda e Estilo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-black: #000000;
-            --primary-gold: #D4AF37; /* Dourado Clássico */
-            --accent-gold: #FFD700;  /* Amarelo Ouro */
-            --light-gray: #f8f9fa;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--primary-black);
-            color: white;
-        }
-
-        h1, h2, .navbar-brand {
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* Navbar */
-        .navbar {
-            background-color: var(--primary-black);
-            border-bottom: 2px solid var(--primary-gold);
-            padding: 1rem 0;
-        }
-
-        .navbar-brand, .nav-link {
-            color: var(--primary-gold) !important;
-            transition: 0.3s;
-        }
-
-        .nav-link:hover {
-            color: var(--accent-gold) !important;
-            text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            border-bottom: 5px solid var(--primary-gold);
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            color: var(--primary-gold);
-            text-transform: uppercase;
-        }
-
-        /* Botões */
-        .btn-gold {
-            background-color: var(--primary-gold);
-            color: black;
-            font-weight: 600;
-            border: none;
-            padding: 12px 30px;
-            transition: 0.3s;
-        }
-
-        .btn-gold:hover {
-            background-color: var(--accent-gold);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
-        }
-
-        /* Cards de Produtos */
-        .card {
-            background-color: #111;
-            border: 1px solid var(--primary-gold);
-            transition: 0.4s;
-            margin-bottom: 20px;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            border-color: var(--accent-gold);
-        }
-
-        .card-title {
-            color: var(--primary-gold);
-        }
-
-        .price {
-            color: var(--accent-gold);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #000;
-            padding: 40px 0;
-            border-top: 1px solid var(--primary-gold);
-            margin-top: 50px;
-        }
-
-        .footer-text {
-            color: #888;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
 
@@ -125,7 +23,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Coleções</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobreNos.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobreNos.php">Sobre Nós</a></li>
                 </ul>
             </div>
         </div>
@@ -181,19 +79,12 @@
         </div>
     </main>
 
-    <footer class="text-center text-lg-start">
-        <div class="container text-center">
-            <h3 style="color: var(--primary-gold)">LookCenter</h3>
-            <p class="footer-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-            <div class="py-3">
-                <span class="text-warning mx-2">Instagram</span>
-                <span class="text-warning mx-2">Facebook</span>
-                <span class="text-warning mx-2">WhatsApp</span>
-            </div>
-            <p class="footer-text mb-0">&copy; 2026 LookCenter - Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<?php 
+include "includes/footer.php";
+?>

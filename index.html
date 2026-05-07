@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookCenter | Moda e Estilo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-black: #000000;
+            --primary-gold: #D4AF37; /* Dourado Clássico */
+            --accent-gold: #FFD700;  /* Amarelo Ouro */
+            --light-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-black);
+            color: white;
+        }
+
+        h1, h2, .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary-black);
+            border-bottom: 2px solid var(--primary-gold);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--primary-gold) !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-gold) !important;
+            text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-gold);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+        }
+
+        /* Botões */
+        .btn-gold {
+            background-color: var(--primary-gold);
+            color: black;
+            font-weight: 600;
+            border: none;
+            padding: 12px 30px;
+            transition: 0.3s;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Cards de Produtos */
+        .card {
+            background-color: #111;
+            border: 1px solid var(--primary-gold);
+            transition: 0.4s;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            border-color: var(--accent-gold);
+        }
+
+        .card-title {
+            color: var(--primary-gold);
+        }
+
+        .price {
+            color: var(--accent-gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            padding: 40px 0;
+            border-top: 1px solid var(--primary-gold);
+            margin-top: 50px;
+        }
+
+        .footer-text {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-2 fw-bold" href="#">LOOKCENTER</a>
+            <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Coleções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobreNos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-1">LookCenter</h1>
+            <p class="lead mb-4 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elegância em cada detalhe.</p>
+            <a href="#produtos" class="btn btn-gold">VER COLEÇÃO</a>
+        </div>
+    </section>
+
+    <main class="container my-5" id="produtos">
+        <h2 class="text-center mb-5" style="color: var(--primary-gold)">Destaques da Temporada</h2>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text text-light">Consectetur adipiscing elit sed do eiusmod.</p>
+                        <p class="price">R$ 199,90</p>
+                        <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dolor Sit Amet</h5>
+                        <p class="card-text text-light">Tempor incididunt ut labore et dolore magna.</p>
+                        <p class="price">R$ 250,00</p>
+                        <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sed Eiusmod</h5>
+                        <p class="card-text text-light">Ut enim ad minim veniam quis nostrud.</p>
+                        <p class="price">R$ 175,00</p>
+                        <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-lg-start">
+        <div class="container text-center">
+            <h3 style="color: var(--primary-gold)">LookCenter</h3>
+            <p class="footer-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <div class="py-3">
+                <span class="text-warning mx-2">Instagram</span>
+                <span class="text-warning mx-2">Facebook</span>
+                <span class="text-warning mx-2">WhatsApp</span>
+            </div>
+            <p class="footer-text mb-0">&copy; 2026 LookCenter - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

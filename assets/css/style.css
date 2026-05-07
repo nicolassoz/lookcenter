@@ -45,7 +45,13 @@
             border-bottom: 5px solid var(--primary-gold);
         }
 
-        .heroN {
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+        }
+
+        .heroN {   
             background-size: cover;
             background-position: center;
             height: 70vh;
@@ -55,7 +61,7 @@
             text-align: center;
         }
 
-        .hero h1 {
+        .heroN h2 {
             font-size: 4rem;
             color: var(--primary-gold);
             text-transform: uppercase;

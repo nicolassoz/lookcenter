@@ -19,7 +19,7 @@ include "includes/menu.php";
             <h2 class="display-1,">SOBRE NÒS</h2>
             <p class="lead mb-4 text-light">Nós somos a <b>LOKCENTER</b>, uma marca vibrantes que pilsa no ritmo das ruas. Nosso DNA é 100% streetwer e sport life, criado por e para jovens que não têm medo de ousar e expressar sua identidade única. Acreditamos que a moda é uma ferramenta poderosa de autoexpressão, e por isso, selecionamos curadoria de peças que unem o estilo urbano, o conforto e a atitude.</p>
             <p class="lead mb-4 text-light">Desde os moletons oversize aos acessórios com design exclusivo, cada item na <b>LOOKCENTER</b> conta uma <b>historia de liberdade, criatividade e autenticidade</b>. Mais que uma loja, somos uma <b>comunidade</b> que celebra a cultura jovem e a energia das cidades. vem fazer parte!</p>
-            <a href="#" class="btn btn-gold">VER NOSSA COLEÇÃO</a>
+            <a href="colecao.php" class="btn btn-gold">VER NOSSA COLEÇÃO</a>
         </div>
     </section>
 

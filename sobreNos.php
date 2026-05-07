@@ -1,3 +1,7 @@
+<?php 
+include "includes/menu.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +13,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    aa
+
+    <section class="heroN">
+        <div class="container">
+            <h2 class="display-1,">SOBRE NÒS</h2>
+            <p class="lead mb-4 text-light">Nós somos a LOKCENTER, uma marca vibrantes que pilsa no ritmo das ruas. Nosso DNA é 100% streetwer e sport life, criado por e para jovens que não têm medo de ousar e expressar sua identidade única. Acreditamos que a moda é uma ferramenta poderosa de autoexpressão, e por isso, selecionamos curadoria de peças que unem o estilo urbano, o conforto e a atitude.</p>
+            <p class="lead mb-4 text-light">Desde os moletons oversize aos acessórios com design exclusivo, cada item na LOOKCENTER conta uma historia de liberdade, criatividade e autenticidade. Mais que uma loja, somos uma comunidade que celebra a cultura jovem e a energia das cidades. vem fazer parte!</p>
+            <a href="#" class="btn btn-gold">VER NOSSA COLEÇÃO</a>
+        </div>
+    </section>
+
+    <!-- <h2>SOBRE NÒS</h2> -->
+
 </body>
 </html>
 

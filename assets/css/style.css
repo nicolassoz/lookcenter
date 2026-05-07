@@ -45,6 +45,16 @@
             border-bottom: 5px solid var(--primary-gold);
         }
 
+        .heroN {
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
         .hero h1 {
             font-size: 4rem;
             color: var(--primary-gold);

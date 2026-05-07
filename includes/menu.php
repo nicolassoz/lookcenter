@@ -7,7 +7,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Coleções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="colecao.php">Coleções</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobreNos.php">Sobre Nós</a></li>
                 </ul>

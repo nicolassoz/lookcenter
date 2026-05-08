@@ -117,3 +117,15 @@
         .footer-text {
             color: #888;
         }
+
+        #tipo1
+        {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .seleção1
+        {
+        margin: 0 15px;
+        }

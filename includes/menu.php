@@ -11,6 +11,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobreNos.php">Sobre Nós</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">login</a></li>
                 </ul>
             </div>
         </div>

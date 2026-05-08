@@ -1,4 +1,5 @@
 <?php 
+// adicionar a parte de cima do site
 include "includes/menu.php";
 ?>
 
@@ -8,12 +9,14 @@ include "includes/menu.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sobre nós</title>
+    <!-- links para o bootstrap, img e style -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+<!-- texto sobre a lookcenter -->
     <section class="heroN">
         <div class="container">
             <h2 class="display-1,">SOBRE NÒS</h2>
@@ -23,11 +26,11 @@ include "includes/menu.php";
         </div>
     </section>
 
-    <!-- <h2>SOBRE NÒS</h2> -->
 
 </body>
 </html>
 
 <?php 
+// adicionar o footer, a parte de baixo do site
 include "includes/footer.php";
 ?>

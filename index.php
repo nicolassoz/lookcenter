@@ -27,7 +27,7 @@ include "includes/menu.php";
 
     <!-- as roupas que serão destaque -->
     <main class="container my-5" id="produtos">
-        <h2 class="text-center mb-5" style="color: var(--primary-gold)">Destaques da Temporada</h2>
+        <h2 class="text-center mb-5" style="color: var(--primary-gold)">Destaques</h2>
         
         <!-- roupa 1 -->
         <div class="row">
@@ -71,6 +71,45 @@ include "includes/menu.php";
         </div>
     </main>
 
+    <!-- as avaliação dos clientes -->
+    <main class="container my-5" id="produtos">
+        <h2 class="text-center mb-5" style="color: var(--primary-gold)">Avaliação</h2>
+        
+        <!-- roupa 1 -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lorem Ipsum</h5>
+                        <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- roupa 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lorem sit</h5>
+                        <p class="card-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- roupa 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lorem dolor</h5>
+                        <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsa itaque velit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

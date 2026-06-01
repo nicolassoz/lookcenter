@@ -21,6 +21,19 @@ include "includes/menu.php"
 
 <h2 class="text-center mb-5" style="color: var(--primary-gold)">Faça seu Login</h2>
 
+
+<div class="justify-content-Center row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5  style="color: var(--light-gray)">Email</h5>
+                        <p style="color: var(--light-gray)">Senha</p>
+                        <button class="btn btn-outline-warning btn-sm">login</button><p></p>
+                        <button class="btn btn-outline-warning btn-sm">se-cadastrar</button>
+                    </div>
+                </div>
+            </div>
+
 </div>
 
 </body>

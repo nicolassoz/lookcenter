@@ -81,8 +81,8 @@ include "includes/menu.php";
                 <div class="card h-100">
                     
                     <div class="card-body text-center">
-                        <h5 class="card-title">Lorem Ipsum</h5>
-                        <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <h5 class="card-title">Carlos Henrique</h5>
+                        <p class="card-text text-light">"Excelente loja! As roupas têm ótima qualidade, o atendimento foi muito bom e encontrei exatamente o que procurava. Com certeza voltarei a comprar."</p>
                     </div>
                 </div>
             </div>
@@ -92,8 +92,8 @@ include "includes/menu.php";
                 <div class="card h-100">
                     
                     <div class="card-body text-center">
-                        <h5 class="card-title">Lorem sit</h5>
-                        <p class="card-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum.</p>
+                        <h5 class="card-title">Rafael Souza</h5>
+                        <p class="card-text text-light">"Loja muito organizada e com várias opções de roupas masculinas. Os preços são justos e as peças vestem muito bem. Recomendo!"</p>
                     </div>
                 </div>
             </div>
@@ -103,8 +103,8 @@ include "includes/menu.php";
                 <div class="card h-100">
                     
                     <div class="card-body text-center">
-                        <h5 class="card-title">Lorem dolor</h5>
-                        <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsa itaque velit.</p>
+                        <h5 class="card-title">Lucas Martins</h5>
+                        <p class="card-text text-light">"Fiquei impressionado com a variedade de estilos disponíveis. O atendimento foi rápido e as roupas chegaram em perfeito estado. Ótima experiência de compra."</p>
                     </div>
                 </div>
             </div>

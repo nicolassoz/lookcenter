@@ -1,7 +1,7 @@
-<?php 
+<!-- <?php 
 // adicionar a parte de cima do site
-include "includes/menu.php"
-?>
+// include "includes/menu.php"
+?> -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,6 +17,34 @@ include "includes/menu.php"
     <link rel="stylesheet" href="catalogo.css">
 </head>
 <body>
+
+
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" href="index.php">LOOKCENTER</a>
+        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="colecao.php">Coleções</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobreNos.php">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfil.php">perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">carrinho</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+    </nav>
+
+
+
+    
     
     <!-- Conteúdo Principal -->
     <div class="container my-5">
@@ -25,6 +53,8 @@ include "includes/menu.php"
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 bg-dark p-3 rounded border border-secondary gap-3">
             <!-- BOTÃO QUE ABRE O FILTRO -->
             <button class="btn btn-gold d-flex align-items-center gap-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarFiltros"> Filtrar Produtos </button>
+
+            <!-- <button class="btn btn-gold d-flex align-items-center gap-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#teste"> teste </button> -->
 
             <div class="d-flex align-items-center gap-3 ml-auto">
                 <p class="mb-0 text-secondary d-none d-sm-block"> Mostrando <span class="text-white fw-bold"> 6 </span> produtos</p>
@@ -40,6 +70,14 @@ include "includes/menu.php"
             </div>
         </div>
 
+
+
+        <!-- <div class="offcanvas offcanvas-end bg-black text-white border-end border-secondary" tabindex="-1" id="teste" aria-labelledby="sidebarFiltrosLabel">
+
+        </div> -->
+
+
+
         <!-- ESTRUTURA DO FILTRO OCULTO (OFFCANVAS) -->
         <div class="offcanvas offcanvas-start bg-black text-white border-end border-secondary" tabindex="-1" id="sidebarFiltros" aria-labelledby="sidebarFiltrosLabel">
             <div class="offcanvas-header border-bottom border-secondary">
@@ -52,21 +90,21 @@ include "includes/menu.php"
                     <h6 class="text-uppercase fw-bold text-light mb-3">Categoria</h6>
                     <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" id="cat1">
-                        <label class="form-check-label text-secondary" for="cat1">Camisas</label>
+                        <label class="form-check-label text-light" for="cat1">Camisas</label>
                     </div>
 
                     <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" id="cat4">
-                        <label class="form-check-label text-secondary" for="cat4">Moletons</label>
+                        <label class="form-check-label text-light" for="cat4">Moletons</label>
                     </div>
                     
                     <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" id="cat2">
-                        <label class="form-check-label text-secondary" for="cat2">Bermudas</label>
+                        <label class="form-check-label text-light" for="cat2">Bermudas</label>
                     </div>
                     <div class="form-check mb-2">
                         <input class="form-check-input" type="checkbox" id="cat3">
-                        <label class="form-check-label text-secondary" for="cat3">Calças</label>
+                        <label class="form-check-label text-light" for="cat3">Calças</label>
                     </div>
                     
                 </div>
@@ -75,17 +113,17 @@ include "includes/menu.php"
                 <div class="filter-section mb-4">
                     <h6 class="text-uppercase fw-bold text-light mb-3">Tamanho</h6>
                     <div class="d-flex flex-wrap gap-2">
-                        <input type="checkbox" class="btn-check" id="sizeP">
-                        <label class="btn btn-outline-gold btn-sm" for="sizeP">P</label>
+                        <input type="checkbox" class="btn-check" id="sizeP" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeP">P</label>
 
-                        <input type="checkbox" class="btn-check" id="sizeM">
-                        <label class="btn btn-outline-gold btn-sm" for="sizeM">M</label>
+                        <input type="checkbox" class="btn-check" id="sizeM" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeM">M</label>
 
-                        <input type="checkbox" class="btn-check" id="sizeG">
-                        <label class="btn btn-outline-gold btn-sm" for="sizeG">G</label>
+                        <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                        <input type="checkbox" class="btn-check" id="sizeGG">
-                        <label class="btn btn-outline-gold btn-sm" for="sizeGG">GG</label>
+                        <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeGG">GG</label>
                     </div>
                 </div>
 

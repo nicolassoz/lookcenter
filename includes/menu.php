@@ -8,10 +8,9 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="colecao.php">Coleções</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobreNos.php">Sobre Nós</a></li>
                 <li class="nav-item"><a class="nav-link" href="perfil.php">perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">login</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">login</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">carrinho</a></li>
             </ul>
         </div>

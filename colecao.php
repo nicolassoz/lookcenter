@@ -25,8 +25,7 @@ include "includes/menu.php"
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 bg-dark p-3 rounded border border-secondary gap-3">
             <!-- BOTÃO QUE ABRE O FILTRO -->
             <button class="btn btn-gold d-flex align-items-center gap-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarFiltros"> Filtrar Produtos </button>
-
-            
+ 
             <div class="d-flex align-items-center gap-3 ml-auto">
                 <p class="mb-0 text-secondary d-none d-sm-block"> Mostrando <span class="text-white fw-bold"> 6 </span> produtos</p>
                 <div class="d-flex align-items-center gap-2">
@@ -104,6 +103,11 @@ include "includes/menu.php"
                 <!-- Botão de Aplicar Filtro -->
                 <button class="btn btn-gold w-100 mt-4" data-bs-dismiss="offcanvas">Aplicar Filtros</button>
             </div>
+        </div>
+
+        <!-- offcanvas de carrinho -->
+        <div class="justify-content-Center align-items-center offcanvas offcanvas-end bg-black text-white border-end border-secondary" tabindex="-1" id="teste" aria-labelledby="sidebarFiltrosLabel">
+            <h5 class="offcanvas-title text-gold">Carrinho Vazio</h5>
         </div>
 
         <!-- GRELHA DE PRODUTOS -->

@@ -106,11 +106,6 @@ include "includes/menu.php"
             </div>
         </div>
 
-        <!-- offcanvas de carrinho -->
-        <!-- <div class="justify-content-Center align-items-center offcanvas offcanvas-end bg-black text-white border-end border-secondary" tabindex="-1" id="teste" aria-labelledby="sidebarFiltrosLabel">
-            <h5 class="offcanvas-title text-gold">Carrinho Vazio</h5>
-        </div> -->
-
         <!-- GRELHA DE PRODUTOS -->
         <main>
             <div class="row g-4">

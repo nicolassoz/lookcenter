@@ -46,7 +46,7 @@ include "includes/menu.php"
 
             <div class="justify-content-Center row">
                     <div class="card-body text-center">
-                      <a href="cadastro.php" class="btn btn-outline-warning btn-sm">se-cadastrar</a>
+                      <a href="cadastro.php" class="btn btn-outline-warning btn-sm">cadastrar-se</a>
                     </div>
 
             </div>

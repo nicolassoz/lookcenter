@@ -16,13 +16,17 @@
 
 <div class="container">
 
-    <h2 class="text-center mb-5" style="color: var(--primary-gold)">perfil</h2>
+    <p style="color: var(--primary-gold)">perfil</p>
+    <p style="color: var(--primary-gold)">pedidos</p>
+    <p style="color: var(--primary-gold)">favoritos</p>
 
-    <?php include "includes/offcar.php" ?>
+    
 
 </div>
 
+<?php include "includes/offcar.php" ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 <?php include "includes/footer.php"; ?>

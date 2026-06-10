@@ -25,6 +25,8 @@ include "includes/menu.php";
         </div>
     </section>
 
+    <?php include "includes/offcar.php" ?>
+
     <!-- as roupas que serão destaque -->
     <main class="container my-5" id="produtos">
         <h2 class="text-center mb-5" style="color: var(--primary-gold)">Destaques</h2>

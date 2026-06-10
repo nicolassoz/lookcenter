@@ -14,7 +14,6 @@ include "includes/menu.php"
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- CSS da Loja e CSS Específico do Catálogo -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="catalogo.css">
 </head>
 <body>
 
@@ -39,6 +38,8 @@ include "includes/menu.php"
                 </div>
             </div>
         </div>
+
+        <?php include "includes/offcar.php" ?>
         
         <!-- ESTRUTURA DO FILTRO OCULTO (OFFCANVAS) -->
         <div class="offcanvas offcanvas-start bg-black text-white border-end border-secondary" tabindex="-1" id="sidebarFiltros" aria-labelledby="sidebarFiltrosLabel">
@@ -106,9 +107,9 @@ include "includes/menu.php"
         </div>
 
         <!-- offcanvas de carrinho -->
-        <div class="justify-content-Center align-items-center offcanvas offcanvas-end bg-black text-white border-end border-secondary" tabindex="-1" id="teste" aria-labelledby="sidebarFiltrosLabel">
+        <!-- <div class="justify-content-Center align-items-center offcanvas offcanvas-end bg-black text-white border-end border-secondary" tabindex="-1" id="teste" aria-labelledby="sidebarFiltrosLabel">
             <h5 class="offcanvas-title text-gold">Carrinho Vazio</h5>
-        </div>
+        </div> -->
 
         <!-- GRELHA DE PRODUTOS -->
         <main>

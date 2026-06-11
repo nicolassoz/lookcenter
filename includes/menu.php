@@ -11,7 +11,7 @@
                 <li class="nav-item"><a class="nav-link" href="sobreNos.php">Sobre Nós</a></li>
                 <li class="nav-item"><a class="nav-link" href="perfil.php">perfil</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.php">login</a></li>        
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#teste">carrinho</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcar">carrinho</a></li>
             </ul>
         </div>
     </div>

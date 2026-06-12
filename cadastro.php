@@ -26,27 +26,27 @@ include "includes/menu.php"
         <div class="row m-1">
             <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">Nome</p>
-                <input type="text" class="form-control" id="nomeCad">
+                <input type="text" class="form-control" id="nomeCad" placeholder="Ex: joão">
             </div>
 
             <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">SobreNome</p>
-                <input type="text" class="form-control" id="nomeCad">
+                <input type="text" class="form-control" id="nomeCad" placeholder="Ex: souza silva">
             </div>
 
             <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">Email</p>
-                <input type="email" class="form-control" id="emailCad">
+                <input type="email" class="form-control" id="emailCad" placeholder="Ex: email.123@gmail.com">
             </div>
                     
             <div class="col-md-4 mb-3">
                  <p  style="color: var(--light-gray)">Telefone (opcional)</p>
-                <input type="text" class="form-control" id="telCad">
+                <input type="text" class="form-control" id="telCad" placeholder="Ex: (11)99999-9999">
             </div>            
                     
             <div class="col-md-4 mb-3" >
                  <p  style="color: var(--light-gray)">Endereço</p>
-                <input type="text" class="form-control" id="enderecoCad">
+                <input type="text" class="form-control" id="enderecoCad" placeholder="Ex: rua. itaquera, n15">
             </div>
 
             <div class="col-md-4 mb-3" >

@@ -26,7 +26,7 @@ include "includes/menu.php"
         <div class="col-md-4 card h-100">
                 <div class="card-body text-center">
                     <p  style="color: var(--light-gray)">Email</p>
-                    <input type="email" class="form-control" id="emailLogin">
+                    <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
                     <p></p>
                     <p style="color: var(--light-gray)">Senha</p>
                     <input type="password" class="form-control" id="senhaLogin">

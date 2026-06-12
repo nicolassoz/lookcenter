@@ -37,10 +37,6 @@
                         <p  style="color: var(--light-gray)">Nome</p>
                         <input type="text" class="form-control"id="nomeCad">
                     </div>
-
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item "><a class="nav-link" href="#">Alterar senha</a></li>
-                    </ul>
                 </div>
             </form>
         </div> 

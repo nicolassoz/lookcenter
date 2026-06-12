@@ -1,4 +1,4 @@
-<?php include "includes/menu.php"; ?>
+<?php include "includes/menu.php" ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,14 +14,17 @@
 <body>
 
 
-<div class="container">
+<div class="container mt-3">
+    <div class="row align-items-start">
+        <div class="col-md-1">
+            <ul class="navbar-nav ms-auto">
+                        <li class="nav-item "><a class="nav-link" href="arPerfil.php">perfil</a></li>
+                        <li class="nav-item "><a class="nav-link" href="colecao.php">pedidos</a></li>
+                        <li class="nav-item "><a class="nav-link" href="sobreNos.php">favoritos</a></li>
+            </ul> 
+        </div>
 
-    <ul class="navbar-nav ms-auto">
-                <li class="nav-item col-md-2"><a class="nav-link" href="arPerfil.php">perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="colecao.php">pedidos</a></li>
-                <li class="nav-item"><a class="nav-link" href="sobreNos.php">favoritos</a></li>
-    </ul> 
-
+    </div>
 </div>
 
 <?php include "includes/offcar.php" ?>

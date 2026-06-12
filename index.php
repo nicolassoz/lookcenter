@@ -77,7 +77,7 @@ include "includes/menu.php";
     <main class="container my-5" id="produtos">
         <h2 class="text-center mb-5" style="color: var(--primary-gold)">Avaliação</h2>
         
-        <!-- roupa 1 -->
+        <!-- avaliação 1 -->
         <div class="row">
             <div class="col-md-4">
                 <div class="card h-100">
@@ -89,7 +89,7 @@ include "includes/menu.php";
                 </div>
             </div>
 
-            <!-- roupa 2 -->
+            <!-- avaliação 2 -->
             <div class="col-md-4">
                 <div class="card h-100">
                     
@@ -100,7 +100,7 @@ include "includes/menu.php";
                 </div>
             </div>
 
-            <!-- roupa 3 -->
+            <!-- avaliação 3 -->
             <div class="col-md-4">
                 <div class="card h-100">
                     
@@ -110,6 +110,7 @@ include "includes/menu.php";
                     </div>
                 </div>
             </div>
+            <a class="btn btn-gold">VER COLEÇÃO</a>
         </div>
     </main>
     

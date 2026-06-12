@@ -14,14 +14,42 @@
 <body>
 
 
-<div class="container">
+<div class="container mt-3">
+    <div class="row align-items-start">
+        <div class="col-md-1">
+            <ul class="navbar-nav ms-auto">
+                        <li class="nav-item "><a class="nav-link" href="arPerfil.php">perfil</a></li>
+                        <li class="nav-item "><a class="nav-link" href="colecao.php">pedidos</a></li>
+                        <li class="nav-item "><a class="nav-link" href="sobreNos.php">favoritos</a></li>
+            </ul> 
+        </div>
 
-    <ul class="navbar-nav ms-auto">
-                <li class="nav-item col-md-2"><a class="nav-link" href="arPerfil.php">perfil</a></li>
-                <li class="nav-item"><a class="nav-link" href="colecao.php">pedidos</a></li>
-                <li class="nav-item"><a class="nav-link" href="sobreNos.php">favoritos</a></li>
-    </ul> 
+        <div class="col">
+            <form class="card">
+                <div class="row">
+                    <div class="mb-3 col-md-3">
+                        <p  style="color: var(--light-gray)">Nome</p>
+                        <input type="text" class="form-control" id="nomeCad">
+                    </div>
 
+                    <div class=" mb-3 col-md-3">
+                        <p  style="color: var(--light-gray)">Email</p>
+                        <input type="email" class="form-control" id="emailCad">
+                    </div>
+                            
+                    <div class=" mb-3 col-md-3">
+                        <p  style="color: var(--light-gray)">Telefone (opcional)</p>
+                        <input type="text" class="form-control" id="telCad">
+                    </div>            
+                            
+                    <div class=" mb-3 col-md-3">
+                        <p  style="color: var(--light-gray)">Endereço</p>
+                        <input type="text" class="form-control" id="enderecoCad">
+                    </div>
+                </div>
+            </form>
+        </div> 
+    </div>
 </div>
 
 <?php include "includes/offcar.php" ?>

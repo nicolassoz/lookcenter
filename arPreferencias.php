@@ -58,6 +58,8 @@
                         </select>
                     </div>
 
+                    <p class="m-3"></p>
+
                     <div class="justify-content-Center row">
                             <div class="card-body text-center">
                                 <a href="cadastro.php" class="btn btn-outline-warning btn-sm">salvar</a>

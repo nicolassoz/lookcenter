@@ -28,7 +28,7 @@
             <form class="card">
                 <div class="row">
                     <div class="m-3 col-md-3">
-                        <h5  style="color: var(--light-gray)">Perfil</h5>
+                        <h5  style="color: var(--light-gray)">Pedidos</h5>
                     </div>
                 </div>
 
@@ -37,30 +37,6 @@
                         <p  style="color: var(--light-gray)">Nome</p>
                         <input type="text" class="form-control"id="nomeCad">
                     </div>
-
-                    <div class="mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">SobreNome</p>
-                        <input type="text" class="form-control"id="nomeCad">
-                    </div>
-
-                    <div class=" mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Email</p>
-                        <input type="email" class="form-control" id="emailCad">
-                    </div>
-                            
-                    <div class=" mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Telefone (opcional)</p>
-                        <input type="text" class="form-control" id="telCad">
-                    </div>            
-                            
-                    <div class=" mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Endereço</p>
-                        <input type="text" class="form-control" id="enderecoCad">
-                    </div>
-
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item "><a class="nav-link" href="arPerfil.php">Adicionar outro Endereço</a></li>
-                    </ul>
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item "><a class="nav-link" href="#">Alterar senha</a></li>

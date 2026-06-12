@@ -23,24 +23,34 @@ include "includes/menu.php"
 
     <form class="card ">
 
-        <div class="row">
-            <div class="col-md-6 mb-3">
+        <div class="row m-1">
+            <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">Nome</p>
                 <input type="text" class="form-control" id="nomeCad">
             </div>
 
-            <div class="col-md-6 mb-3">
+            <div class="col-md-4 mb-3">
+                <p  style="color: var(--light-gray)">SobreNome</p>
+                <input type="text" class="form-control" id="nomeCad">
+            </div>
+
+            <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">Email</p>
                 <input type="email" class="form-control" id="emailCad">
             </div>
                     
-            <div class="col-md-6 mb-3">
-                 <p  style="color: var(--light-gray)">Telefone</p>
+            <div class="col-md-4 mb-3">
+                 <p  style="color: var(--light-gray)">Telefone (opcional)</p>
                 <input type="text" class="form-control" id="telCad">
             </div>            
                     
-            <div class="col-md-6 mb-3" >
+            <div class="col-md-4 mb-3" >
                  <p  style="color: var(--light-gray)">Endereço</p>
+                <input type="text" class="form-control" id="enderecoCad">
+            </div>
+
+            <div class="col-md-4 mb-3" >
+                 <p  style="color: var(--light-gray)">Senha</p>
                 <input type="text" class="form-control" id="enderecoCad">
             </div>
 
@@ -48,7 +58,6 @@ include "includes/menu.php"
                     <div class="card-body text-center">
                       <a href="cadastro.php" class="btn btn-outline-warning btn-sm">cadastrar-se</a>
                     </div>
-
             </div>
         </div>
 

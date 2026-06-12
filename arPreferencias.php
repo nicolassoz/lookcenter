@@ -28,43 +28,42 @@
             <form class="card">
                 <div class="row">
                     <div class="m-3 col-md-3">
-                        <h5  style="color: var(--light-gray)">Perfil</h5>
+                        <h5  style="color: var(--light-gray)">Preferências</h5>
                     </div>
                 </div>
 
-                <div class="row m-1">
-                    <div class="mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Nome</p>
-                        <input type="text" class="form-control"id="nomeCad">
+                <div class="row m-1 justify-content-between">
+                    <div class="col-md-3">
+                        <p  style="color: var(--light-gray)">Tamanho</p>
+                        <select id="inputState" class="form-select">
+                            <option selected> </option>
+                            <option>p</option>
+                            <option>m</option>
+                            <option>g</option>
+                            <option>gg</option>
+                        </select>
                     </div>
 
-                    <div class="mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">SobreNome</p>
-                        <input type="text" class="form-control"id="nomeCad">
+                    <div class="col-md-3">
+                        <p  style="color: var(--light-gray)">Estilo</p>
+                        <select id="inputState" class="form-select">
+                        <option selected> </option>
+                        </select>
                     </div>
 
-                    <div class=" mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Email</p>
-                        <input type="email" class="form-control" id="emailCad">
-                    </div>
-                            
-                    <div class=" mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Telefone (opcional)</p>
-                        <input type="text" class="form-control" id="telCad">
-                    </div>            
-                            
-                    <div class=" mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Endereço</p>
-                        <input type="text" class="form-control" id="enderecoCad">
+                    <div class="col-md-3">
+                        <p  style="color: var(--light-gray)">Endereço</p> <!-- aqui ira aparecer o primeiro endereço que foi cadastrado-->
+                        <select id="inputState" class="form-select">
+                            <option selected>"endereço atual" </option>
+                        </select>
                     </div>
 
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item "><a class="nav-link" href="arPerfil.php">Adicionar outro Endereço</a></li>
-                    </ul>
-
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item "><a class="nav-link" href="#">Alterar senha</a></li>
-                    </ul>
+                    <div class="justify-content-Center row">
+                            <div class="card-body text-center">
+                                <a href="cadastro.php" class="btn btn-outline-warning btn-sm">salvar</a>
+                            </div>
+                    </div>
+                    
                 </div>
             </form>
         </div> 

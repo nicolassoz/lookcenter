@@ -20,7 +20,7 @@
             <ul class="navbar-nav ms-auto">
                         <li class="nav-item "><a class="nav-link" href="arPerfil.php">perfil</a></li>
                         <li class="nav-item "><a class="nav-link" href="arPedidos.php">pedidos</a></li>
-                        <li class="nav-item "><a class="nav-link" href="sobreNos.php">favoritos</a></li>
+                        <li class="nav-item "><a class="nav-link" href="arPreferencias.php">Preferências</a></li>
             </ul> 
         </div>
 

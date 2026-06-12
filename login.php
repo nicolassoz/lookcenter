@@ -32,7 +32,6 @@ include "includes/menu.php"
                     <input type="password" class="form-control" id="senhaLogin">
                     <p></p>
                     <button class="btn btn-outline-warning btn-sm">login</button><p></p>
-                    <!-- <button  class="btn btn-outline-warning btn-sm">se-cadastrar</button> -->
                     <a href="cadastro.php" class="btn btn-outline-warning btn-sm">se-cadastrar</a>
                     <ul class="navbar-nav ms-auto mt-2">
                         <li class="nav-item "><a class="nav-link" href="#">Alterar senha</a></li>

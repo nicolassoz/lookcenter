@@ -113,7 +113,7 @@ include "includes/menu.php";
 
             <div class="justify-content-Center row mt-3">
                     <div class="card-body text-center">
-                      <a  href="#produtos" class="btn btn-gold">dar feedback</a>
+                      <a  href="feedback.php" class="btn btn-gold">dar feedback</a>
                     </div>
             </div>
         </div>

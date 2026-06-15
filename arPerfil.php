@@ -38,24 +38,22 @@
                         <input type="text" class="form-control"id="nomeCad">
                     </div>
 
-                    <div class="mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">SobreNome</p>
-                        <input type="text" class="form-control"id="nomeCad">
-                    </div>
-
                     <div class=" mb-3 col-md-3">
                         <p  style="color: var(--light-gray)">Email</p>
                         <input type="email" class="form-control" id="emailCad">
                     </div>
                             
-                    <div class=" mb-3 col-md-3">
+                    <div class=" mb-3 col-md-2">
                         <p  style="color: var(--light-gray)">Telefone (opcional)</p>
                         <input type="text" class="form-control" id="telCad">
                     </div>            
                             
-                    <div class=" mb-3 col-md-3">
+                    <div class=" mb-3 col-md-4">
                         <p  style="color: var(--light-gray)">Endereço</p>
                         <input type="text" class="form-control" id="enderecoCad">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item "><a class="nav-link" href="arPerfil.php">ver detalhes do endereço</a></li>
+                        </ul>
                     </div>
 
                     <ul class="navbar-nav ms-auto">

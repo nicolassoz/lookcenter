@@ -93,11 +93,11 @@ include "includes/menu.php"
                 <!-- Filtro por Faixa de Preço -->
                 <div class="filter-section mb-4">
                     <h6 class="text-uppercase fw-bold text-light mb-3">Preço Máximo</h6>
-                    <input type="range" class="form-range custom-range" min="100" max="1000" step="50" id="priceRange">
+                    <input type="range" class="form-range custom-range" min="100" max="300" step="20" id="priceRange">
                     <div class="d-flex justify-content-between text-secondary small mt-1">
                         <span>R$ 100</span>
-                        <span id="priceValue" class="text-warning fw-bold">R$ 500</span>
-                        <span>R$ 1000+</span>
+                        <span id="priceValue" class="text-warning fw-bold">R$ 200</span>
+                        <span>R$ 300+</span>
                     </div>
                 </div>
 

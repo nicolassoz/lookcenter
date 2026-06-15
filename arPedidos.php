@@ -27,17 +27,78 @@
         <div class="col">
             <form class="card">
                 <div class="row">
-                    <div class="m-3 col-md-3">
-                        <h5  style="color: var(--light-gray)">Pedidos</h5>
+                    <div class="m-3 col-md-3" style="color: var(--light-gray)">
+                        <h5>Pedidos</h5>
+                        <p>veja seus pedidos antigos e novos</p>
                     </div>
                 </div>
 
-                <div class="row m-1">
-                    <div class="mb-3 col-md-3">
-                        <p  style="color: var(--light-gray)">Nome</p>
+                <div class="row">
+                    <div class="ms-1 col-md-1">
+                        <p  style="color: var(--light-gray)">Todos</p>
+                    </div>
+
+                    <div class="col-md-1">
+                        <p  style="color: var(--light-gray)">Novos</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <p  style="color: var(--light-gray)">Em andamento</p>
+                    </div>
+
+                    <div class="col-md-1">
+                        <p  style="color: var(--light-gray)">Entregue</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <p  style="color: var(--light-gray)">Cancelados</p>
+                    </div>
+
+                    <div class="col-md-3">
                         <input type="text" class="form-control"id="nomeCad">
                     </div>
-                </div>
+
+                    <div class="col-md-1">
+                        <a href="#" class="btn btn-outline-warning btn-sm">Filtrar</a>
+                    </div>
+                </div>    
+
+
+                <main class="container mt-2">
+                <table class="table">
+                    
+                    <tr>
+                        <td>pedido #abc00001</td>
+                        <td>2 itens</td>
+                        <td>199</td>
+                        <td>
+                            <p style="color: blue;" >Entregue</p>
+                        </td>
+                        </tr>
+
+                </table>
+
+
+
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-Center">
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+
             </form>
         </div> 
     </div>

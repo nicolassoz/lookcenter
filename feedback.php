@@ -23,7 +23,7 @@ include "includes/menu.php";
 
 .estrela {
     font-size: 35px;
-    color: #555; /* cinza quando não selecionada */
+    color: #ffffff; /* cinza quando não selecionada */
     cursor: pointer;
     transition: 0.3s;
 }
@@ -55,9 +55,9 @@ include "includes/menu.php";
                     <p  class="mt-2" style="color: var(--light-gray)">Email</p>
                     <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
 
-                    <p style="color: var(--light-gray)">Como você avalia sua experiência?</p>
+                    <p style="color: var(--light-gray)" class="mt-3">Como você avalia sua experiência?</p>
 
-                    <div class="avaliacao">
+                    <div class="avaliacao justify-content-start">
                         <span class="estrela" data-value="1">&#9733;</span>
                         <span class="estrela" data-value="2">&#9733;</span>
                         <span class="estrela" data-value="3">&#9733;</span>

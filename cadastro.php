@@ -39,14 +39,63 @@ include "includes/menu.php"
                 <input type="email" class="form-control" id="emailCad" placeholder="Ex: email.123@gmail.com">
             </div>
                     
-            <div class="col-md-4 mb-3">
+            <div class="col-md-2 mb-3">
                  <p  style="color: var(--light-gray)">Telefone (opcional)</p>
                 <input type="text" class="form-control" id="telCad" placeholder="Ex: (11)99999-9999">
-            </div>            
+            </div>
+            
+            <div class="col-md-2 mb-3" >
+                 <p  style="color: var(--light-gray)">CEP</p>
+                <input type="text" class="form-control" id="enderecoCad" placeholder="Ex: 11111-111">
+            </div>
                     
             <div class="col-md-4 mb-3" >
                  <p  style="color: var(--light-gray)">Endereço</p>
                 <input type="text" class="form-control" id="enderecoCad" placeholder="Ex: rua. itaquera, n15">
+            </div>
+
+            <div class="col-md-4 mb-3" >
+                 <p  style="color: var(--light-gray)">Complemento (opcional)</p>
+                <input type="text" class="form-control" id="enderecoCad" placeholder="bloco A, ap 11">
+            </div>
+
+            <div class="col-md-3">
+                <p  style="color: var(--light-gray)">Estado</p>
+                <select id="inputState" class="form-select">
+                    <option selected>selecione o Estado </option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RS</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+            </div>
+
+            <div class="col-md-4 mb-3" >
+                 <p  style="color: var(--light-gray)">Cidade</p>
+                <input type="text" class="form-control" id="enderecoCad" placeholder="Ex:São Paulo">
             </div>
 
             <div class="col-md-4 mb-3" >

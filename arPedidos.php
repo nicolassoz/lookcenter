@@ -35,69 +35,85 @@
 
                 <div class="row">
                     <div class="ms-1 col-md-1">
-                        <p  style="color: var(--light-gray)">Todos</p>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Todos</a></li>
+                        </ul> 
                     </div>
 
                     <div class="col-md-1">
-                        <p  style="color: var(--light-gray)">Novos</p>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item "><a class="nav-link" href="#">Novos</a></li>
+                        </ul>
                     </div>
 
                     <div class="col-md-2">
-                        <p  style="color: var(--light-gray)">Em andamento</p>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item "><a class="nav-link" href="#">Em andamento</a></li>
+                        </ul>
                     </div>
 
                     <div class="col-md-1">
-                        <p  style="color: var(--light-gray)">Entregue</p>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item "><a class="nav-link" href="#">Entregue</a></li>
+                        </ul>
                     </div>
 
                     <div class="col-md-2">
-                        <p  style="color: var(--light-gray)">Cancelados</p>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item "><a class="nav-link" href="#">Cancelados</a></li>
+                        </ul>
                     </div>
 
                     <div class="col-md-3">
-                        <input type="text" class="form-control"id="nomeCad">
+                        <input type="text" class="form-control border border-1 border-warning" id="#" placeholder="buscar pedido..." style="background:transparent; color:white;">
                     </div>
 
-                    <div class="col-md-1">
-                        <a href="#" class="btn btn-outline-warning btn-sm">Filtrar</a>
+                    <div class="col-md-1 dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--primary-gold);">filtrar</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">mais recente</a></li>
+                            <li><a class="dropdown-item" href="#">mais antigo</a></li>
+                            <li><a class="dropdown-item" href="#">em 3 meses</a></li>
+                            <li><a class="dropdown-item" href="#">em 6 meses</a></li>
+                            <li><a class="dropdown-item" href="#">em 1 ano</a></li>
+                        </ul>
                     </div>
                 </div>    
 
 
-                <main class="container mt-2">
-                <table class="table">
-                    
-                    <tr>
-                        <td>pedido #abc00001</td>
-                        <td>2 itens</td>
-                        <td>199</td>
-                        <td>
-                            <p style="color: blue;" >Entregue</p>
-                        </td>
+                <table class="table table-dark table-hover mt-1">
+                    <tbody>
+                        <tr>
+                            <th>pedido</th>
+                            <th>itens</th>
+                            <th>valor (R$100,00)</th>
+                            <th>(status) Entregue</th>
                         </tr>
-
+                        <tr>
+                            <th>pedido</th>
+                            <th>itens</th>
+                            <th>valor (R$100,00)</th>
+                            <th>(status) Entregue</th>
+                        </tr>
+                    </tbody>
                 </table>
 
 
-
-
-                <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-Center">
-                        <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Previous" style="background: transparent;">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item active"><a class="page-link" href="#" style="background: transparent; color: var(--primary-gold);">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#" style="background: transparent; color: var(--primary-gold);">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#" style="background: transparent; color: var(--primary-gold);">3</a></li>
                         <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
+                            <a class="page-link" href="#" aria-label="Next" style="background: transparent; color: var(--primary-gold);">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
                         </li>
                     </ul>
-                </nav>
 
             </form>
         </div> 

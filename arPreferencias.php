@@ -27,14 +27,16 @@
         <div class="col">
             <form class="card">
                 <div class="row">
-                    <div class="m-3 col-md-3">
-                        <h5  style="color: var(--light-gray)">Preferências</h5>
+                    <div class="m-3" style="color: var(--light-gray)">
+                        <h5>Preferências</h5>
+                        <p>gerencie suas preferências para uma experiência personalizada</p>
                     </div>
                 </div>
 
                 <div class="row m-1 justify-content-between">
                     <div class="col-md-3">
                         <p  style="color: var(--light-gray)">Tamanho</p>
+                        <p style="color: var(--light-gray)">selecione os Tamanho que você usa com mais frequencia.</p>
                         <select id="inputState" class="form-select">
                             <option selected> </option>
                             <option>p</option>

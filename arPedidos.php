@@ -1,3 +1,7 @@
+
+<!-- pagina da area de pedidos (o usuario podera ver as informações do perfil)-->
+
+<!-- adicionar a parte de cima do site -->
 <?php include "includes/menu.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,7 +17,7 @@
 </head>
 <body>
 
-
+<!-- "navbar" que fica a esquerda pagina -->
 <div class="container mt-3">
     <div class="row align-items-start">
         <div class="col-md-1">
@@ -24,15 +28,19 @@
             </ul> 
         </div>
 
+               <!-- card do perfil -->
         <div class="col">
             <form class="card">
                 <div class="row">
+
+                    <!-- titulo -->
                     <div class="m-3 col-md-3" style="color: var(--light-gray)">
                         <h5>Pedidos</h5>
                         <p>veja seus pedidos antigos e novos</p>
                     </div>
                 </div>
 
+                <!-- nav que podera ser para listra entre os status -->
                 <div class="row">
                     <div class="ms-1 col-md-1">
                         <ul class="navbar-nav ms-auto">
@@ -64,10 +72,12 @@
                         </ul>
                     </div>
 
+                    <!-- campo de texto onde o usuario poderar buscar pelos pedidos-->
                     <div class="col-md-3">
                         <input type="text" class="form-control border border-1 border-warning" id="#" placeholder="buscar pedido..." style="background:transparent; color:white;">
                     </div>
 
+                    <!-- o usuario poderar litrar os pedidos -->
                     <div class="col-md-1 dropdown">
                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--primary-gold);">filtrar</button>
                         <ul class="dropdown-menu">
@@ -80,7 +90,7 @@
                     </div>
                 </div>    
 
-
+                <!-- exemplo de pedidos -->
                 <table class="table table-dark table-hover mt-1">
                     <tbody>
                         <tr>
@@ -98,7 +108,7 @@
                     </tbody>
                 </table>
 
-
+                    <!-- caso tenha muito pedidos o usuario poderar mudar a pagina -->
                     <ul class="pagination justify-content-Center">
                         <li class="page-item disabled">
                             <a class="page-link" href="#" aria-label="Previous" style="background: transparent;">
@@ -120,9 +130,12 @@
     </div>
 </div>
 
+<!-- area do carrinho (offcanva) -->
 <?php include "includes/offcar.php" ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
+<!-- adicionar o footer, a parte de baixo do site -->
 <?php include "includes/footer.php"; ?>

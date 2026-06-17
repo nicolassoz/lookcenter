@@ -9,6 +9,6 @@
                 <span class="text-warning mx-2">Facebook</span>
                 <span class="text-warning mx-2">WhatsApp</span>
             </div>
-            <p class="footer-text mb-0">&copy; 2026 LookCenter - Todos os direitos reservados.</p>
+            <p class="footer-text mb-0">&copy; 2026 NextCode - Todos os direitos reservados.</p>
         </div>
     </footer>

@@ -1,3 +1,6 @@
+
+<!-- pagina principal -->
+
 <?php 
 // adicionar a parte de cima do site
 include "includes/menu.php";

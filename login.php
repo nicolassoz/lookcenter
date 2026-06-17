@@ -1,3 +1,6 @@
+
+<!-- pagina de login onde o usuario realiza o login-->
+
 <?php 
 // adicionar a parte de cima do site
 include "includes/menu.php"
@@ -21,18 +24,23 @@ include "includes/menu.php"
 
     <h2 class="text-center mb-5" style="color: var(--primary-gold)">Faça seu Login</h2>
 
-
+    <!-- card de login -->
     <div class="justify-content-Center row">
         <div class="col-md-4 card h-100">
                 <div class="card-body text-center">
                     <p  style="color: var(--light-gray)">Email</p>
+                    <!-- campo para inserir o email -->
                     <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
                     <p></p>
                     <p style="color: var(--light-gray)">Senha</p>
+                    <!-- campo para inserir a senha -->
                     <input type="password" class="form-control" id="senhaLogin">
                     <p></p>
+                    <!-- botão que realizarar o login -->
                     <button class="btn btn-outline-warning btn-sm">login</button><p></p>
+                    <!-- botão para realizarar o cadastro -->
                     <a href="cadastro.php" class="btn btn-outline-warning btn-sm">se-cadastrar</a>
+                    <!-- botão para mudar a senha -->
                     <ul class="navbar-nav ms-auto mt-2">
                         <li class="nav-item "><a class="nav-link" href="#">Alterar senha</a></li>
                     </ul>
@@ -41,6 +49,7 @@ include "includes/menu.php"
     </div>
 </div>
 
+<!-- area do carrinho (offcanva) -->
 <?php include "includes/offcar.php" ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

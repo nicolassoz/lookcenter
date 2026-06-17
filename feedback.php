@@ -13,6 +13,7 @@ include "includes/menu.php";
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- style do feedback  (colocar no style css)-->
     <style>
 
     .avaliacao {
@@ -41,11 +42,14 @@ include "includes/menu.php";
 
 <div class="container">
 
+    <!-- "titulo" do feedback -->
     <h2 class="text-center mb-3" style="color: var(--primary-gold)">seu feedback é importante</h2>
 
+    <!-- "subtitulo do feedback" -->
     <p class="text-center footer-text">queremos saber a sua opniao para continuar melhorando.</p>
     <p class="text-center footer-text">Deixe seu feedback abaixo</p>
 
+    <!-- card do feedback -->
     <div class="justify-content-Center row">
         <div class="col-md-5 card h-100">
                 <div class="card-body">
@@ -57,6 +61,7 @@ include "includes/menu.php";
 
                     <p style="color: var(--light-gray)" class="mt-3">Como você avalia sua experiência?</p>
 
+                    <!-- estrelas de avaliação -->
                     <div class="avaliacao justify-content-start">
                         <span class="estrela" data-value="1">&#9733;</span>
                         <span class="estrela" data-value="2">&#9733;</span>
@@ -67,6 +72,7 @@ include "includes/menu.php";
 
                     <input type="hidden" id="nota" name="nota" value="0">
 
+                    <!-- campo de comentario -->
                     <label for="cometFeed" class="form-label" style="color: var(--light-gray)">seu feedback</label>
                     <textarea class="form-control mb-3" id="comentFeed" rows="3" placeholder="Conte-nos o que achou"></textarea>
                      
@@ -78,6 +84,7 @@ include "includes/menu.php";
     </div>
 </div>
 
+<!-- onde vai aparecer os outros feedback de clietes -->
 <main class="container my-5" id="produtos">
         <h2 class="text-center mb-5" style="color: var(--primary-gold)">outros feedback</h2>
         
@@ -118,11 +125,13 @@ include "includes/menu.php";
         </div>
     </main>
     
+    <!-- area do carrinho (offcanva) -->
 <?php include "includes/offcar.php" ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 
+// JS das estrelas de avaliação
 const estrelas = document.querySelectorAll(".estrela");
 const nota = document.getElementById("nota");
 
@@ -145,4 +154,6 @@ estrelas.forEach((estrela) => {
 
 </body>
 </html>
+
+<!-- adicionar o footer, a parte de baixo do site -->
 <?php include "includes/footer.php"; ?>

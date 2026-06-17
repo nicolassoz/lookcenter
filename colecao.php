@@ -39,6 +39,7 @@ include "includes/menu.php"
             </div>
         </div>
 
+        <!-- area do carrinho (offcanva) -->
         <?php include "includes/offcar.php" ?>
         
         <!-- ESTRUTURA DO FILTRO OCULTO (OFFCANVAS) -->

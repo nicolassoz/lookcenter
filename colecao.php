@@ -22,7 +22,7 @@ include "includes/menu.php"
         
         <!-- BARRA SUPERIOR COM BOTÃO DE FILTRO E ORDENAÇÃO -->
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 bg-dark p-3 rounded border border-secondary gap-3">
-            <!-- BOTÃO QUE ABRE O FILTRO -->
+            <!-- BOTÃO QUE ABRE O FILTRO DE ORDEM -->
             <button class="btn btn-gold d-flex align-items-center gap-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarFiltros"> Filtrar Produtos </button>
  
             <div class="d-flex align-items-center gap-3 ml-auto">

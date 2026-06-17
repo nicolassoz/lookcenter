@@ -1,5 +1,5 @@
 
-
+<!-- pagina da area de perfil (o usuario podera ver as informações do perfil)-->
 
 <!-- adicionar a parte de cima do site -->
 <?php include "includes/menu.php"; ?>
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-
+<!-- "navbar" que fica a esquerda pagina -->
 <div class="container mt-3">
     <div class="row align-items-start">
         <div class="col-md-1">
@@ -28,14 +28,18 @@
             </ul> 
         </div>
 
+        <!-- card do perfil -->
         <div class="col">
             <form class="card">
                 <div class="row">
+
+                    <!-- titulo -->
                     <div class="m-3 col-md-3">
                         <h5  style="color: var(--light-gray)">Perfil</h5>
                     </div>
                 </div>
 
+                <!-- campos que tera que ser prencido automaticamente -->
                 <div class="row m-1">
                     <div class="mb-3 col-md-3">
                         <p  style="color: var(--light-gray)">Nome</p>
@@ -53,17 +57,21 @@
                     </div>            
                             
                     <div class=" mb-3 col-md-4">
+                        <!-- tera que aparecer o endereço que foi cadastrado -->
                         <p  style="color: var(--light-gray)">Endereço</p>
                         <input type="text" class="form-control" id="enderecoCad">
+                        <!-- tera que mandar para perferencias e gerenciar endereços -->
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item "><a class="nav-link" href="arPerfil.php">ver detalhes do endereço</a></li>
                         </ul>
                     </div>
 
+                    <!-- tera que mandar para gerenciar endereços -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item "><a class="nav-link" href="arPerfil.php">Adicionar outro Endereço</a></li>
                     </ul>
 
+                    <!-- manda para uma area de altera a senha  -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item "><a class="nav-link" href="#">Alterar senha</a></li>
                     </ul>

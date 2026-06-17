@@ -28,6 +28,7 @@ include "includes/menu.php";
         </div>
     </section>
 
+    <!-- area do carrinho (offcanva) -->
     <?php include "includes/offcar.php" ?>
 
     <!-- as roupas que serão destaque -->

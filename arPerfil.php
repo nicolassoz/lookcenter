@@ -1,3 +1,7 @@
+
+
+
+<!-- adicionar a parte de cima do site -->
 <?php include "includes/menu.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -69,9 +73,12 @@
     </div>
 </div>
 
+<!-- area do carrinho (offcanva) -->
 <?php include "includes/offcar.php" ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
+<!-- adicionar o footer, a parte de baixo do site -->
 <?php include "includes/footer.php"; ?>

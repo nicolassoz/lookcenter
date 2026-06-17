@@ -34,40 +34,84 @@
                 </div>
 
                 <div class="row m-1 justify-content-between">
-                    <div class="col-md-3">
+                    <div class="col-md-5">
                         <p  style="color: var(--light-gray)">Tamanho</p>
                         <p style="color: var(--light-gray)">selecione os Tamanho que você usa com mais frequencia.</p>
-                        <select id="inputState" class="form-select">
-                            <option selected> </option>
-                            <option>p</option>
-                            <option>m</option>
-                            <option>g</option>
-                            <option>gg</option>
-                        </select>
+                        <div class="filter-section mb-4">
+                    <div class="d-flex flex-wrap gap-2">
+                        <input type="checkbox" class="btn-check" id="sizeP" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeP">P</label>
+
+                        <input type="checkbox" class="btn-check" id="sizeM" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeM">M</label>
+
+                        <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeG">G</label>
+
+                        <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
+                        <label class="btn btn-outline-light" for="sizeGG">GG</label>
+                    </div>
+                </div>
                     </div>
 
-                    <div class="col-md-3">
-                        <p  style="color: var(--light-gray)">Estilo</p>
-                        <select id="inputState" class="form-select">
-                        <option selected> </option>
-                        </select>
-                    </div>
 
-                    <div class="col-md-3">
-                        <p  style="color: var(--light-gray)">Endereço</p> <!-- aqui ira aparecer o primeiro endereço que foi cadastrado-->
+                    <div class="col-md-5">
+                        <p style="color: var(--light-gray)">Endereço</p> <!-- aqui ira aparecer o primeiro endereço que foi cadastrado-->
+                        <p style="color: var(--light-gray)">defina seu endereço principal para facilitar suas compras.</p>
                         <select id="inputState" class="form-select">
                             <option selected>"endereço atual" </option>
                         </select>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item "><a class="nav-link" href="arPerfil.php">gerenciar endereços</a></li>
+                        </ul>
                     </div>
 
-                    <p class="m-3"></p>
+                    <div class="col-md-6" style="color: var(--light-gray)">
+                        <p>Cominicação</p>
+                        <p>escolha como deseja receber nossas nividades e promoções.</p>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="filter-section">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat1">
+                                <label class="form-check-label text-light" for="cat1">receber novidades por e-mail</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat4">
+                                <label class="form-check-label text-light" for="cat4">receber promoções por e-email</label>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat2">
+                                <label class="form-check-label text-light" for="cat2">notificação</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p></p>
+
+                    <div class="col-md-4" style="color: var(--light-gray)">
+                        <p>privacidade</p>
+                        <p>gerencie suas preferências de privacidade.</p>
+                    </div>
+
+                    <div class="col-md-7" style="color: var(--light-gray)">
+                        <p>perfil público</p>
+                        <p>permitir que minha avaliação e comentários sejam vistos por outros clientes.</p>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                                <label class="form-check-label" for="switchCheckDefault"></label>
+                            </div>
+                    </div>
 
                     <div class="justify-content-Center row">
                             <div class="card-body text-center">
-                                <a href="cadastro.php" class="btn btn-outline-warning btn-sm">salvar</a>
+                                <a href="cadastro.php" class="btn btn-outline-warning btn-sm">salvar preferências</a>
                             </div>
                     </div>
-                    
+
                 </div>
             </form>
         </div> 

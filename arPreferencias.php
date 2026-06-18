@@ -39,7 +39,7 @@
                     </div>
                 </div>
 
-                <!-- o usuario poderar selecionar o(s) tamanho que aparecerar primeiro -->
+                <!-- o usuario poderar selecionar o(s) tamanho que aparecerar mais -->
                 <div class="row m-1 justify-content-between">
                     <div class="col-md-5">
                         <p  style="color: var(--light-gray)">Tamanho</p>

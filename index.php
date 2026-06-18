@@ -11,21 +11,25 @@ include "includes/menu.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LookCenter | Moda e Estilo</title>
-    <!-- links para o bootstrap, img e style -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <?php //include "includes/head.php";?>
+    
+    <script>
+
+    
+
+    </script>
+
+    
     
 </head>
 <body>
 
 <!-- mostrar a imagem com o nome (esqueci o nome disso) -->
     <section class="hero">
-        <div class="container">
-            <h1 class="display-1">LookCenter</h1>
-            <p class="lead mb-4 text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elegância em cada detalhe.</p>
-            <a href="#produtos" class="btn btn-gold">VER COLEÇÃO</a>
-        </div>
+        
     </section>
 
     <!-- area do carrinho (offcanva) -->
@@ -124,7 +128,7 @@ include "includes/menu.php";
     </main>
     
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
 

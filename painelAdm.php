@@ -18,8 +18,11 @@ include "includes/menu.php";
     
 </head>
 <body>
-
-
+<!-- titulo -->
+<div class="container mt-3" style="color: var(--primary-gold)">
+    <h2>Olá Administrador!</h2>
+    <p class="footer-text">Bem vindo ao painel da loja.</p>
+</div>
 
 <!-- area do carrinho (offcanva) -->
 <?php include "includes/offcar.php" ?>

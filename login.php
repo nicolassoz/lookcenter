@@ -38,9 +38,9 @@ include "includes/menu.php"
                     <p></p>
                     <!-- botão que realizarar o login -->
                     <button class="btn btn-outline-warning btn-sm">login</button><p></p>
-                    <!-- botão para realizarar o cadastro -->
+                    <!-- botão que mandara para area de realizar o cadastro -->
                     <a href="cadastro.php" class="btn btn-outline-warning btn-sm">se-cadastrar</a>
-                    <!-- botão para mudar a senha -->
+                    <!-- botão que mandara para a area que realizara a mudança de senha -->
                     <ul class="navbar-nav ms-auto mt-2">
                         <li class="nav-item "><a class="nav-link" href="#">Alterar senha</a></li>
                     </ul>

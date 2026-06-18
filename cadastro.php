@@ -1,3 +1,6 @@
+
+<!-- pagina de cadastro onde o usuario realiza o cadastro-->
+
 <?php 
 // adicionar a parte de cima do site
 include "includes/menu.php"
@@ -75,6 +78,7 @@ include "includes/menu.php"
 
 </main>
 
+<!-- area do carrinho (offcanva) -->
 <?php include "includes/offcar.php" ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

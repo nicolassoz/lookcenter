@@ -22,51 +22,67 @@ include "includes/menu.php"
 
 <main class="container mt 5">
 
-    <h2 class="text-center mb-5" style="color: var(--primary-gold)">Faça seu Login</h2>
+    <h2 class="text-center mb-5" style="color: var(--primary-gold)">Faça seu Cadastro</h2>
 
+    <!-- card de cadastro -->
     <form class="card ">
 
         <div class="row m-1">
+            <!-- campo para inserir o nome -->
             <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">Nome</p>
                 <input type="text" class="form-control" id="nomeCad" placeholder="Ex: joão souza">
             </div>
 
+            <!-- campo para inserir o CPF -->
             <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">Cpf</p>
-                <input type="email" class="form-control" id="emailCad" placeholder="Ex: 111.111.111-11">
+                <input type="text" class="form-control" id="emailCad" placeholder="Ex: 111.111.111-11">
             </div>
 
+            <!-- campo para inserir o email -->
             <div class="col-md-4 mb-3">
                 <p  style="color: var(--light-gray)">Email</p>
                 <input type="email" class="form-control" id="emailCad" placeholder="Ex: email.123@gmail.com">
             </div>
                     
+            <!-- campo para inserir o telefone -->
             <div class="col-md-2 mb-3">
                  <p  style="color: var(--light-gray)">Telefone (opcional)</p>
                 <input type="text" class="form-control" id="telCad" placeholder="Ex: (11)99999-9999">
             </div>
             
+            <!-- campo para inserir o CEP -->
             <div class="col-md-2 mb-3" >
                  <p  style="color: var(--light-gray)">CEP</p>
                 <input type="text" class="form-control" id="enderecoCad" placeholder="Ex: 11111-111">
             </div>
                     
+            <!-- campo para inserir o endereço -->
             <div class="col-md-4 mb-3" >
                  <p  style="color: var(--light-gray)">Endereço</p>
                 <input type="text" class="form-control" id="enderecoCad" placeholder="Ex: rua. itaquera, n15">
             </div>
 
+            <!-- campo para inserir o complemento -->
             <div class="col-md-4 mb-3" >
                  <p  style="color: var(--light-gray)">Complemento (opcional)</p>
                 <input type="text" class="form-control" id="enderecoCad" placeholder="bloco A, ap 11">
             </div>
 
+            <!-- campo para inserir o senha -->
             <div class="col-md-4 mb-3" >
                  <p  style="color: var(--light-gray)">Senha</p>
                 <input type="text" class="form-control" id="enderecoCad">
             </div>
 
+            <!-- campo para confirma a senha -->
+            <div class="col-md-4 mb-3" >
+                 <p  style="color: var(--light-gray)">confirme a Senha</p>
+                <input type="text" class="form-control" id="enderecoCad">
+            </div>
+
+            <!-- botão para realiza o cadastro -->
             <div class="justify-content-Center row">
                     <div class="card-body text-center">
                       <a href="cadastro.php" class="btn btn-outline-warning btn-sm">cadastrar-se</a>

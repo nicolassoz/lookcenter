@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <!-- nav que podera ser para listra entre os status -->
+                <!-- nav que server para listra entre os status -->
                 <div class="row">
                     <div class="ms-1 col-md-1">
                         <ul class="navbar-nav ms-auto">
@@ -108,16 +108,21 @@
                     </tbody>
                 </table>
 
-                    <!-- caso tenha muito pedidos o usuario poderar mudar a pagina -->
+                    <!-- caso tenha muito pedidos o usuario poderar mudar a pagina (tera que aparecer as outras pagina so se necessario)-->
+                     <!-- volta -->
                     <ul class="pagination justify-content-Center">
                         <li class="page-item disabled">
                             <a class="page-link" href="#" aria-label="Previous" style="background: transparent;">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
+                            <!-- paginas -->
                         </li>
                         <li class="page-item active"><a class="page-link" href="#" style="background: transparent; color: var(--primary-gold);">1</a></li>
+
                         <li class="page-item"><a class="page-link" href="#" style="background: transparent; color: var(--primary-gold);">2</a></li>
+
                         <li class="page-item"><a class="page-link" href="#" style="background: transparent; color: var(--primary-gold);">3</a></li>
+                        <!-- avança -->
                         <li class="page-item">
                             <a class="page-link" href="#" aria-label="Next" style="background: transparent; color: var(--primary-gold);">
                                 <span aria-hidden="true">&raquo;</span>

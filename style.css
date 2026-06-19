@@ -10,7 +10,7 @@ body
     {
         font-family: 'Poppins', sans-serif;
         background-color: var(--primary-black);
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
 h1, h2, .navbar-brand 

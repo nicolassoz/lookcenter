@@ -14,18 +14,42 @@ include "includes/menu.php";
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="style.css">
 
-    
-    
 </head>
 <body>
 
 <!-- mostrar a imagem com o nome (esqueci o nome disso) -->
-    <section class="hero">
-        
-    </section>
+
+
+    <div id="carouselBannerIndex" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBannerIndex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBannerIndex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBannerIndex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4500">
+                <img src="assets/img/modelo_lookcenter.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="4500">
+                <img src="assets/img/banner_frete_lookcenter.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="4500">
+                <img src="assets/img/banner_3peca_desc.png" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerIndex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerIndex" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
 
     <!-- area do carrinho (offcanva) -->
     <?php include "includes/offcar.php" ?>
@@ -123,7 +147,9 @@ include "includes/menu.php";
     </main>
     
 
-    
+    <!-- area do carrinho (offcanva) -->
+    <?php include "includes/offcar.php" ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

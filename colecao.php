@@ -130,11 +130,11 @@ include "includes/menu.php"
                 <!-- Produto 2 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moletom_Red_Graphics_costa.jpg" class="card-img-top" alt="Vestido">
+                        <img src="roupas/camisas/PROJETO STREETWEAR.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Vestido Golden Hour</h5>
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
                             <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 680,00</p>
+                            <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -143,11 +143,11 @@ include "includes/menu.php"
                 <!-- Produto 3 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Terno">
+                        <img src="roupas/camisas/Camiseta_Tripside_Tag_Centra.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Terno Completo Lux</h5>
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
                             <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 899,00</p>
+                            <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -338,7 +338,7 @@ include "includes/menu.php"
                 <!-- Produto 18 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/camisas/Camiseta_Tripside_Tag_Centra.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Cargo_Techwear_Preta_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
                             <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
@@ -351,7 +351,7 @@ include "includes/menu.php"
                 <!-- Produto 19 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/camisas/PROJETO STREETWEAR.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Jeans_Carpenter_Cinza_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
                             <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
@@ -360,6 +360,162 @@ include "includes/menu.php"
                         </div>
                     </div>
                 </div>
+
+                <!-- Produto 20 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/bermudas/Bermuda_Streetwear_Preta_Apparel_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 21 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/bermudas/Bermuda_TribalTopside_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 22 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 22 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/calcas/Calça_Jeans_Baggy_Black_Acid_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 23 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/calcas/Calça_Jeans_Baggy_Clássica_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 24 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/calcas/Calça_Jeans_Black_Topside_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 25 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/calcas/Calça_Jeans_Carpenter_Light_Blue_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 26 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/calcas/Calça_Jeans_Tribal_Blue.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 27 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/moletons/Moletom_bear_black_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 28 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/moletons/Moletom_cruz_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 29 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/moletons/Moletom_Red_Graphics_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 30 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/moletons/Moleton_Bear_Red_frente.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Camisa Executiva Satin</h5>
+                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
     </div>

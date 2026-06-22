@@ -62,11 +62,11 @@ include "includes/menu.php";
         <div class="row">
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Lorem Ipsum</h5>
-                        <p class="card-text text-light">Consectetur adipiscing elit sed do eiusmod.</p>
-                        <p class="price">R$ 199,90</p>
+                        <h5 class="card-title">neymar jr.</h5>
+                        <p class="card-text text-light">camisa neymar jr. streerwear preta</p>
+                        <p class="price">R$ 149,99</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
                 </div>
@@ -75,10 +75,10 @@ include "includes/menu.php";
             <!-- roupa 2 -->
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <img src="roupas/moletons/Moletom_Red_Graphics_costa.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Dolor Sit Amet</h5>
-                        <p class="card-text text-light">Tempor incididunt ut labore et dolore magna.</p>
+                        <h5 class="card-title">graphics</h5>
+                        <p class="card-text text-light">Moletom vermelho Graphics.</p>
                         <p class="price">R$ 250,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
@@ -88,10 +88,10 @@ include "includes/menu.php";
             <!-- roupa 3 -->
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Sed Eiusmod</h5>
-                        <p class="card-text text-light">Ut enim ad minim veniam quis nostrud.</p>
+                        <h5 class="card-title">jeans off-white</h5>
+                        <p class="card-text text-light">Calça Cargo Jeans Off-White.</p>
                         <p class="price">R$ 175,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>

@@ -12,7 +12,8 @@ class Usuario
     private bool $primeiro_login;
     private PDO $pdo;
 
-        public function __construct(){
+    public function __construct()
+    {
        $this->pdo = obterPdo();
     }
     

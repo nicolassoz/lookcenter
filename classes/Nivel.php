@@ -35,9 +35,73 @@ class Nivel
 
     public function setSigla(string $sigla)
     {
-        return $this->sigla = $sigla;
+         $this->sigla = $sigla;
+    }
+
+    public function inserir():bool
+    {
+        $sql = "INSERT INTO niveis (nome, sigla)
+         values (:nome, :sigla)";
+        $cmd = $this->pdo->prepare($sql);
+        $cmd->bindValue(":nome", $this->nome);
+        $cmd->bindValue(":sigla", $this->sigla);
+        
+        if($cmd->execute())
+        {
+            $this->id = $this->pdo->lastInsertId();
+            return true;
+        }
+        return false;
+    }    
+
+    public static function listar():array
+    {
+        $cmd = obterPdo()->query("select * from niveis order by id desc");
+        return $cmd->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function buscarPorId(int $id):bool
+    {
+        $sql = "SELECT * FROM niveis WHERE id = :id";
+        $cmd = obterPdo()->prepare($sql);
+        $cmd->bindValue(":id",$id);
+        $cmd->execute();
+        if($cmd->rowCount() > 0)
+        {
+            $dados = $cmd->fetch(PDO::FETCH_ASSOC);
+           
+            $this->id = $dados['id'];
+            $this->setNome($dados['nome']);
+            $this->setSigla($dados['sigla']);
+            return true;
+        }
+        return false;
+    }
+
+    public function atualizar():bool
+    {
+        if(!$this->id) return false;
+        $sql = "UPDATE niveis
+                set nome = :nome, sigla = :sigla
+                WHERE id = :id";
+
+        $cmd = $this->pdo->prepare($sql);
+        $cmd->bindValue(":id", $this->id); 
+        $cmd->bindValue(":nome", $this->nome);   
+        $cmd->bindValue(":sigla", $this->sigla);   
+        return $cmd->execute();
+    }
+
+    public function excluir():bool
+    {
+        if(!$this->id) return false;
+
+        $sql = "DELETE FROM niveis WHERE id = :id";
+        $cmd = $this->pdo->prepare($sql);
+        $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);
+
+        return $cmd->execute();
     }
 
 }
-
 ?>

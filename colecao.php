@@ -335,6 +335,10 @@ include "includes/menu.php"
                     </div>
                 </div>
 
+
+                <!-- bermudas -->
+
+
                 <!-- Produto 18 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
@@ -386,6 +390,10 @@ include "includes/menu.php"
                         </div>
                     </div>
                 </div>
+
+
+                <!-- calças -->
+
 
                 <!-- Produto 22 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
@@ -464,6 +472,10 @@ include "includes/menu.php"
                         </div>
                     </div>
                 </div>
+
+
+                <!-- moletons -->
+
 
                 <!-- Produto 27 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">

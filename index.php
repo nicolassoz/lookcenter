@@ -14,23 +14,42 @@ include "includes/menu.php";
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <?php //include "includes/head.php";?>
-    
-    <script>
+    <link rel="stylesheet" href="style.css">
 
-    
-
-    </script>
-
-    
-    
 </head>
 <body>
 
 <!-- mostrar a imagem com o nome (esqueci o nome disso) -->
-    <section class="hero">
-        
-    </section>
+
+
+    <div id="carouselBannerIndex" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBannerIndex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBannerIndex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBannerIndex" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4500">
+                <img src="assets/img/modelo_lookcenter.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="4500">
+                <img src="assets/img/banner_frete_lookcenter.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="4500">
+                <img src="assets/img/banner_3peca_desc.png" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannerIndex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBannerIndex" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
 
     <!-- area do carrinho (offcanva) -->
     <?php include "includes/offcar.php" ?>
@@ -43,11 +62,11 @@ include "includes/menu.php";
         <div class="row">
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Lorem Ipsum</h5>
-                        <p class="card-text text-light">Consectetur adipiscing elit sed do eiusmod.</p>
-                        <p class="price">R$ 199,90</p>
+                        <h5 class="card-title">neymar jr.</h5>
+                        <p class="card-text text-light">camisa neymar jr. streerwear preta</p>
+                        <p class="price">R$ 149,99</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
                 </div>
@@ -56,10 +75,10 @@ include "includes/menu.php";
             <!-- roupa 2 -->
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <img src="roupas/moletons/Moletom_Red_Graphics_costa.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Dolor Sit Amet</h5>
-                        <p class="card-text text-light">Tempor incididunt ut labore et dolore magna.</p>
+                        <h5 class="card-title">graphics</h5>
+                        <p class="card-text text-light">Moletom vermelho Graphics.</p>
                         <p class="price">R$ 250,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
@@ -69,10 +88,10 @@ include "includes/menu.php";
             <!-- roupa 3 -->
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Produto">
+                    <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Sed Eiusmod</h5>
-                        <p class="card-text text-light">Ut enim ad minim veniam quis nostrud.</p>
+                        <h5 class="card-title">jeans off-white</h5>
+                        <p class="card-text text-light">Calça Cargo Jeans Off-White.</p>
                         <p class="price">R$ 175,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
@@ -128,7 +147,9 @@ include "includes/menu.php";
     </main>
     
 
-    
+    <!-- area do carrinho (offcanva) -->
+    <?php include "includes/offcar.php" ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

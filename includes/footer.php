@@ -4,7 +4,7 @@
 <footer class="text-center text-lg-start">
         <div class="container text-center">
             <h3 style="color: var(--primary-gold)">LookCenter</h3>
-            <p class="footer-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+            <p class="footer-text mt-3">Mais do que uma marca, somos um estilo de vida para aqueles que transformam as ruas em passarela e fazem da moda uma forma de identidade.</p>
             <p class="footer-text">alguma duvida? entre em contato com a gente através do nosso E-mail ou redes socias</p>
             <p class="footer-text" style="color: var(--primary-gold)">LookCenter@gmail.com</p>
             <!-- rede socias da lookcenter -->

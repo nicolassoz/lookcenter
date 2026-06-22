@@ -10,7 +10,7 @@ body
     {
         font-family: 'Poppins', sans-serif;
         background-color: var(--primary-black);
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
 h1, h2, .navbar-brand 
@@ -39,18 +39,7 @@ h1, h2, .navbar-brand
     }
 
     /* Hero Section */
-.hero 
-    {
-        background: url('assets/img/modelo_lookcenter.png');
-        background-size: cover;
-        background-position: center;
-        height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        border-bottom: 5px solid var(--primary-gold);
-    }
+
 
 .hero h1 
     {

@@ -175,7 +175,7 @@ class Usuario
         return $cmd->execute();
     }
 
-public function atualizarSenha(string $senhaHash):bool
+    public function atualizarSenha(string $senhaHash):bool
     {
         if(!$this->id) return false;
 

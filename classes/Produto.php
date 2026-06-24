@@ -106,7 +106,28 @@ class Produto
     {
         $this->descontinuado = $descontinuado;
     }
+
+    public function inserir():bool
+    {
+        $sql = "INSERT INTO produtos (nome, descricao, preco, unidade_venda, categoria_id, estoque_minimo, desconto, imagem, data_cad, descontinuado)
+         values (:nome, :descricao, :preco, :unidade_venda, :categoria_id, :estoque_minimo, :desconto, :imagem, :data_cad, :descontinuado)";
+        $cmd = $this->pdo->prepare($sql);
+        $cmd->bindValue(":nome", $this->nome);
+        $cmd->bindValue(":descricao", $this->descricao);
+        $cmd->bindValue(":preco", $this->preco);
+        $cmd->bindValue(":unidade_venda", $this->unidade_venda);
+        $cmd->bindValue(":categoria_id", $this->categoria_id);
+        $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
+        $cmd->bindValue(":desconto", $this->desconto);
+        $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
+
+
+        if($cmd->execute())
+        {
+            $this->id = $this->pdo->lastInsertId();
+            return true;
+        }
+        return false;
+    }    
 }
-
-
 ?>

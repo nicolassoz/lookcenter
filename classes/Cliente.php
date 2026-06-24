@@ -11,8 +11,7 @@ class Cliente
     private DateTime $data_nasc;
     private DateTime $data_cad;
     private bool $ativo;
-    private PDO $pdo;
-    private int $usuario_id;
+    private PDO $pdo;    
 
     public function __construct()
     {
@@ -22,16 +21,6 @@ class Cliente
     public function getId()
     {
         return $this->id;
-    }
-
-    public function getUsuarioId()
-    {
-        return $this->usuario_id;
-    }
-
-    public function setUsuarioId(int $usuario_id)
-    {
-        $this->usuario_id = $usuario_id;
     }
 
     public function getTelefone()
@@ -99,80 +88,78 @@ class Cliente
         $this->ativo = $ativo;
     }
 
-    public function inserir(): bool 
+    public function Inserir():bool
     {
-        $sql = "INSERT INTO clientes (usuario_id, telefone, cpf)
-                VALUES (:usuario_id, :telefone, :cpf)";
-        $cmd = $this->pdo->prepare($sql);
-        $cmd->bindValue(":usuario_id", $this->usuario_id, PDO::PARAM_INT);
-        $cmd->bindValue(":telefone", $this->telefone);
-        $cmd->bindValue(":cpf", $this->cpf);
+        $sql = "INSERT INTO clientes (nome, cpf, telefone, email, data_nasc, data_cad, ativo) values (:nome, :cpf, :telefone, :email, :data_nasc, :data_cad, :ativo)";
 
-        if ($cmd->execute())
+        $cmd = $this->pdo->prepare($sql);
+
+        $cmd->bindValue(":nome", $this->nome);
+        $cmd->bindValue(":cpf", $this->cpf);
+        $cmd->bindValue(":telefone", $this->telefone);
+        $cmd->bindValue(":email", $this->email);
+        $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));        
+        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d H:i:s'));   
+        $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);     
+
+        if($cmd->execute())
         {
-            $this->id = $this->pdo->lastInsertId();
+            $this->id = (int)$this->pdo->lastInsertId();
             return true;
         }
         return false;
-    }
+    }    
 
-    public function atualizar(): bool 
+    public function Atualizar():bool
     {
-        if (!$this->id) return false;
+        if(!$this->id) return false;
+        $sql = "UPDATE clientes set nome = :nome, cpf = :cpf, telefone = :telefone, email = :email, data_nasc = :data_nasc, data_cad = :data_cad, ativo = :ativo WHERE id = :id";
 
-        $sql = "UPDATE clientes 
-                SET telefone = :telefone, cpf = :cpf
-                WHERE id = :id";
         $cmd = $this->pdo->prepare($sql);
+
         $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);
-        $cmd->bindValue(":telefone", $this->telefone);
+        $cmd->bindValue(":nome", $this->nome);
         $cmd->bindValue(":cpf", $this->cpf);
+        $cmd->bindValue(":telefone", $this->telefone);
+        $cmd->bindValue(":email", $this->email);
+        $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));   
+        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d H:i:s'));
+        $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);   
+           
         return $cmd->execute();
     }
 
-    public static function listar(): array 
+    public static function Listar(): array 
     {
         $cmd = obterPdo()->query("SELECT * FROM clientes ORDER BY id DESC");
         return $cmd->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function buscarPorId(int $id): bool 
+    public function BuscarPorId(int $id): bool 
     {
         $sql = "SELECT * FROM clientes WHERE id = :id";
         $cmd = obterPdo()->prepare($sql);
         $cmd->bindValue(":id", $id, PDO::PARAM_INT);
         $cmd->execute();
 
-        if ($cmd->rowCount() > 0) {
+        if ($cmd->rowCount() > 0) 
+        {
             $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-            $this->id = $dados["id"];
-            $this->usuario_id = $dados["usuario_id"];
-            $this->telefone = $dados["telefone"];
-            $this->cpf = $dados["cpf"];
+
+            $this->id = $dados['id'];
+            $this->setNome($dados['nome']);
+            $this->setCpf($dados['cpf']);
+            $this->setTelefone($dados['telefone']);
+            $this->setEmail($dados['email']);
+            $this->setDataNasc(new DateTime($dados['data_nasc']));
+            $this->setDataCad(new DateTime($dados['data_cad']));
+            $this->setAtivo((bool)$dados['ativo']);
             return true;
         }
         return false;
     }
 
-    public function buscarPorUsuario(int $usuario_id): bool 
-    {
-        $sql = "SELECT * FROM clientes WHERE usuario_id = :usuario_id LIMIT 1";
-        $cmd = obterPdo()->prepare($sql);
-        $cmd->bindValue(":usuario_id", $usuario_id, PDO::PARAM_INT);
-        $cmd->execute();
-        
-        if ($cmd->rowCount() > 0) {
-            $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-            $this->id = $dados["id"];
-            $this->usuario_id = $dados["usuario_id"];
-            $this->telefone = $dados["telefone"];
-            $this->cpf = $dados["cpf"];
-            return true;
-        }
-        return false;
-    }
-
-    public function excluir():bool
+    public function Excluir():bool
     {
         if(!$this->id) return false;
 

@@ -39,7 +39,7 @@
 
 <div class="container mt-3">
     <div class="row">
-            
+                <!-- "navbar" que fica a esquerda pagina -->
                 <div class="col-md-1">
                 <ul class="navbar-nav ms-auto">
                             <li class="nav-item "><a class="nav-link" href="arPerfil.php">perfil</a></li>

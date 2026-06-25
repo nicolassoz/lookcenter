@@ -90,7 +90,7 @@ class Usuario
         }
     }
 
-    public function inserir():bool
+    public function Inserir():bool
     {
         $sql = "INSERT INTO usuarios (nome, email, senha, nivel_id)
          values (:nome, :email, :senha, :nivel_id)";
@@ -101,19 +101,19 @@ class Usuario
         $cmd->bindValue(":nivel_id", $this->nivel_id);
         if($cmd->execute())
         {
-            $this->id = $this->pdo->lastInsertId();
+            $this->id = (int)$this->pdo->lastInsertId();
             return true;
         }
         return false;
     }    
 
-    public static function listar():array
+    public static function Listar():array
     {
         $cmd = obterPdo()->query("select * from usuarios order by id desc");
         return $cmd->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function buscarPorEmail(string $email):bool
+    public function BuscarPorEmail(string $email):bool
     {
         $sql = "SELECT * FROM usuarios WHERE email = :email";
         $cmd = obterPdo()->prepare($sql);
@@ -135,7 +135,7 @@ class Usuario
         return false;
     }
 
-    public function buscarPorId(int $id):bool
+    public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM usuarios WHERE id = :id";
         $cmd = obterPdo()->prepare($sql);
@@ -157,13 +157,10 @@ class Usuario
         return false;
     }
 
-    public function atualizar():bool
+    public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE usuarios
-                set nome = :nome, email = :email, nivel_id = :nivel_id, ativo = :ativo,
-                primeiro_login = :primeiro_login
-                WHERE id = :id";
+        $sql = "UPDATE usuarios set nome = :nome, email = :email, nivel_id = :nivel_id, ativo = :ativo, primeiro_login = :primeiro_login WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":id", $this->id); 
@@ -175,7 +172,7 @@ class Usuario
         return $cmd->execute();
     }
 
-public function atualizarSenha(string $senhaHash):bool
+    public function AtualizarSenha(string $senhaHash):bool
     {
         if(!$this->id) return false;
 
@@ -187,7 +184,7 @@ public function atualizarSenha(string $senhaHash):bool
         return $cmd->execute();
     }
 
-    public function excluir():bool
+    public function Excluir():bool
     {
         if(!$this->id) return false;
 

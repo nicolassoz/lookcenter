@@ -37,7 +37,7 @@ include "includes/menu.php"
                     <input type="password" class="form-control" id="senhaLogin">
                     <p></p>
                     <!-- botão que realizarar o login -->
-                    <button class="btn btn-outline-warning btn-sm">login</button><p></p>
+                    <button class="btn btn-outline-warning btn-sm" href="arPerfil.php">login</button><p></p>
                     <!-- botão que mandara para area de realizar o cadastro -->
                     <a href="cadastro.php" class="btn btn-outline-warning btn-sm">se-cadastrar</a>
                     <!-- botão que mandara para a area que realizara a mudança de senha -->

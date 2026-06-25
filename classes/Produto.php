@@ -11,7 +11,7 @@ class Produto
     private string $unidade_venda;
     private int $categoria_id;
     private int $estoque_minimo;
-    private float $desconto;
+    private ?float $desconto = null;
     private DateTime $data_cad;
     private bool $descontinuado;
     private PDO $pdo;
@@ -109,8 +109,8 @@ class Produto
 
     public function Inserir():bool
     {
-        $sql = "INSERT INTO produtos (nome, descricao, preco, unidade_venda, categoria_id, estoque_minimo, desconto, data_cad, descontinuado)
-         values (:nome, :descricao, :preco, :unidade_venda, :categoria_id, :estoque_minimo, :desconto, :data_cad, :descontinuado)";
+        $sql = "INSERT INTO produtos (nome, descricao, preco, unidade_venda, categoria_id, estoque_minimo, desconto, descontinuado)
+         values (:nome, :descricao, :preco, :unidade_venda, :categoria_id, :estoque_minimo, :desconto, :descontinuado)";
 
         $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":nome", $this->nome);
@@ -120,7 +120,6 @@ class Produto
         $cmd->bindValue(":categoria_id", $this->categoria_id);
         $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
         $cmd->bindValue(":desconto", $this->desconto);
-        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d H:i:s'));
         $cmd->bindValue(":descontinuado", $this->descontinuado);
 
         if($cmd->execute())
@@ -190,7 +189,7 @@ class Produto
     public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE produtos set nome = :nome, descricao = :descricao, preco = :preco, unidade_venda = :unidade_venda, categoria_id = :categoria_id, estoque_minimo = :estoque_minimo, desconto = :desconto, data_cad = :data_cad, descontinuado = :descontinuado WHERE id = :id";
+        $sql = "UPDATE produtos set nome = :nome, descricao = :descricao, preco = :preco, unidade_venda = :unidade_venda, categoria_id = :categoria_id, estoque_minimo = :estoque_minimo, desconto = :desconto, descontinuado = :descontinuado WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
         
@@ -202,7 +201,6 @@ class Produto
         $cmd->bindValue(":categoria_id", $this->categoria_id);
         $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
         $cmd->bindValue(":desconto", $this->desconto);
-        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d H:i:s'));
         $cmd->bindValue(":descontinuado", $this->descontinuado, PDO::PARAM_BOOL);  
         
         return $cmd->execute();

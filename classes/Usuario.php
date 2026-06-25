@@ -9,7 +9,6 @@ class Usuario
     private string $senha;
     private int $nivel_id;
     private bool $ativo;
-    private bool $primeiro_login;
     private PDO $pdo;
 
     public function __construct()
@@ -67,15 +66,6 @@ class Usuario
         $this->ativo = $ativo;
     }
 
-    public function getPrimeiroLogin()
-    {
-        return $this->primeiro_login;
-    }
-    public function setPrimeiroLogin(bool $primeiro_login)
-    {
-        $this->primeiro_login = $primeiro_login;
-    }
-
     public static function efetuarLogin(string $email, string $senha):array
     {
         $sql = "select * from usuarios where email = :email and ativo = b'1'";
@@ -129,7 +119,6 @@ class Usuario
             $this->setSenha($dados['senha']);
             $this->setNivelId($dados['nivel_id']);
             $this->setAtivo($dados['ativo']);
-            $this->primeiro_login = $dados['primeiro_login'];
             return true;
         }
         return false;
@@ -151,7 +140,6 @@ class Usuario
             $this->setSenha($dados['senha']);
             $this->setNivelId($dados['nivel_id']);
             $this->setAtivo($dados['ativo']);
-            $this->primeiro_login = $dados['primeiro_login'];
             return true;
         }
         return false;
@@ -160,7 +148,7 @@ class Usuario
     public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE usuarios set nome = :nome, email = :email, nivel_id = :nivel_id, ativo = :ativo, primeiro_login = :primeiro_login WHERE id = :id";
+        $sql = "UPDATE usuarios set nome = :nome, email = :email, nivel_id = :nivel_id, ativo = :ativo, WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":id", $this->id); 
@@ -168,7 +156,6 @@ class Usuario
         $cmd->bindValue(":email", $this->email);   
         $cmd->bindValue(":nivel_id", $this->nivel_id);   
         $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);   
-        $cmd->bindValue(":primeiro_login", $this->primeiro_login, PDO::PARAM_BOOL);   
         return $cmd->execute();
     }
 

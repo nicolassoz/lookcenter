@@ -166,15 +166,15 @@ include "includes/menu.php";
             <!-- o usuario poderar litrar os pedidos -->
         <div class="col-md-1">
             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--primary-gold);">filtrar</button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">ultimas 24H</a></li>
-                <li><a class="dropdown-item" href="#">ultima semana</a></li>
-                <li><a class="dropdown-item" href="#">ultimo mes</a></li>
-                <li><a class="dropdown-item" href="#">ultimos 3 meses</a></li>
-                <li><a class="dropdown-item" href="#">ultimos 6 meses</a></li>
-                <li><a class="dropdown-item" href="#">ultimo 1 ano</a></li>
-                <li><a class="dropdown-item" href="#">ultimo 2 ano</a></li>
-                <li><a class="dropdown-item" href="#">sempre</a></li>
+            <ul class="dropdown-menu bg-black text-light">
+                <li><a class="dropdown-item text-light" href="#">ultimas 24H</a></li>
+                <li><a class="dropdown-item text-light" href="#">ultima semana</a></li>
+                <li><a class="dropdown-item text-light" href="#">ultimo mes</a></li>
+                <li><a class="dropdown-item text-light" href="#">ultimos 3 meses</a></li>
+                <li><a class="dropdown-item text-light" href="#">ultimos 6 meses</a></li>
+                <li><a class="dropdown-item text-light" href="#">ultimo 1 ano</a></li>
+                <li><a class="dropdown-item text-light" href="#">ultimo 2 ano</a></li>
+                <li><a class="dropdown-item text-light" href="#">sempre</a></li>
             </ul>
         </div>
     </div>
@@ -184,7 +184,7 @@ include "includes/menu.php";
             <form class="card" style="color: var(--light-gray);">
                 <div>
                     <p>vendas (hoje)</p>
-                    <h3><i class="bi bi-currency-dollar" style="font-size: 2rem; color:#ffca28;"></i>R$1.000,00</h3>
+                    <h3><i class="bi bi-currency-dollar" style="font-size: 2rem; color:#ffca28;"> </i>R$1.000,00</h3>
                     <span>2.0% vs ontem</span>
                 </div>
             </form>
@@ -195,7 +195,7 @@ include "includes/menu.php";
                 <div>
                     <p>pedidos (hoje)</p>
                     <h3><i class="bi bi-bag" style="font-size: 2rem; color:#ffca28;"> </i>5</h3>
-                    <p>3.2% vs ontem</p>
+                    <span>3.2% vs ontem</span>
                 </div>
             </form>
         </div>
@@ -205,7 +205,7 @@ include "includes/menu.php";
                 <div>
                     <p>clientes</p>
                     <h3><i class="bi bi-people" style="font-size: 2rem; color:#ffca28;"> </i>2.728</h3>
-                    <p>7.7% este més</p>
+                    <span>7.7% este més</span>
                 </div>
             </form>
         </div>
@@ -215,7 +215,7 @@ include "includes/menu.php";
                 <div>
                     <p>produtos</p>
                     <h3><i class="bi bi-box-seam" style="font-size: 2rem; color:#ffca28;"> </i>200</h3>
-                    <p>total cadastrados</p>
+                    <span>total cadastrados</span>
                 </div>
             </form>
         </div>
@@ -438,28 +438,29 @@ include "includes/menu.php";
     <div class="row mt-3">
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
-                <div>
-                    <p><i class="bi bi-box-seam" style="color:#ffca28;"> </i>produtos</p>
+                <div class="m-2">
+                    <h5><i class="bi bi-box-seam" style="color:#ffca28;"> </i>produtos</h5>
                     <p>gerencie os produtos da sua loja.</p>
-                    <button class="btn btn-outline-warning btn-sm">gerenciar</button>
+                    <button class="btn btn-outline-warning btn-sm m-2">gerenciar</button>
                 </div>
             </form>
         </div>
 
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
-                <div>
-                    <p><i class="bi bi-people" style="color:#ffca28;"> </i>clientes</p>
+                <div class="m-2">
+                    <h5><i class="bi bi-people" style="color:#ffca28;"> </i>clientes</h5>
                     <p>veja e gerencie seus clientes.</p>
-                    <button class="btn btn-outline-warning btn-sm">gerenciar</button>
+                    <p></p>
+                    <button class="btn btn-outline-warning btn-sm m-2">gerenciar</button>
                 </div>
             </form>
         </div>
 
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
-                <div>
-                    <p><i class="bi bi-tag" style="color:#ffca28;"> </i>cupons</p>
+                <div class="m-2">
+                    <h5><i class="bi bi-tag" style="color:#ffca28;"> </i>cupons</h5>
                     <p>crie e gerencie cupons de desconto.</p>
                     <button class="btn btn-outline-warning btn-sm">gerenciar</button>
                 </div>
@@ -468,8 +469,8 @@ include "includes/menu.php";
 
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
-                <div>
-                    <p><i class="bi bi-graph-up-arrow" style="color:#ffca28;"> </i>relatorios</p>
+                <div class="m-2">
+                    <h5><i class="bi bi-graph-up-arrow" style="color:#ffca28;"> </i>relatorios</h5>
                     <p>acompanhe o desempenho da sua loja.</p>
                     <button class="btn btn-outline-warning btn-sm">acessar</button>
                 </div>

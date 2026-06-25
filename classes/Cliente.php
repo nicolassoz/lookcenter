@@ -90,7 +90,7 @@ class Cliente
 
     public function Inserir():bool
     {
-        $sql = "INSERT INTO clientes (nome, cpf, telefone, email, data_nasc, data_cad, ativo) values (:nome, :cpf, :telefone, :email, :data_nasc, :data_cad, :ativo)";
+        $sql = "INSERT INTO clientes (nome, cpf, telefone, email, data_nasc, ativo) values (:nome, :cpf, :telefone, :email, :data_nasc, :ativo)";
 
         $cmd = $this->pdo->prepare($sql);
 
@@ -99,7 +99,6 @@ class Cliente
         $cmd->bindValue(":telefone", $this->telefone);
         $cmd->bindValue(":email", $this->email);
         $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));        
-        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d H:i:s'));   
         $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);     
 
         if($cmd->execute())
@@ -113,7 +112,7 @@ class Cliente
     public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE clientes set nome = :nome, cpf = :cpf, telefone = :telefone, email = :email, data_nasc = :data_nasc, data_cad = :data_cad, ativo = :ativo WHERE id = :id";
+        $sql = "UPDATE clientes set nome = :nome, cpf = :cpf, telefone = :telefone, email = :email, data_nasc = :data_nasc, ativo = :ativo WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
 
@@ -123,7 +122,6 @@ class Cliente
         $cmd->bindValue(":telefone", $this->telefone);
         $cmd->bindValue(":email", $this->email);
         $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));   
-        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d H:i:s'));
         $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);   
            
         return $cmd->execute();
@@ -146,7 +144,7 @@ class Cliente
         {
             $dados = $cmd->fetch(PDO::FETCH_ASSOC);
 
-            $this->id = $dados['id'];
+            $this->id = (int)$dados['id'];
             $this->setNome($dados['nome']);
             $this->setCpf($dados['cpf']);
             $this->setTelefone($dados['telefone']);

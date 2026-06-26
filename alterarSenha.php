@@ -15,10 +15,174 @@ include "includes/menu.php"
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* Painel Principal de Pedidos */
+        .orders-panel {
+            background-color: #111;
+            border: 1px solid var(--primary-gold);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .orders-panel h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .orders-panel p {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Itens da Lista de Pedidos */
+        .order-item {
+            border: 1px solid #ffd90050;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            transition: 0.2s;
+        }
+
+        .order-item:hover {
+            border-color: #818181ff;
+        }
+
+        .order-info h6 {
+            margin-bottom: 3px;
+            font-size: 0.95rem;
+            color: var(--light-gray);
+        }
+
+        .order-info span {
+            font-size: 0.8rem;
+            color: var(--light-gray);
+        }
+
+        .order-details-link {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .order-details-link:hover {
+            text-decoration: underline;
+        }
+
+        .order-price {
+            font-weight: bold;
+            font-size: 0.95rem;
+            color: var(--light-gray);
+        }
+
+        .order-payment {
+            font-size: 0.8rem;
+            color: var(--light-gray);
+        }
+
+        /* Status Badges */
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .status-entregue {
+            background-color: rgba(25, 135, 84, 0.5);
+            color: #ffffffff;
+        }
+
+        .status-andamento {
+            background-color: rgba(13, 110, 253, 0.5);
+            color: #ffffffff;
+        }
+
+        .status-novo {
+            background-color: rgba(255, 217, 0, 0.66);
+            color: #ffffffff;
+        }
+
+        .status-cancelado {
+            background-color: rgba(247, 2, 2, 0.7);
+            color: #ffffffff;
+        }
+
+        .arrow-icon {
+            color: var(--primary-gold);
+            font-size: 0.9rem;
+        }
+
+        /* Paginação */
+        .pagination-btn {
+            border: 1px solid var(--primary-gold);
+            color: var(--accent-gold);
+            background: transparent;
+            font-size: 0.85rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .pagination-btn:hover {
+            background-color: var(--accent-gold);
+            color: #000;
+        }
+
+        .page-number {
+            color: var(--light-gray);
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 0.9rem;
+        }
+
+        .page-number.active {
+            background-color: var(--accent-gold);
+            color: #000;
+            padding: 3px 9px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .se {
+            color: #ffca28;
+        }
+    </style>
 </head>
+
 <body>
 
+    <div class="container mt-3">
+        <div class="row">
+            <!-- "navbar" que fica a esquerda pagina -->
+                <h2 class="text-center mb-5" style="color: var(--primary-gold)">Faça seu Login</h2>
+            
+            <!-- painel de pedidos do cliente onde o cliente pode ver todos os pedidos realizado -->
+            <div class="justify-content-Center row">
+                <div class="col-md-5 orders-panel">
+                    <p>codigo de verificação</p>
+                    <p>emviaremos um codigo de verificação para e-mail</p>
+                    <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
+                    <a href="cadastro.php" class="btn btn-outline-warning btn-sm">enviar codigo</a>
+                    <p>digite o codigo</p>
+                    <p>digite o codigo que foi enviado para o e-mail</p>
+                    <p>"caixas de texto para o codigo"</p>
+                    <p>não recebeu o codigo? renviar codigo</p>
+                    <p>defina sua nova senha</p>
+                    <p>nova senha</p>
+                    <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
+                    <p>confirmar nova senha</p>
+                    <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
+                    <a href="cadastro.php" class="btn btn-outline-warning btn-sm">alterar senha</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 
 
 <!-- area do carrinho (offcanva) -->

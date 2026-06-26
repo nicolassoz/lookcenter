@@ -151,6 +151,13 @@ include "includes/menu.php"
         .se {
             color: #ffca28;
         }
+
+        .a
+        {
+        background: transparent; 
+        border: 1px solid; 
+        color: #f5f5f5ff;
+        }
     </style>
 </head>
 
@@ -159,25 +166,27 @@ include "includes/menu.php"
     <div class="container mt-3">
         <div class="row">
             <!-- "navbar" que fica a esquerda pagina -->
-                <h2 class="text-center mb-5" style="color: var(--primary-gold)">Faça seu Login</h2>
+                <h2 class="text-center mb-5" style="color: var(--primary-gold)">altere sua senha</h2>
             
             <!-- painel de pedidos do cliente onde o cliente pode ver todos os pedidos realizado -->
             <div class="justify-content-Center row">
                 <div class="col-md-5 orders-panel">
-                    <p>codigo de verificação</p>
-                    <p>emviaremos um codigo de verificação para e-mail</p>
-                    <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
-                    <a href="cadastro.php" class="btn btn-outline-warning btn-sm">enviar codigo</a>
-                    <p>digite o codigo</p>
-                    <p>digite o codigo que foi enviado para o e-mail</p>
-                    <p>"caixas de texto para o codigo"</p>
-                    <p>não recebeu o codigo? renviar codigo</p>
-                    <p>defina sua nova senha</p>
-                    <p>nova senha</p>
-                    <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
-                    <p>confirmar nova senha</p>
-                    <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
-                    <a href="cadastro.php" class="btn btn-outline-warning btn-sm">alterar senha</a>
+                    <h5 style="color: var(--primary-gold)">Digite o seu E-mail</h5>
+                    <p>Enviaremos um codigo de verificação para E-mail digitado abaixo</p>
+                    <input type="email" class="form-control mb-3" id="emailLogin" placeholder="Ex: email.123@gmail.com">
+                    <button class="btn btn-outline-warning btn-sm col-md-12">ENVIAR CÓDIGO</button>
+                    <h5 class="mt-4" style="color: var(--primary-gold)">digite o codigo que foi enviado para o e-mail</h5>
+                    <div class="text-center m-2">
+                        <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -"> 
+                        <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -">
+                    </div> 
+                    <p>Não recebeu o código? <a href="#" style="color: var(--primary-gold)">Reenviar código</a></p>
+                    <h5 style="color: var(--primary-gold)">defina sua nova senha</h5>
+                    <p class="mb-0">Nova senha:</p>
+                    <input type="password" class="form-control" id="senhaLogin">
+                    <p class="mb-0 mt-3">Confirmar nova senha:</p>
+                    <input type="password" class="form-control mb-3" id="senhaLogin">
+                    <button class="btn btn-outline-warning btn-sm col-md-12">alterar senha</button>
                 </div>
             </div>
             

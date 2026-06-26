@@ -161,7 +161,7 @@ include "includes/menu.php"
                             <h5 class="card-title">Camisa Executiva Satin</h5>
                             <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_J_P_Q.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>

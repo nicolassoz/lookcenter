@@ -56,6 +56,7 @@
 
                         <div class="config-section">
                             <div class="row g-4">
+                                <!-- o usuario poderar escolher o tamamho de preferencia -->
                                 <div class="col-md-6 border-end-md" style="border-color: #222 !important;">
                                     <p  style="color: var(--light-gray)">Tamanho</p>
                                     <p style="color: var(--light-gray)">selecione os Tamanho que você usa com mais frequencia.</p>

@@ -198,26 +198,30 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- detalhes ds pedidos (e para aparecer os pedidos do usuario os esta abaixo é exemplo de como dever ser) -->
+                    <!-- detalhes de pedidos (e para aparecer os pedidos do usuario os que está abaixo é exemplo de como dever ser) -->
                     <div class="order-container mb-3">
                         <div class="order-item d-flex align-items-center justify-content-between"
                             data-bs-toggle="collapse"
                             data-bs-target="#detalhesPedido1"
                             role="button"
                             aria-expanded="false">
+                            <!-- id pedido com dia e hora -->
                             <div class="order-info">
                                 <h6>Pedido #LC12345</h6>
                                 <span>20/05/2024 às 14:32</span>
                             </div>
                             <div>
+                                <!-- quantidade de peças -->
                                 <span class="d-block" style="font-size: 0.9rem; color: var(--light-gray);">3 itens</span>
                                 <span class="order-details-link">Ver detalhes</span>
                             </div>
                             <div>
+                                <!-- valor e forma de pagamento -->
                                 <div class="order-price">R$ 459,90</div>
                                 <div class="order-payment">Pix</div>
                             </div>
                             <div>
+                                <!-- status do pedido, os status são(novo, Em andamento, Entregue e cancelado) -->
                                 <span class="status-badge status-entregue">Entregue</span>
                             </div>
                             <div>
@@ -226,6 +230,7 @@
                         </div>
 
                         <div class="collapse" id="detalhesPedido1">
+                            <!-- todas as peças do pedido -->
                             <div class="p-3 mx-2 mb-2" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
                                 <h6 style="color: var(--accent-gold); font-size: 0.95rem;">Produtos deste pedido:</h6>
                                 <ul class="list-unstyled mb-3" style="color: var(--light-gray);">
@@ -235,10 +240,12 @@
                                 </ul>
                                 <div class="row pt-2" style="border-top: 1px solid #222;">
                                     <div class="col-md-6">
+                                        <!-- endereço do cliente para entrega -->
                                         <span class="d-block se">Endereço de Entrega:</span>
                                         <span style="color: white;">Rua das Flores, 123 - Centro, São Paulo - SP</span>
                                     </div>
                                     <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                                        <!-- codigo para os correios -->
                                         <span class="d-block" style="color: white;">Código de Rastreio:</span>
                                         <a href="#" style="color: var(--accent-gold); text-decoration: none;"><i class="fa-solid fa-truck me-1"></i> BR123456789BR</a>
                                     </div>
@@ -373,7 +380,7 @@
                                 </div>
 
                             </div>
-                            <!-- para mudar de pagina -->
+                            <!-- para mudar de pagina (o maximo de pedidos que deve apareçe em uma pagina é 5) -->
                             <div class="d-flex justify-content-between align-items-center mt-4">
                                 <a href="#" class="pagination-btn"><i class="fa-solid fa-chevron-left me-1"></i> Anterior</a>
                                 <div class="d-flex align-items-center">

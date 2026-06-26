@@ -163,30 +163,40 @@ include "includes/menu.php"
 
 <body>
 
+        <!-- cada area deverar aparecer uma de cada vez -->
     <div class="container mt-3">
         <div class="row">
-            <!-- "navbar" que fica a esquerda pagina -->
                 <h2 class="text-center mb-5" style="color: var(--primary-gold)">altere sua senha</h2>
             
-            <!-- painel de pedidos do cliente onde o cliente pode ver todos os pedidos realizado -->
             <div class="justify-content-Center row">
                 <div class="col-md-5 orders-panel">
+
+                    <!--1: o usuario devera digitar o email -->
                     <h5 style="color: var(--primary-gold)">Digite o seu E-mail</h5>
                     <p>Enviaremos um codigo de verificação para E-mail digitado abaixo</p>
                     <input type="email" class="form-control mb-3" id="emailLogin" placeholder="Ex: email.123@gmail.com">
                     <button class="btn btn-outline-warning btn-sm col-md-12">ENVIAR CÓDIGO</button>
+                    <!--  -->
+
+                    <!--2: o usuario deverar digitar o codigo que foi mandado para o email -->
                     <h5 class="mt-4" style="color: var(--primary-gold)">digite o codigo que foi enviado para o e-mail</h5>
                     <div class="text-center m-2">
                         <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -"> 
                         <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -"> <input class="a col-md-1" type="text" placeholder="   -">
                     </div> 
+                    <!-- podera pedir um novo codigo -->
                     <p>Não recebeu o código? <a href="#" style="color: var(--primary-gold)">Reenviar código</a></p>
+                    <!--  -->
+
+                    <!--3 o usuario agora poderar digita a nova senha -->
                     <h5 style="color: var(--primary-gold)">defina sua nova senha</h5>
                     <p class="mb-0">Nova senha:</p>
                     <input type="password" class="form-control" id="senhaLogin">
                     <p class="mb-0 mt-3">Confirmar nova senha:</p>
                     <input type="password" class="form-control mb-3" id="senhaLogin">
                     <button class="btn btn-outline-warning btn-sm col-md-12">alterar senha</button>
+                    <!--  -->
+                    
                 </div>
             </div>
             

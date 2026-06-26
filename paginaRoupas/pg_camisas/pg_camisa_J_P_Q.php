@@ -17,10 +17,33 @@ include "../../includes/menu.php"
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
+<body style="color: white;">
 
+<div class="container">
 
+    <img src="../../roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" alt="Camisa">
 
+    <p>camiseta</p>
+    <h2>CAMISA POLO JERSEY DRAGON</h2>
+    <H3>R$159,90</H3>
+    <p>ou 3x de 53,30</p>
+
+    <p>camisa polo estilo jersey branca com gola preta, estampa de fundo com dragões orientais cinzas</p>
+    <ul>
+        <li>???</li>
+        <li>???</li>
+        <li>???</li>
+        <li>???</li>
+    </ul>
+    <p>COR: PRETO</p>
+    <p>TAMANHO:</p>
+
+    *botes*
+
+    <p>frete gratis</p>
+    <p>nas compras acima de 250</p>
+
+</div>
 <!-- area do carrinho (offcanva) -->
 <?php include "../../includes/offcar.php" ?>
 

@@ -30,7 +30,9 @@ include "includes/menu.php";
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4500">
-                <img src="assets/img/modelo_lookcenter.png" class="d-block w-100">
+                <a href="colecao.php">
+                    <img src="assets/img/modelo_lookcenter.png" class="d-block w-100">
+                </a>
             </div>
             <div class="carousel-item" data-bs-interval="4500">
                 <img src="assets/img/banner_frete_lookcenter.png" class="d-block w-100">

@@ -58,6 +58,7 @@ include "includes/menu.php"
                     <button class="btn btn-outline-warning btn-sm col-md-12">ENVIAR CÓDIGO</button>
                     <!--  -->
 
+
                     <!--2: o usuario deverar digitar o codigo que foi mandado para o email -->
                     <h5 class="mt-4" style="color: var(--primary-gold)">digite o codigo que foi enviado para o e-mail</h5>
                     <div class="text-center m-2">
@@ -67,11 +68,19 @@ include "includes/menu.php"
                     <!-- podera pedir um novo codigo -->
                     <p>Não recebeu o código? <a href="#" style="color: var(--primary-gold)">Reenviar código</a></p>
                     <!--  -->
+                    
 
                     <!--3 o usuario agora poderar digita a nova senha -->
                     <h5 style="color: var(--primary-gold)">defina sua nova senha</h5>
                     <p class="mb-0">Nova senha:</p>
                     <input type="password" class="form-control" id="senhaLogin">
+                    <p class="mb-0">a senha tem que ter no minimo</p>
+                    <ul style="color: #fdfdfdda">
+                        <li>8 caractere</li>
+                        <li>letra maiuscula</li>
+                        <li>caractere especial</li>
+                        <li>numero</li>
+                    </ul>
                     <p class="mb-0 mt-3">Confirmar nova senha:</p>
                     <input type="password" class="form-control mb-3" id="senhaLogin">
                     <button class="btn btn-outline-warning btn-sm col-md-12">alterar senha</button>

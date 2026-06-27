@@ -24,18 +24,18 @@ include "../../includes/menu.php"
     <img src="../../roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" alt="Camisa">
 
     <p>camiseta</p>
-    <h2>CAMISA POLO JERSEY DRAGON</h2>
-    <H3>R$159,90</H3>
-    <p>ou 3x de 53,30</p>
+    <h2>CAMISA POLO JERSEY</h2>
+    <H3>R$179,90</H3>
+    <p>ou 3x de 59,96</p>
 
-    <p>camisa polo estilo jersey branca com gola preta, estampa de fundo com dragões orientais cinzas</p>
+    <p>camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa...</p>
     <ul>
         <li>???</li>
         <li>???</li>
         <li>???</li>
         <li>???</li>
     </ul>
-    <p>COR: PRETO</p>
+    <p>COR: Branco</p>
     <p>TAMANHO:</p>
 
     *botes*

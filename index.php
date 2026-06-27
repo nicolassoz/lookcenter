@@ -94,7 +94,7 @@ include "includes/menu.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">calça cargo jeans Off-White</h5>
                         <p class="card-text text-light">Calça Cargo Jeans Off-White.</p>
-                        <p class="price">R$ 175,00</p>
+                        <p class="price">R$ 110,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
                 </div>

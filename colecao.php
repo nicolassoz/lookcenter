@@ -119,9 +119,9 @@ include "includes/menu.php"
                         <span class="badge position-absolute m-3 bg-gold text-dark">Premium</span>
                         <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Blazer Gold">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Blazer Slim Noir</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 499,90</p>
+                            <h5 class="card-title">Camisa Neymar Jr.</h5>
+                            <p class="card-text text-secondary small">Cmaisa streerwear preta Neymar jr.</p>
+                            <p class="price">R$ 159,99</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -158,9 +158,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa polo jersey</h5>
+                            <p class="card-text text-secondary small">camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa...</p>
+                            <p class="price">R$179,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_J_P_Q.php">Ver Detalhes</a>
                         </div>
                     </div>
@@ -171,9 +171,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camisa_Jersey_Dragão_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa polo jersey Dragon</h5>
+                            <p class="card-text text-secondary small">camisa polo estilo jersey branca com gola preta, estampa de fundo com dragões orientais cinzas e e...</p>
+                            <p class="price">R$ 159,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -184,9 +184,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camisa_Polo_Tripside_Tribal_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa Polo Tribal 1977</h5>
+                            <p class="card-text text-secondary small">Camisa polo preta minimalistra na frente com pequeno logo e uma grande estampa traseira em estilo tribal..</p>
+                            <p class="price">R$ 189,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -197,9 +197,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camiseta_Basic_Tag_Marrom_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa Graffit</h5>
+                            <p class="card-text text-secondary small">Camisa marrom escura lisa de modelagem streetwear, com uma pequena assinatura central no peito...</p>
+                            <p class="price">R$ 149,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -210,9 +210,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camiseta_Compton_Cruz_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa Compton</h5>
+                            <p class="card-text text-secondary small">Camiseta preta com a palavra "Compton" no peito e estampa traseira expandida com uma grande cruz...</p>
+                            <p class="price">R$ 129,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -223,9 +223,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camiseta_Cyber_Essence_Neo-code_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa Dragon Cyber</h5>
+                            <p class="card-text text-secondary small">Camiseta roxa vibrante com estampa lateral de dragão em tom sobre tom na frente e um grande ...</p>
+                            <p class="price">R$ 129,30</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -236,9 +236,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camiseta_Máscara_Tática_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa Skull</h5>
+                            <p class="card-text text-secondary small">Camiseta preta com estampa frontal e traseira de um personagem com máscara tática/caveira, ...</p>
+                            <p class="price">R$ 159,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -249,8 +249,8 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camiseta_Oval_angel_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
+                            <h5 class="card-title">Camisa angel black</h5>
+                            <p class="card-text text-secondary small">camiseta preta com um pequeno logo oval prateado no peito e uma grande estampa realista nas costa...</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -275,9 +275,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/camisas/Camiseta_Topside_black_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Camisa Compton Black</h5>
+                            <p class="card-text text-secondary small">Camiseta preta com design diferenciado onde a palavra "Com" começa na frente da barra e termina...</p>
+                            <p class="price">R$ 139,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -344,9 +344,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/bermudas/Bermuda_Cargo_Techwear_Preta_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Bermuda Streetwear Preta Apparel</h5>
+                            <p class="card-text text-secondary small">Bermuda cargo preta de estilo streetwear, com modelagem solta e tecido leve, Possui estampa branca</p>
+                            <p class="price">R$ 119,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -400,9 +400,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Calça Jeans Baggy Clássica</h5>
+                            <p class="card-text text-secondary small">Calça jeans bem larga (baggy) na cor off-white, com múltiplos bolsos cargo funcionais nas pernas,tiras...</p>
+                            <p class="price">R$ 220,30</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -413,9 +413,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Baggy_Black_Acid_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Calça Jeans Black Topside</h5>
+                            <p class="card-text text-secondary small">Calça jeans com corte volumoso e caimento pesado em lavagem cinza-escura</p>
+                            <p class="price">R$ 215,64</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -482,9 +482,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/moletons/Moletom_bear_black_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Moletom Patch Bear black</h5>
+                            <p class="card-text text-secondary small">Moletom canguru preto com capuz e cordão de ajuste. Apresenta uma oversized confortavel...</p>
+                            <p class="price">R$ 229,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -495,9 +495,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/moletons/Moletom_cruz_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Moletom TPSD</h5>
+                            <p class="card-text text-secondary small">Moletom canguru preto com estampa centralizada "TPSD" sobreposta a uma cruz prateada/cinza no...</p>
+                            <p class="price">R$ 189,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -508,9 +508,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/moletons/Moletom_Red_Graphics_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Moletom White Skull</h5>
+                            <p class="card-text text-secondary small">Moletom canguru braco com capuz e cordões pretos. Destaca-se pelas estampas em vermelho de ...</p>
+                            <p class="price">R$ 209,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -520,9 +520,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/moletons/Moleton_Bear_Red_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Moletom Patch Bear Red</h5>
+                            <p class="card-text text-secondary small">Moletom canguru na cor vermelha (tom fechado/bordô) com cabuz e cordões pretos contrastantes...</p>
+                            <p class="price">R$ 199,67</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>

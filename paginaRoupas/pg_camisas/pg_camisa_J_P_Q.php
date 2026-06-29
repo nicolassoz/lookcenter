@@ -21,27 +21,56 @@ include "../../includes/menu.php"
 
 <div class="container">
 
-    <img src="../../roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" alt="Camisa">
+    <div class="row">
+        <div class="card col-md-5 m-3">
+            <img src="../../roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" alt="Camisa">
+        </div>
 
-    <p>camiseta</p>
-    <h2>CAMISA POLO JERSEY</h2>
-    <H3>R$179,90</H3>
-    <p>ou 3x de 59,96</p>
+        <div class="col-md-5 m-3">
+            <p style="color: var(--accent-gold);">camiseta</p>
+            <h2>CAMISA POLO JERSEY</h2>
+            <H3 style="color: var(--accent-gold); font-size:45px;">R$179,90</H3>
+            <p>ou 3x de 59,96</p>
 
-    <p>camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa...</p>
-    <ul>
-        <li>???</li>
-        <li>???</li>
-        <li>???</li>
-        <li>???</li>
-    </ul>
-    <p>COR: Branco</p>
-    <p>TAMANHO:</p>
+            <p>camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa...</p>
+            <ul>
+                <li>???</li>
+                <li>???</li>
+                <li>???</li>
+                <li>???</li>
+            </ul>
+            <p>COR: Branco</p>
+            <p class="mb-0">TAMANHO:</p>
+            <div class="size-options mb-3">
+                <input type="checkbox" class="btn-check" id="sizeP" autocomplete="off">
+                <label class="btn btn-outline-light" for="sizeP">P</label>
 
-    *botes*
+                <input type="checkbox" class="btn-check" id="sizeM" autocomplete="off">
+                <label class="btn btn-outline-light" for="sizeM">M</label>
 
-    <p>frete gratis</p>
-    <p>nas compras acima de 250</p>
+                <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
+                <label class="btn btn-outline-light" for="sizeG">G</label>
+
+                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
+            <label class="btn btn-outline-light" for="sizeGG">GG</label>
+            </div>
+
+            <div class="row mb-3">
+
+                <div class="col-md-4">
+                    <button class="btn" type="button" style="background:var(--accent-gold); color:black">comprar agora</button>
+                </div>
+
+                <div class="col-md-5">
+                    <button class="btn" type="button" style="background:transparent; color:white; border:solid 2px; color:white;">adicionar ao carrinho</button>
+                </div>
+            </div>
+   
+            <p class="mb-0" style="color: var(--accent-gold);">frete gratis</p>
+            <p>nas compras acima de R$250,00</p>
+
+        </div>
+    </div>
 
 </div>
 <!-- area do carrinho (offcanva) -->

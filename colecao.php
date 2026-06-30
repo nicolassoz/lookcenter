@@ -345,7 +345,7 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_Cargo_Techwear_Preta_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Streetwear Preta Apparel</h5>
-                            <p class="card-text text-secondary small">Bermuda cargo preta de estilo streetwear, com modelagem solta e tecido leve, Possui estampa branca</p>
+                            <p class="card-text text-secondary small">Bermuda cargo preta de estilo streetwear, com modelagem solta e tecido leve. Possui estampa branca na perna e bolso lateral.</p>
                             <p class="price">R$ 119,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -357,9 +357,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/bermudas/Bermuda_Jeans_Carpenter_Cinza_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Bermuda Tribal Topside</h5>
+                            <p class="card-text text-secondary small">Bermuda jeans cinza de modelagem larga estilo streetwear. Traz a escrita gangster "Compton" bordada no bolso traseiro e a logo "C" no bolso lateral.</p>
+                            <p class="price">R$ 130,    20</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -440,7 +440,7 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Baggy Clássica</h5>
-                            <p class="card-text text-secondary small">Calça jeans bem larga (baggy) na cor off-white, com múltiplos bolsos cargo funcionais nas pernas,tiras...</p>
+                            <p class="card-text text-secondary small">Calça jeans bem larga (baggy) na cor off-white, com múltiplos bolsos cargo funcionais nas pernas, tiras com fivelas e costuras escuras contrastantes.</p>
                             <p class="price">R$ 220,30</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -465,9 +465,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Baggy_Clássica_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Calça Jeans Carpenter Light Blue</h5>
+                            <p class="card-text text-secondary small">Calça jeans azul-clara tradicional de modelagem bem ampla, destacando-se pelo logotipo gótico "Compton" bordado em preto e branco no bolso traseiro.</p>
+                            <p class="price">R$ 230,98</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -491,9 +491,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Carpenter_Light_Blue_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Calça Jeans Vintage</h5>
+                            <p class="card-text text-secondary small">Calça jeans azul-clara estilo carpinteiro com lavagem vintage, caracterizada pelos painéis duplos de tecido costurados para reforço na parte frontal.</p>
+                            <p class="price">R$ 229.90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -504,9 +504,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Tribal_Blue.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
-                            <p class="price">R$ 240,00</p>
+                            <h5 class="card-title">Calça Jeans Tribal</h5>
+                            <p class="card-text text-secondary small">Calça jeans azul-média com modelagem bem folgada, estampada com uma grande arte tribal em tom azul-claro que percorre toda a lateral da perna.</p>
+                            <p class="price">R$ 189,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>

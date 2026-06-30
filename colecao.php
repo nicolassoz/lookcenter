@@ -120,7 +120,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Blazer Gold">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Neymar Jr.</h5>
-                            <p class="card-text text-secondary small">Camisa streerwear preta Neymar jr.</p>
                             <p class="price">R$ 159,99</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_NJR.php">Ver Detalhes</a>
                         </div>
@@ -133,7 +132,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/PROJETO STREETWEAR.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -146,7 +144,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Tripside_Tag_Centra.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -159,7 +156,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa polo jersey</h5>
-                            <p class="card-text text-secondary small">Camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa e logotipo central preto.</p>
                             <p class="price">R$179,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_J_P_Q.php">Ver Detalhes</a>
                         </div>
@@ -172,7 +168,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camisa_Jersey_Dragão_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa polo jersey Dragon</h5>
-                            <p class="card-text text-secondary small">Camisa polo estilo jersey branca com gola preta, estampa de fundo com dragões orientais cinzas e escritas marcantes em vermelho e preto.</p>
                             <p class="price">R$ 159,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_J_D.php">Ver Detalhes</a>
                         </div>
@@ -185,7 +180,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camisa_Polo_Tripside_Tribal_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Polo Tribal 1977</h5>
-                            <p class="card-text text-secondary small">'Camisa polo preta minimalista na frente com pequeno logo e uma grande estampa traseira em estilo tribal com a escrita "TOPSIDE est. 1977" em branco.</p>
                             <p class="price">R$ 189,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_p_t_t.php">Ver Detalhes</a>
                         </div>
@@ -198,7 +192,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Basic_Tag_Marrom_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Graffit</h5>
-                            <p class="card-text text-secondary small">Camiseta marrom escura lisa de modelagem streetwear, com uma pequena assinatura central no peito e uma estampa de pichação/tag branca vertical nas costas.</p>
                             <p class="price">R$ 149,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_b_t_marrom.php">Ver Detalhes</a>
                         </div>
@@ -211,8 +204,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Compton_Cruz_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Compton</h5>
-                            <p class="card-text text-secondary small">'Camiseta preta com a palavra \"Compton\" no peito e estampa traseira expandida com uma grande cruz centralizada.</p>
-                            <p class="price">R$ 129,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_c_c.php">Ver Detalhes</a>
                         </div>
                     </div>
@@ -224,7 +215,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Cyber_Essence_Neo-code_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Dragon Cyber</h5>
-                            <p class="card-text text-secondary small">Camiseta roxa vibrante com estampa lateral de dragão em tom sobre tom na frente e um grande gráfico abstrato/cyber com linhas vermelhas nas costas.</p>
                             <p class="price">R$ 129,30</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_C_E_Nc.php">Ver Detalhes</a>
                         </div>
@@ -237,7 +227,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Máscara_Tática_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Skull</h5>
-                            <p class="card-text text-secondary small">Camiseta preta com estampa frontal e traseira de um personagem com máscara tática/caveira, cercado por uma auréola de arame farpado e detalhes em vermelho.</p>
                             <p class="price">R$ 159,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_M_T.php">Ver Detalhes</a>
                         </div>
@@ -250,7 +239,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Oval_angel_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa angel black</h5>
-                            <p class="card-text text-secondary small">Camiseta preta com um pequeno logo oval prateado no peito e uma grande estampa realista nas costas de um anjo/cupido arqueiro em cima de uma plataforma flutuante.</p>
                             <p class="price">R$ 240,00</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_O_A.php">Ver Detalhes</a>
                         </div>

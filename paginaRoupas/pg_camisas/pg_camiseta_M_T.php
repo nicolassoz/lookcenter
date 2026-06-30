@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$159,90</H3>
             <p>ou 3x de 53,10</p>
 
-            <p>Camiseta preta com estampa frontal e traseira de um personagem com máscara tática/caveira, ...</p>
+            <p>Camiseta preta com estampa frontal e traseira de um personagem com máscara tática/caveira, cercado por uma auréola de arame farpado e detalhes em vermelho.</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$149,90</H3>
             <p>ou 3x de 49,96</p>
 
-            <p>Camisa marrom escura lisa de modelagem streetwear, com uma pequena assinatura central no peito...</p>
+            <p>Camiseta marrom escura lisa de modelagem streetwear, com uma pequena assinatura central no peito e uma estampa de pichação/tag branca vertical nas costas.</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

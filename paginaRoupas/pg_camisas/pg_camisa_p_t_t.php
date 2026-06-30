@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$189,90</H3>
             <p>ou 3x de 63,30</p>
 
-            <p>Camisa polo preta minimalistra na frente com pequeno logo e uma grande estampa traseira em estilo tribal..</p>
+            <p>'Camisa polo preta minimalista na frente com pequeno logo e uma grande estampa traseira em estilo tribal com a escrita "TOPSIDE est. 1977" em branco.</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$159,90</H3>
             <p>ou 3x de 53,30</p>
 
-            <p>camisa polo estilo jersey branca com gola preta, estampa de fundo com dragões orientais cinzas e e...</p>
+            <p>Camisa polo estilo jersey branca com gola preta, estampa de fundo com dragões orientais cinzas e escritas marcantes em vermelho e preto.</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

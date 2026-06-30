@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$240,00</H3>
             <p>ou 3x de 80,00</p>
 
-            <p>camiseta preta com um pequeno logo oval prateado no peito e uma grande estampa realista nas costa...</p>
+            <p>Camiseta preta com um pequeno logo oval prateado no peito e uma grande estampa realista nas costas de um anjo/cupido arqueiro em cima de uma plataforma flutuante.</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

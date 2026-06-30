@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$129,30</H3>
             <p>ou 3x de 43,10</p>
 
-            <p>Camiseta roxa vibrante com estampa lateral de dragão em tom sobre tom na frente e um grande ...</p>
+            <p>Camiseta roxa vibrante com estampa lateral de dragão em tom sobre tom na frente e um grande gráfico abstrato/cyber com linhas vermelhas nas costas.</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

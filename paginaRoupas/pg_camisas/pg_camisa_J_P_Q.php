@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$179,90</H3>
             <p>ou 3x de 59,96</p>
 
-            <p>camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa...</p>
+            <p>Camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa e logotipo central preto</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

@@ -33,7 +33,7 @@ include "../../includes/menu.php"
             <H3 style="color: var(--accent-gold); font-size:45px;">R$129,90</H3>
             <p>ou 3x de 43,30</p>
 
-            <p>Camiseta preta com a palavra "Compton" no peito e estampa traseira expandida com uma grande cruz...</p>
+            <p>'Camiseta preta com a palavra "Compton" no peito e estampa traseira expandida com uma grande cruz centralizada.</p>
             <ul>
                 <li>???</li>
                 <li>???</li>

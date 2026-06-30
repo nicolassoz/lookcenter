@@ -38,7 +38,7 @@ class Nivel
          $this->sigla = $sigla;
     }
 
-    public function inserir():bool
+    public function Inserir():bool
     {
         $sql = "INSERT INTO niveis (nome, sigla)
          values (:nome, :sigla)";
@@ -54,13 +54,13 @@ class Nivel
         return false;
     }    
 
-    public static function listar():array
+    public static function Listar():array
     {
         $cmd = obterPdo()->query("select * from niveis order by id desc");
         return $cmd->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function buscarPorId(int $id):bool
+    public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM niveis WHERE id = :id";
         $cmd = obterPdo()->prepare($sql);
@@ -78,7 +78,7 @@ class Nivel
         return false;
     }
 
-    public function atualizar():bool
+    public function Atualizar():bool
     {
         if(!$this->id) return false;
         $sql = "UPDATE niveis
@@ -92,7 +92,7 @@ class Nivel
         return $cmd->execute();
     }
 
-    public function excluir():bool
+    public function Excluir():bool
     {
         if(!$this->id) return false;
 

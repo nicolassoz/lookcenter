@@ -593,6 +593,32 @@ include "includes/menu.php"
                     </div>
                 </div>
 
+                <!-- Produto 37 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/moletons/Moletom_TPSD_black.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Moletom TPSD black</h5>
+                            <p class="card-text text-secondary small">Moletom aberto com zíper (zip-up) preto. Possui o logotipo "TPSD" no peito ladeado por duas grande...</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 38 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/moletons/Moletom_TPSD_Red_AND_White.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Moletom TPSD Red and Black</h5>
+                            <p class="card-text text-secondary small">Moletom com zíper pesado na cor preta, trazendo as letras "TPSD" aplicadas no peito em formato...</p>
+                            <p class="price">R$ 240,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </main>
     </div>

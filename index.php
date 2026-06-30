@@ -30,7 +30,9 @@ include "includes/menu.php";
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4500">
-                <img src="assets/img/modelo_lookcenter.png" class="d-block w-100">
+                <a href="colecao.php">
+                    <img src="assets/img/modelo_lookcenter.png" class="d-block w-100">
+                </a>
             </div>
             <div class="carousel-item" data-bs-interval="4500">
                 <img src="assets/img/banner_frete_lookcenter.png" class="d-block w-100">
@@ -65,8 +67,8 @@ include "includes/menu.php";
                     <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
                         <h5 class="card-title">neymar jr.</h5>
-                        <p class="card-text text-light">camisa neymar jr. streerwear preta</p>
-                        <p class="price">R$ 149,99</p>
+                        <p class="card-text text-light">camisa streerwear preta neymar jr.</p>
+                        <p class="price">R$ 159,99</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
                 </div>
@@ -77,9 +79,9 @@ include "includes/menu.php";
                 <div class="card h-100">
                     <img src="roupas/moletons/Moletom_Red_Graphics_costa.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">graphics</h5>
-                        <p class="card-text text-light">Moletom vermelho Graphics.</p>
-                        <p class="price">R$ 250,00</p>
+                        <h5 class="card-title">moletom white Skull</h5>
+                        <p class="card-text text-light">Moletom canguru branco com capuz e cordões pretos. Destaca-se pelas estampas em vermelho de esqueleto</p>
+                        <p class="price">R$ 209,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
                 </div>
@@ -90,9 +92,9 @@ include "includes/menu.php";
                 <div class="card h-100">
                     <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
-                        <h5 class="card-title">jeans off-white</h5>
+                        <h5 class="card-title">calça cargo jeans Off-White</h5>
                         <p class="card-text text-light">Calça Cargo Jeans Off-White.</p>
-                        <p class="price">R$ 175,00</p>
+                        <p class="price">R$ 110,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
                 </div>

@@ -163,7 +163,7 @@ include "includes/menu.php";
             <p class="footer-text">Bem vindo ao painel da loja.</p>
         </div>
         
-            <!-- o usuario poderar litrar os pedidos -->
+            <!-- o usuario poderar as informações da loja -->
         <div class="col-md-1">
             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--primary-gold);">filtrar</button>
             <ul class="dropdown-menu bg-black text-light">
@@ -178,7 +178,7 @@ include "includes/menu.php";
             </ul>
         </div>
     </div>
-
+        <!-- informações da loja -->
     <div class="row">
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
@@ -199,7 +199,7 @@ include "includes/menu.php";
                 </div>
             </form>
         </div>
-
+        <!-- total de cliente -->
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
                 <div>
@@ -209,13 +209,13 @@ include "includes/menu.php";
                 </div>
             </form>
         </div>
-
+        <!-- total de produtos em estoque -->
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
                 <div>
                     <p>produtos</p>
                     <h3><i class="bi bi-box-seam" style="font-size: 2rem; color:#ffca28;"> </i>200</h3>
-                    <span>total cadastrados</span>
+                    <span>total em estoque</span>
                 </div>
             </form>
         </div>
@@ -243,30 +243,31 @@ include "includes/menu.php";
                         <h5 style="color: var(--light-gray);">ação</h5>
                     </div>  
 
-                    <!-- detalhes ds pedidos (e para aparecer os pedidos do usuario os esta abaixo é exemplo de como dever ser) -->
+                    <!-- detalhes ds pedidos (e para aparecer os pedidos dos usuario os esta abaixo é exemplo de como dever ser) -->
                     <div class="order-container mb-3">
                         <div class="order-item d-flex align-items-center justify-content-between"
                             data-bs-toggle="collapse"
                             data-bs-target="#detalhesPedido1"
                             role="button"
                             aria-expanded="false">
+                            <!-- id do pedido -->
                             <div class="order-info">
                                 <h6>#LC12345</h6>
                             </div>
-
+                            <!-- nome do cliente -->
                             <div class="order-info">
                                 <h6>Carlos Henrique</h6>
                             </div>
-
+                            <!-- data e hora -->
                             <div>
                                 <span class="d-block" style="font-size: 0.9rem; color: var(--light-gray);">20/05/2024 às 14:32</span>
                                 
                             </div>
-                            
+                            <!-- status do pedido -->
                             <div>
                                 <span class="status-badge status-entregue">Entregue</span>
                             </div>
-
+                            <!-- valor do pedido -->
                             <div>
                                 <div class="order-price">R$ 459,90</div>
                             </div>
@@ -275,7 +276,7 @@ include "includes/menu.php";
                                 <span class="arrow-icon"><i class="fa-solid fa-chevron-down"></i></span>
                             </div>
                         </div>
-
+                        <!-- aparecer as peças que foi compradas -->
                         <div class="collapse" id="detalhesPedido1">
                             <div class="p-3 mx-2 mb-2" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
                                 <h6 style="color: var(--accent-gold); font-size: 0.95rem;">Produtos deste pedido:</h6>
@@ -284,6 +285,7 @@ include "includes/menu.php";
                                     <li><i class="fa-solid fa-circle font-xs me-2" style="font-size: 6px; vertical-align: middle;"></i> 1x Calça Cargo Street Preta - 42 (R$ 220,00)</li>
                                     <li><i class="fa-solid fa-circle font-xs me-2" style="font-size: 6px; vertical-align: middle;"></i> 1x Boné Strapback Classic - Único (R$ 80,00)</li>
                                 </ul>
+                                <!-- mandar para outra pagina que mostara mas detalhes -->
                                 <div class="row pt-2" style="border-top: 1px solid #222;">
                                     <div class="col-md-12 text-center">
                                         <button class="btn btn-outline-warning btn-sm">ver detalhes</button>
@@ -434,7 +436,7 @@ include "includes/menu.php";
             </div>
         </form>
     </div>
-
+        <!-- mandar para uma pagina onde o adm poderar gerenciar os pedidos -->
     <div class="row mt-3">
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
@@ -445,7 +447,7 @@ include "includes/menu.php";
                 </div>
             </form>
         </div>
-
+        <!-- mandar para uma pagina onde o adm poderar ver os usuarios -->
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
                 <div class="m-2">
@@ -456,7 +458,7 @@ include "includes/menu.php";
                 </div>
             </form>
         </div>
-
+        <!-- mandar para uma pagina onde o adm poderar gerenciar os cupons -->
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
                 <div class="m-2">
@@ -466,7 +468,7 @@ include "includes/menu.php";
                 </div>
             </form>
         </div>
-
+        <!-- mandar para uma pagina onde o adm poderar aconpanha o desempenho da loja -->
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
                 <div class="m-2">

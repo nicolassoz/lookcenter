@@ -391,11 +391,50 @@ include "includes/menu.php"
                     </div>
                 </div>
 
+                <!-- Produto 22 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/bermudas/Bermuda_Graffit_Thunder.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bermuda Graffit Thuder</h5>
+                            <p class="card-text text-secondary small">Bermuda jeans oversized (abaixo do joelho) em tom cinza escuro/grafite com detalhes frontais que...</p>
+                            <p class="price">R$ 120,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 23 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/bermudas/Bermuda_Jeans_Topside_cruz.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bermuda jeans topside cruz</h5>
+                            <p class="card-text text-secondary small">Bermuda jeans larga grafite com estampa vertical em letras "Topside" na perna esquerda e duas cruz...</p>
+                            <p class="price">R$ 190,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 24 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/bermudas/Bermuda_Jeans_Gray.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bermuda jeans Gray</h5>
+                            <p class="card-text text-secondary small">Bermuda de sarja/jeans leve na cor cinza escura estonada, com cós elástico franzido e cordão tático...</p>
+                            <p class="price">R$ 140,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- calças -->
 
 
-                <!-- Produto 22 -->
+                <!-- Produto 25 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Camisa">
@@ -408,7 +447,7 @@ include "includes/menu.php"
                     </div>
                 </div>
 
-                <!-- Produto 22 -->
+                <!-- Produto 26 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Baggy_Black_Acid_frente.jpg" class="card-img-top" alt="Camisa">
@@ -421,7 +460,7 @@ include "includes/menu.php"
                     </div>
                 </div>
 
-                <!-- Produto 23 -->
+                <!-- Produto 27 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Baggy_Clássica_frente.jpg" class="card-img-top" alt="Camisa">
@@ -434,7 +473,7 @@ include "includes/menu.php"
                     </div>
                 </div>
 
-                <!-- Produto 24 -->
+                <!-- Produto 28 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Black_Topside_frente.jpg" class="card-img-top" alt="Camisa">
@@ -447,7 +486,7 @@ include "includes/menu.php"
                     </div>
                 </div>
 
-                <!-- Produto 25 -->
+                <!-- Produto 29 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Carpenter_Light_Blue_frente.jpg" class="card-img-top" alt="Camisa">
@@ -460,7 +499,7 @@ include "includes/menu.php"
                     </div>
                 </div>
 
-                <!-- Produto 26 -->
+                <!-- Produto 30 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Tribal_Blue.jpg" class="card-img-top" alt="Camisa">
@@ -473,11 +512,24 @@ include "includes/menu.php"
                     </div>
                 </div>
 
+                <!-- Produto 31 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/calcas/Calça_Jeans_Spider.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Calça Jeans Spider</h5>
+                            <p class="card-text text-secondary small">Calça jeans de modelagem bem larga (baggy) em lavegem cinza estonada, O grande destaque é o ...</p>
+                            <p class="price">R$ 159,00</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- moletons -->
 
 
-                <!-- Produto 27 -->
+                <!-- Produto 32 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/moletons/Moletom_bear_black_frente.jpg" class="card-img-top" alt="Camisa">
@@ -490,7 +542,7 @@ include "includes/menu.php"
                     </div>
                 </div>
 
-                <!-- Produto 28 -->
+                <!-- Produto 33 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/moletons/Moletom_cruz_frente.jpg" class="card-img-top" alt="Camisa">
@@ -503,7 +555,7 @@ include "includes/menu.php"
                     </div>
                 </div>
 
-                <!-- Produto 29 -->
+                <!-- Produto 34 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/moletons/Moletom_Red_Graphics_frente.jpg" class="card-img-top" alt="Camisa">
@@ -515,7 +567,7 @@ include "includes/menu.php"
                         </div>
                     </div>
                 </div>
-                <!-- Produto 30 -->
+                <!-- Produto 35 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <img src="roupas/moletons/Moleton_Bear_Red_frente.jpg" class="card-img-top" alt="Camisa">
@@ -523,6 +575,19 @@ include "includes/menu.php"
                             <h5 class="card-title">Moletom Patch Bear Red</h5>
                             <p class="card-text text-secondary small">Moletom canguru na cor vermelha (tom fechado/bordô) com cabuz e cordões pretos contrastantes...</p>
                             <p class="price">R$ 199,67</p>
+                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 36 -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="roupas/moletons/Moletom_Graffit_urbano.jpg" class="card-img-top" alt="Camisa">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Moletom Graffit Urbano</h5>
+                            <p class="card-text text-secondary small">Moletom fechado (canguru) preto com uma estampa frontal centralizada em formato de tag de...</p>
+                            <p class="price">R$ 250,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>

@@ -69,7 +69,7 @@ include "includes/menu.php";
                         <h5 class="card-title">neymar jr.</h5>
                         <p class="card-text text-light">camisa streerwear preta neymar jr.</p>
                         <p class="price">R$ 159,99</p>
-                        <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
+                        <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_NJR.php">Ver Detalhes</a>
                     </div>
                 </div>
             </div>

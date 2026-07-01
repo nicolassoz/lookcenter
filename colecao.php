@@ -117,7 +117,7 @@ include "includes/menu.php"
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
                         <span class="badge position-absolute m-3 bg-gold text-dark">Premium</span>
-                        <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Blazer Gold">
+                        <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Neymar Jr.</h5>
                             <p class="price">R$ 159,99</p>
@@ -229,7 +229,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Graffit black</h5>
                             <p class="price">R$ 189,90</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_T_C.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -253,11 +253,11 @@ include "includes/menu.php"
                 <!-- Produto 12 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/bermudas/Bermuda_Cargo_Techwear_Preta_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Cargo_Techwear_Preta_frente.jpg" class="card-img-top" alt="Bermuda">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Streetwear Preta Apparel</h5>
                             <p class="price">R$ 119,90</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_bermudas/pg_bermuda_C_T_preta.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -265,11 +265,11 @@ include "includes/menu.php"
                 <!-- Produto 13 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/bermudas/Bermuda_Jeans_Carpenter_Cinza_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Jeans_Carpenter_Cinza_frente.jpg" class="card-img-top" alt="Bermuda">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Tribal Topside</h5>
                             <p class="price">R$ 130,20</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_bermudas/pg_bermuda_J_C_cinza.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -277,11 +277,11 @@ include "includes/menu.php"
                 <!-- Produto 14 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/bermudas/Bermuda_Streetwear_Preta_Apparel_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Streetwear_Preta_Apparel_frente.jpg" class="card-img-top" alt="Bermuda">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Cargo Cyber Black</h5>
                             <p class="price">R$ 110,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_bermudas/pg_bermuda_S_A_preta.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -289,11 +289,11 @@ include "includes/menu.php"
                 <!-- Produto 15 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/bermudas/Bermuda_TribalTopside_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_TribalTopside_frente.jpg" class="card-img-top" alt="Bermuda">
                         <div class="card-body text-center">
                             <h5 class="card-title">bermuda oversized tribal</h5>
                             <p class="price">R$ 125,30</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_bermudas/pg_bermuda_Ttopside.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -301,11 +301,11 @@ include "includes/menu.php"
                 <!-- Produto 16 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/bermudas/Bermuda_Graffit_Thunder.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Graffit_Thunder.jpg" class="card-img-top" alt="Bermuda">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Graffit Thuder</h5>
                             <p class="price">R$ 120,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_bermudas/pg_bermuda_G_T.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -313,11 +313,11 @@ include "includes/menu.php"
                 <!-- Produto 17 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/bermudas/Bermuda_Jeans_Topside_cruz.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Jeans_Topside_cruz.jpg" class="card-img-top" alt="Bermuda">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda jeans topside cruz</h5>
                             <p class="price">R$ 190,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_bermudas/pg_bermuda_J_T_C.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -325,11 +325,11 @@ include "includes/menu.php"
                 <!-- Produto 18 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/bermudas/Bermuda_Jeans_Gray.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/bermudas/Bermuda_Jeans_Gray.jpg" class="card-img-top" alt="Bermuda">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda jeans Gray</h5>
                             <p class="price">R$ 140,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_bermudas/pg_bermuda_J_G.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -341,7 +341,7 @@ include "includes/menu.php"
                 <!-- Produto 19 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Baggy Clássica</h5>
                             <p class="price">R$ 220,30</p>
@@ -353,7 +353,7 @@ include "includes/menu.php"
                 <!-- Produto 20 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Jeans_Baggy_Black_Acid_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Jeans_Baggy_Black_Acid_frente.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Black Topside</h5>
                             <p class="price">R$ 215,64</p>
@@ -365,7 +365,7 @@ include "includes/menu.php"
                 <!-- Produto 21 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Jeans_Baggy_Clássica_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Jeans_Baggy_Clássica_frente.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Carpenter Light Blue</h5>
                             <p class="price">R$ 230,98</p>
@@ -377,7 +377,7 @@ include "includes/menu.php"
                 <!-- Produto 22 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Jeans_Black_Topside_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Jeans_Black_Topside_frente.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
                             <p class="price">R$ 240,00</p>
@@ -389,7 +389,7 @@ include "includes/menu.php"
                 <!-- Produto 23 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Jeans_Carpenter_Light_Blue_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Jeans_Carpenter_Light_Blue_frente.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Vintage</h5>
                             <p class="price">R$ 229.90</p>
@@ -401,7 +401,7 @@ include "includes/menu.php"
                 <!-- Produto 24 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Jeans_Tribal_Blue.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Jeans_Tribal_Blue.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Tribal</h5>
                             <p class="price">R$ 189,90</p>
@@ -413,7 +413,7 @@ include "includes/menu.php"
                 <!-- Produto 25 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Jeans_Spider.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Jeans_Spider.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Spider</h5>
                             <p class="price">R$ 159,00</p>
@@ -425,7 +425,7 @@ include "includes/menu.php"
                 <!-- Produto 26 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça Jeans Light Blue.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça Jeans Light Blue.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Light Blue</h5>
                             <p class="price">R$ 155,00</p>
@@ -437,7 +437,7 @@ include "includes/menu.php"
                 <!-- Produto 27 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça Jeans Branca.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça Jeans Branca.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans branca</h5>
                             <p class="price">R$ 155,00</p>
@@ -449,7 +449,7 @@ include "includes/menu.php"
                 <!-- Produto 28 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_Jeans_Baggy_Classic.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_Jeans_Baggy_Classic.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Baggy Classic</h5>
                             <p class="price">R$ 190,00</p>
@@ -461,7 +461,7 @@ include "includes/menu.php"
                 <!-- Produto 29 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/calcas/Calça_jeans_Classica_Azul.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/calcas/Calça_jeans_Classica_Azul.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Clasica azul</h5>
                             <p class="price">R$ 155,00</p>
@@ -477,7 +477,7 @@ include "includes/menu.php"
                 <!-- Produto 30 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moletom_bear_black_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/moletons/Moletom_bear_black_frente.jpg" class="card-img-top" alt="Moletom">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Patch Bear black</h5>
                             <p class="price">R$ 229,00</p>
@@ -489,7 +489,7 @@ include "includes/menu.php"
                 <!-- Produto 31 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moletom_cruz_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/moletons/Moletom_cruz_frente.jpg" class="card-img-top" alt="Moletom">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD</h5>
                             <p class="price">R$ 189,90</p>
@@ -501,7 +501,7 @@ include "includes/menu.php"
                 <!-- Produto 32 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moletom_Red_Graphics_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/moletons/Moletom_Red_Graphics_frente.jpg" class="card-img-top" alt="Moletom">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom White Skull</h5>
                             <p class="price">R$ 209,00</p>
@@ -512,7 +512,7 @@ include "includes/menu.php"
                 <!-- Produto 33 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moleton_Bear_Red_frente.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/moletons/Moleton_Bear_Red_frente.jpg" class="card-img-top" alt="Moletom">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Patch Bear Red</h5>
                             <p class="price">R$ 199,67</p>
@@ -524,7 +524,7 @@ include "includes/menu.php"
                 <!-- Produto 34 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moletom_Graffit_urbano.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/moletons/Moletom_Graffit_urbano.jpg" class="card-img-top" alt="Moletom">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Graffit Urbano</h5>
                             <p class="price">R$ 250,00</p>
@@ -536,7 +536,7 @@ include "includes/menu.php"
                 <!-- Produto 35 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moletom_TPSD_black.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/moletons/Moletom_TPSD_black.jpg" class="card-img-top" alt="Moletom">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD black</h5>
                             <p class="price">R$ 240,00</p>
@@ -548,7 +548,7 @@ include "includes/menu.php"
                 <!-- Produto 36 -->
                 <div class="col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100">
-                        <img src="roupas/moletons/Moletom_TPSD_Red_AND_White.jpg" class="card-img-top" alt="Camisa">
+                        <img src="roupas/moletons/Moletom_TPSD_Red_AND_White.jpg" class="card-img-top" alt="Moletom">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD Red and Black</h5>
                             <p class="price">R$ 240,00</p>

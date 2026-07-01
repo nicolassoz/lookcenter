@@ -204,6 +204,7 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Compton_Cruz_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Compton</h5>
+                            <p class="price">R$ 129,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_c_c.php">Ver Detalhes</a>
                         </div>
                     </div>
@@ -251,7 +252,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Tag_Central_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -264,7 +264,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Topside_black_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Compton Black</h5>
-                            <p class="card-text text-secondary small">Camiseta preta com design diferenciado onde a palavra "Com" começa na frente da barra e termina com "pton" cobrindo a parte traseira, em letras góticas brancas gigantes.</p>
                             <p class="price">R$ 139,90</p>
                             <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_T_Black">Ver Detalhes</a>
                         </div>
@@ -277,7 +276,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_TPSD_Dragão_Lateral_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -290,7 +288,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_TPSD_Gótica_Básica_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -303,7 +300,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Trip_Side_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -316,7 +312,6 @@ include "includes/menu.php"
                         <img src="roupas/camisas/Camiseta_Tripside_Graffiti_&_Bear_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -333,7 +328,6 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_Cargo_Techwear_Preta_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Streetwear Preta Apparel</h5>
-                            <p class="card-text text-secondary small">Bermuda cargo preta de estilo streetwear, com modelagem solta e tecido leve. Possui estampa branca na perna e bolso lateral.</p>
                             <p class="price">R$ 119,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -346,8 +340,7 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_Jeans_Carpenter_Cinza_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Tribal Topside</h5>
-                            <p class="card-text text-secondary small">Bermuda jeans cinza de modelagem larga estilo streetwear. Traz a escrita gangster "Compton" bordada no bolso traseiro e a logo "C" no bolso lateral.</p>
-                            <p class="price">R$ 130,    20</p>
+                            <p class="price">R$ 130,20</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
                     </div>
@@ -359,7 +352,6 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_Streetwear_Preta_Apparel_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -372,7 +364,6 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_TribalTopside_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -385,7 +376,6 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_Graffit_Thunder.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda Graffit Thuder</h5>
-                            <p class="card-text text-secondary small">Bermuda jeans oversized (abaixo do joelho) em tom cinza escuro/grafite com detalhes frontais que...</p>
                             <p class="price">R$ 120,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -398,7 +388,6 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_Jeans_Topside_cruz.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda jeans topside cruz</h5>
-                            <p class="card-text text-secondary small">Bermuda jeans larga grafite com estampa vertical em letras "Topside" na perna esquerda e duas cruz...</p>
                             <p class="price">R$ 190,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -411,7 +400,6 @@ include "includes/menu.php"
                         <img src="roupas/bermudas/Bermuda_Jeans_Gray.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bermuda jeans Gray</h5>
-                            <p class="card-text text-secondary small">Bermuda de sarja/jeans leve na cor cinza escura estonada, com cós elástico franzido e cordão tático...</p>
                             <p class="price">R$ 140,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -428,7 +416,6 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Baggy Clássica</h5>
-                            <p class="card-text text-secondary small">Calça jeans bem larga (baggy) na cor off-white, com múltiplos bolsos cargo funcionais nas pernas, tiras com fivelas e costuras escuras contrastantes.</p>
                             <p class="price">R$ 220,30</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -441,7 +428,6 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Jeans_Baggy_Black_Acid_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Black Topside</h5>
-                            <p class="card-text text-secondary small">Calça jeans com corte volumoso e caimento pesado em lavagem cinza-escura</p>
                             <p class="price">R$ 215,64</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -454,7 +440,6 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Jeans_Baggy_Clássica_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Carpenter Light Blue</h5>
-                            <p class="card-text text-secondary small">Calça jeans azul-clara tradicional de modelagem bem ampla, destacando-se pelo logotipo gótico "Compton" bordado em preto e branco no bolso traseiro.</p>
                             <p class="price">R$ 230,98</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -467,7 +452,6 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Jeans_Black_Topside_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="card-text text-secondary small">Lorem ipsum dolor sit amet.</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -480,7 +464,6 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Jeans_Carpenter_Light_Blue_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Vintage</h5>
-                            <p class="card-text text-secondary small">Calça jeans azul-clara estilo carpinteiro com lavagem vintage, caracterizada pelos painéis duplos de tecido costurados para reforço na parte frontal.</p>
                             <p class="price">R$ 229.90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -493,7 +476,6 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Jeans_Tribal_Blue.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Tribal</h5>
-                            <p class="card-text text-secondary small">Calça jeans azul-média com modelagem bem folgada, estampada com uma grande arte tribal em tom azul-claro que percorre toda a lateral da perna.</p>
                             <p class="price">R$ 189,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -506,7 +488,6 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça_Jeans_Spider.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Spider</h5>
-                            <p class="card-text text-secondary small">Calça jeans de modelagem bem larga (baggy) em lavegem cinza estonada, O grande destaque é o ...</p>
                             <p class="price">R$ 159,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -523,7 +504,6 @@ include "includes/menu.php"
                         <img src="roupas/moletons/Moletom_bear_black_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Patch Bear black</h5>
-                            <p class="card-text text-secondary small">Moletom canguru preto com capuz e cordão de ajuste. Apresenta uma oversized confortavel...</p>
                             <p class="price">R$ 229,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -536,7 +516,6 @@ include "includes/menu.php"
                         <img src="roupas/moletons/Moletom_cruz_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD</h5>
-                            <p class="card-text text-secondary small">Moletom canguru preto com estampa centralizada "TPSD" sobreposta a uma cruz prateada/cinza no...</p>
                             <p class="price">R$ 189,90</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -549,7 +528,6 @@ include "includes/menu.php"
                         <img src="roupas/moletons/Moletom_Red_Graphics_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom White Skull</h5>
-                            <p class="card-text text-secondary small">Moletom canguru braco com capuz e cordões pretos. Destaca-se pelas estampas em vermelho de ...</p>
                             <p class="price">R$ 209,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -561,7 +539,6 @@ include "includes/menu.php"
                         <img src="roupas/moletons/Moleton_Bear_Red_frente.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Patch Bear Red</h5>
-                            <p class="card-text text-secondary small">Moletom canguru na cor vermelha (tom fechado/bordô) com cabuz e cordões pretos contrastantes...</p>
                             <p class="price">R$ 199,67</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -574,7 +551,6 @@ include "includes/menu.php"
                         <img src="roupas/moletons/Moletom_Graffit_urbano.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Graffit Urbano</h5>
-                            <p class="card-text text-secondary small">Moletom fechado (canguru) preto com uma estampa frontal centralizada em formato de tag de...</p>
                             <p class="price">R$ 250,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -587,7 +563,6 @@ include "includes/menu.php"
                         <img src="roupas/moletons/Moletom_TPSD_black.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD black</h5>
-                            <p class="card-text text-secondary small">Moletom aberto com zíper (zip-up) preto. Possui o logotipo "TPSD" no peito ladeado por duas grande...</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>
@@ -600,7 +575,6 @@ include "includes/menu.php"
                         <img src="roupas/moletons/Moletom_TPSD_Red_AND_White.jpg" class="card-img-top" alt="Camisa">
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD Red and Black</h5>
-                            <p class="card-text text-secondary small">Moletom com zíper pesado na cor preta, trazendo as letras "TPSD" aplicadas no peito em formato...</p>
                             <p class="price">R$ 240,00</p>
                             <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
                         </div>

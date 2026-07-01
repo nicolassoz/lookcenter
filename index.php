@@ -67,7 +67,6 @@ include "includes/menu.php";
                     <img src="roupas/camisas/camisa_neymar_jr_streetwear_preta_frente.png" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
                         <h5 class="card-title">neymar jr.</h5>
-                        <p class="card-text text-light">camisa streerwear preta neymar jr.</p>
                         <p class="price">R$ 159,99</p>
                         <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camisa_NJR.php">Ver Detalhes</a>
                     </div>
@@ -80,7 +79,6 @@ include "includes/menu.php";
                     <img src="roupas/moletons/Moletom_Red_Graphics_costa.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
                         <h5 class="card-title">moletom white Skull</h5>
-                        <p class="card-text text-light">Moletom canguru branco com capuz e cordões pretos. Destaca-se pelas estampas em vermelho de esqueleto</p>
                         <p class="price">R$ 209,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>
@@ -93,7 +91,6 @@ include "includes/menu.php";
                     <img src="roupas/calcas/Calça_Cargo_Jeans_Off-White_frente.jpg" class="card-img-top" alt="Produto">
                     <div class="card-body text-center">
                         <h5 class="card-title">calça cargo jeans Off-White</h5>
-                        <p class="card-text text-light">Calça Cargo Jeans Off-White.</p>
                         <p class="price">R$ 110,00</p>
                         <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
                     </div>

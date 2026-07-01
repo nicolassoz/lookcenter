@@ -265,7 +265,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Camisa Compton Black</h5>
                             <p class="price">R$ 139,90</p>
-                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_T_Black">Ver Detalhes</a>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_camisas/pg_camiseta_T_Black.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>

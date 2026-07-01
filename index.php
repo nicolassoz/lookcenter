@@ -92,7 +92,7 @@ include "includes/menu.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">calça cargo jeans Off-White</h5>
                         <p class="price">R$ 110,00</p>
-                        <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
+                        <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_C_J_Off-W.php">Ver Detalhes</a>
                     </div>
                 </div>
             </div>

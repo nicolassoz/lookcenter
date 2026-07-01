@@ -345,7 +345,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Baggy Clássica</h5>
                             <p class="price">R$ 220,30</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_C_J_Off-W.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -357,7 +357,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Black Topside</h5>
                             <p class="price">R$ 215,64</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_B_A_black.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -369,7 +369,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Carpenter Light Blue</h5>
                             <p class="price">R$ 230,98</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_B_Classica.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -379,9 +379,9 @@ include "includes/menu.php"
                     <div class="card h-100">
                         <img src="roupas/calcas/Calça_Jeans_Black_Topside_frente.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
-                            <h5 class="card-title">Camisa Executiva Satin</h5>
-                            <p class="price">R$ 240,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <h5 class="card-title">Calça Jeans Tribal</h5>
+                            <p class="price">R$ 200.98</p>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_TS_Black.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -393,7 +393,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Vintage</h5>
                             <p class="price">R$ 229.90</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_C_L_Blue.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -405,7 +405,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Tribal</h5>
                             <p class="price">R$ 189,90</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_T_blue.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -417,7 +417,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Spider</h5>
                             <p class="price">R$ 159,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_S.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -429,7 +429,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Light Blue</h5>
                             <p class="price">R$ 155,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_L_Blue.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -440,8 +440,8 @@ include "includes/menu.php"
                         <img src="roupas/calcas/Calça Jeans Branca.jpg" class="card-img-top" alt="Calça">
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans branca</h5>
-                            <p class="price">R$ 155,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <p class="price">R$ 170,00</p>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_Branca.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -453,7 +453,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Baggy Classic</h5>
                             <p class="price">R$ 190,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_B_C.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -465,7 +465,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Calça Jeans Clasica azul</h5>
                             <p class="price">R$ 155,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_calcas/pg_calca_J_C_Azul.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>

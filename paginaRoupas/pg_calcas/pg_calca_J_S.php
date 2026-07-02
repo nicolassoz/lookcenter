@@ -30,7 +30,7 @@ include "../../includes/menu.php"
                     <div class="carousel-item active">
                     <img src="../../roupas/calcas/Calça_Jeans_Spider.jpg" class="img-fluid" alt="Calca"></div>
                     <div class="carousel-item">
-                    <img src="../../roupas/calcas/"  class="img-fluid" alt="Calca"></div>
+                    <img src="../../roupas/calcas/Calça_Jeans_Spider_costa.png"  class="img-fluid" alt="Calca"></div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

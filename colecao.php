@@ -481,7 +481,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Patch Bear black</h5>
                             <p class="price">R$ 229,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_B_Black.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -493,7 +493,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD</h5>
                             <p class="price">R$ 189,90</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_Cruz.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -505,7 +505,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom White Skull</h5>
                             <p class="price">R$ 209,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_G_red.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -516,7 +516,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Patch Bear Red</h5>
                             <p class="price">R$ 199,67</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_B_Red.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -528,7 +528,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom Graffit Urbano</h5>
                             <p class="price">R$ 250,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_G_U.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -540,7 +540,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD black</h5>
                             <p class="price">R$ 240,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_TPSD_Black.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>
@@ -552,7 +552,7 @@ include "includes/menu.php"
                         <div class="card-body text-center">
                             <h5 class="card-title">Moletom TPSD Red and Black</h5>
                             <p class="price">R$ 240,00</p>
-                            <button class="btn btn-outline-warning btn-sm w-100">Ver Detalhes</button>
+                            <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_TPSD_RedAndWhite.php">Ver Detalhes</a>
                         </div>
                     </div>
                 </div>

@@ -80,7 +80,7 @@ include "includes/menu.php";
                     <div class="card-body text-center">
                         <h5 class="card-title">moletom white Skull</h5>
                         <p class="price">R$ 209,00</p>
-                        <button class="btn btn-outline-warning btn-sm">Comprar Agora</button>
+                        <a class="btn btn-outline-warning btn-sm w-100" href="paginaRoupas/pg_moletons/pg_moleton_G_red.php">Ver Detalhes</a>
                     </div>
                 </div>
             </div>

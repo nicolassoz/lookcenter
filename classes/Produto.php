@@ -8,10 +8,10 @@ class Produto
     private string $nome;
     private string $descricao;
     private float $preco;
-    private string $unidade_venda;
     private int $categoria_id;
     private int $estoque_minimo;
     private ?float $desconto = null;
+    private string $imagem;
     private DateTime $data_cad;
     private bool $descontinuado;
     private PDO $pdo;
@@ -53,15 +53,6 @@ class Produto
         $this->preco = $preco;
     }
 
-    public function getUnidadeVenda()
-    {
-        return $this->unidade_venda;
-    }
-    public function setUnidadeVenda(string $unidade_venda)
-    {
-        $this->unidade_venda = $unidade_venda;
-    }
-
     public function getCategoriaId()
     {
         return $this->categoria_id;
@@ -84,9 +75,18 @@ class Produto
     {
         return $this->desconto;
     }
-    public function setDesconto(float $desconto)
+    public function setDesconto(?float $desconto)
     {
         $this->desconto = $desconto;
+    }
+
+    public function getImagem()
+    {
+        return $this->imagem;
+    }
+    public function setImagem(string $imagem)
+    {
+        $this->imagem = $imagem;
     }
 
     public function getDataCad()
@@ -109,18 +109,19 @@ class Produto
 
     public function Inserir():bool
     {
-        $sql = "INSERT INTO produtos (nome, descricao, preco, unidade_venda, categoria_id, estoque_minimo, desconto, descontinuado)
-         values (:nome, :descricao, :preco, :unidade_venda, :categoria_id, :estoque_minimo, :desconto, :descontinuado)";
+        $sql = "INSERT INTO produtos (nome, descricao, preco, categoria_id, estoque_minimo, desconto, imagem, data_cad, descontinuado)
+         values (:nome, :descricao, :preco, :categoria_id, :estoque_minimo, :desconto, :imagem, :data_cad, :descontinuado)";
 
         $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":nome", $this->nome);
         $cmd->bindValue(":descricao", $this->descricao);
         $cmd->bindValue(":preco", $this->preco);
-        $cmd->bindValue(":unidade_venda", $this->unidade_venda);
         $cmd->bindValue(":categoria_id", $this->categoria_id);
         $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
         $cmd->bindValue(":desconto", $this->desconto);
-        $cmd->bindValue(":descontinuado", $this->descontinuado);
+        $cmd->bindValue(":imagem", $this->imagem);
+        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d H:i:s'));
+        $cmd->bindValue(":descontinuado", $this->descontinuado, PDO::PARAM_BOOL);
 
         if($cmd->execute())
         {
@@ -142,20 +143,20 @@ class Produto
         $cmd = obterPdo()->prepare($sql);
         $cmd->bindValue(":nome",$nome);
         $cmd->execute();
-        if($cmd->rowCount() > 0)
+        $dados = $cmd->fetch(PDO::FETCH_ASSOC);
+
+        if($dados)        
         {
-            $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-           
             $this->id = $dados['id'];
             $this->setNome($dados['nome']);
             $this->setDescricao($dados['descricao']);
             $this->setPreco($dados['preco']);
-            $this->setUnidadeVenda($dados['unidade_venda']);
             $this->setCategoriaId($dados['categoria_id']);
             $this->setEstoqueMinimo($dados['estoque_minimo']);
             $this->setDesconto($dados['desconto']);
+            $this->setImagem($dados['imagem']);
             $this->setDataCad(new DateTime($dados['data_cad']));
-            $this->setDescontinuado($dados['descontinuado']);
+            $this->setDescontinuado((bool)$dados['descontinuado']);            
             return true;
         }
         return false;
@@ -167,20 +168,20 @@ class Produto
         $cmd = obterPdo()->prepare($sql);
         $cmd->bindValue(":id",$id);
         $cmd->execute();
-        if($cmd->rowCount() > 0)
+        $dados = $cmd->fetch(PDO::FETCH_ASSOC);
+
+        if($dados)        
         {
-            $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-           
             $this->id = $dados['id'];
             $this->setNome($dados['nome']);
             $this->setDescricao($dados['descricao']);
             $this->setPreco($dados['preco']);
-            $this->setUnidadeVenda($dados['unidade_venda']);
             $this->setCategoriaId($dados['categoria_id']);
             $this->setEstoqueMinimo($dados['estoque_minimo']);
             $this->setDesconto($dados['desconto']);
+            $this->setImagem($dados['imagem']);
             $this->setDataCad(new DateTime($dados['data_cad']));
-            $this->setDescontinuado($dados['descontinuado']);
+            $this->setDescontinuado((bool)$dados['descontinuado']);
             return true;
         }
         return false;
@@ -189,7 +190,7 @@ class Produto
     public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE produtos set nome = :nome, descricao = :descricao, preco = :preco, unidade_venda = :unidade_venda, categoria_id = :categoria_id, estoque_minimo = :estoque_minimo, desconto = :desconto, descontinuado = :descontinuado WHERE id = :id";
+        $sql = "UPDATE produtos set nome = :nome, descricao = :descricao, preco = :preco, categoria_id = :categoria_id, estoque_minimo = :estoque_minimo, desconto = :desconto, imagem = :imagem, descontinuado = :descontinuado WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
         
@@ -197,10 +198,10 @@ class Produto
         $cmd->bindValue(":nome", $this->nome);
         $cmd->bindValue(":descricao", $this->descricao);
         $cmd->bindValue(":preco", $this->preco);
-        $cmd->bindValue(":unidade_venda", $this->unidade_venda);
         $cmd->bindValue(":categoria_id", $this->categoria_id);
         $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
         $cmd->bindValue(":desconto", $this->desconto);
+        $cmd->bindValue(":imagem", $this->imagem);
         $cmd->bindValue(":descontinuado", $this->descontinuado, PDO::PARAM_BOOL);  
         
         return $cmd->execute();

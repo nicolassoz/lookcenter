@@ -63,13 +63,15 @@ class Nivel
     public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM niveis WHERE id = :id";
-        $cmd = obterPdo()->prepare($sql);
+        $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":id",$id);
+
         $cmd->execute();
-        if($cmd->rowCount() > 0)
+        
+        $dados = $cmd->fetch(PDO::FETCH_ASSOC);
+
+        if($dados)
         {
-            $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-           
             $this->id = $dados['id'];
             $this->setNome($dados['nome']);
             $this->setSigla($dados['sigla']);

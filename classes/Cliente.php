@@ -136,7 +136,7 @@ class Cliente
     public function BuscarPorId(int $id): bool 
     {
         $sql = "SELECT * FROM clientes WHERE id = :id";
-        $cmd = obterPdo()->prepare($sql);
+        $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":id", $id, PDO::PARAM_INT);
         $cmd->execute();
 

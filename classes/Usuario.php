@@ -66,16 +66,20 @@ class Usuario
         $this->ativo = $ativo;
     }
 
-    public static function efetuarLogin(string $email, string $senha):array
+    public static function EfetuarLogin(string $email, string $senha):array
     {
-        $sql = "select * from usuarios where email = :email and ativo = b'1'";
+        $sql = "SELECT * FROM usuarios WHERE email = :email AND ativo = b'1'";
         $cmd = obterPdo()->prepare($sql);
         $cmd->bindValue(":email", $email);
         $cmd->execute();
         $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-        if($dados && password_verify($senha, $dados['senha'])){
+
+        if($dados && password_verify($senha, $dados['senha']))
+        {
             return $dados;
-        }else{
+        }
+        else
+        {
             return $dados = [];    
         }
     }
@@ -106,19 +110,22 @@ class Usuario
     public function BuscarPorEmail(string $email):bool
     {
         $sql = "SELECT * FROM usuarios WHERE email = :email";
-        $cmd = obterPdo()->prepare($sql);
+        $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":email",$email);
+
         $cmd->execute();
-        if($cmd->rowCount() > 0)
+
+        $dados = $cmd->fetch(PDO::FETCH_ASSOC);
+
+        if($dados)
         {
-            $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-           
             $this->id = $dados['id'];
             $this->setNome($dados['nome']);
             $this->setEmail($dados['email']);
             $this->setSenha($dados['senha']);
             $this->setNivelId($dados['nivel_id']);
-            $this->setAtivo($dados['ativo']);
+            $this->setAtivo(ord($dados['ativo']) == 1 ? true : false);
+
             return true;
         }
         return false;
@@ -127,19 +134,22 @@ class Usuario
     public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM usuarios WHERE id = :id";
-        $cmd = obterPdo()->prepare($sql);
+        $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":id",$id);
+
         $cmd->execute();
-        if($cmd->rowCount() > 0)
+
+        $dados = $cmd->fetch(PDO::FETCH_ASSOC);
+
+        if($dados)
         {
-            $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-           
             $this->id = $dados['id'];
             $this->setNome($dados['nome']);
             $this->setEmail($dados['email']);
             $this->setSenha($dados['senha']);
             $this->setNivelId($dados['nivel_id']);
-            $this->setAtivo($dados['ativo']);
+            $this->setAtivo(ord($dados['ativo']) == 1 ? true : false);
+
             return true;
         }
         return false;
@@ -148,14 +158,15 @@ class Usuario
     public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE usuarios set nome = :nome, email = :email, nivel_id = :nivel_id, ativo = :ativo, WHERE id = :id";
+        $sql = "UPDATE usuarios set nome = :nome, email = :email, nivel_id = :nivel_id, ativo = :ativo WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
-        $cmd->bindValue(":id", $this->id); 
+        $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);
         $cmd->bindValue(":nome", $this->nome);   
         $cmd->bindValue(":email", $this->email);   
         $cmd->bindValue(":nivel_id", $this->nivel_id);   
-        $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);   
+        $cmd->bindValue(":ativo", $this->ativo ? 1 : 0, PDO::PARAM_INT);
+
         return $cmd->execute();
     }
 
@@ -165,7 +176,8 @@ class Usuario
 
         $sql = "UPDATE usuarios SET senha = :senha WHERE id = :id";
         $cmd = $this->pdo->prepare($sql);
-        $cmd->bindValue(":senha", $senhaHash);
+
+        $cmd->bindValue(":senha", password_hash($senhaHash, PASSWORD_DEFAULT));
         $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);
 
         return $cmd->execute();

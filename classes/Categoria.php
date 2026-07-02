@@ -63,7 +63,7 @@ class Categoria
     public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM categorias WHERE id = :id";
-        $cmd = obterPdo()->prepare($sql);
+        $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":id",$id);
         $cmd->execute();
         if($cmd->rowCount() > 0)

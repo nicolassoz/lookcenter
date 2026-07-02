@@ -29,7 +29,8 @@ include "../../includes/menu.php"
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                     <img src="../../roupas/bermudas/Bermuda_Jeans_Topside_cruz.jpg" class="img-fluid" alt="Bermuda"></div>
-                    
+                    <div class="carousel-item">
+                    <img src="../../roupas/bermudas/Bermuda_Jeans_Topside_cruz_costa.jpg" class="img-fluid" alt="Bermuda"></div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

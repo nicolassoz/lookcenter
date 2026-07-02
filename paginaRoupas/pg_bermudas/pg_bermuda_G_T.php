@@ -30,7 +30,7 @@ include "../../includes/menu.php"
                     <div class="carousel-item active">
                     <img src="../../roupas/bermudas/Bermuda_Graffit_Thunder.jpg" class="img-fluid" alt="Bermuda"></div>
                     <div class="carousel-item">
-                    <img src="../../roupas/bermudas/Bermuda_Graffit_Thunder_lado.png" class="img-fluid" alt="Bermuda"></div>
+                    <img src="../../roupas/bermudas/Bermuda_Graffit_Thunder_costa.jpg" class="img-fluid" alt="Bermuda"></div>
                 </div>
                 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

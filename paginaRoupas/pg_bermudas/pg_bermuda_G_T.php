@@ -30,9 +30,9 @@ include "../../includes/menu.php"
                     <div class="carousel-item active">
                     <img src="../../roupas/bermudas/Bermuda_Graffit_Thunder.jpg" class="img-fluid" alt="Bermuda"></div>
                     <div class="carousel-item">
-                    <img src="../../roupas/bermudas/" class="img-fluid" alt="Bermuda">
-                    </div>
+                    <img src="../../roupas/bermudas/Bermuda_Graffit_Thunder_lado.png" class="img-fluid" alt="Bermuda"></div>
                 </div>
+                
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -43,7 +43,6 @@ include "../../includes/menu.php"
                 </button>
             </div>
 
-            <img src="../../roupas/bermudas/Bermuda_Graffit_Thunder.jpg" alt="Bermuda">
         </div>
 
         <div class="col-md-5 m-3">

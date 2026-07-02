@@ -77,7 +77,7 @@ include "../../includes/menu.php"
             <div class="row mb-3">
 
                 <div class="col-md-5">
-                    <button class="btn" type="button" style="background:var(--accent-gold); color:black"><i class="bi bi-bag"></i> comprar agora</button>
+                    <a class="btn" type="button" style="background:var(--accent-gold); color:black" href="../../compra/carrinho.php"><i class="bi bi-bag"></i> comprar agora</a>
                 </div>
 
                 <div class="col-md-6">

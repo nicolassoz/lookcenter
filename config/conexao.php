@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 function obterPdo():PDO{
 
     $host = "10.91.47.80";
-    $db = "db_lookcenter";  // nome do banco de dados
+    $db = "lookcenter";  // nome do banco de dados
     $user = "root";
     $pass = "P@ssw0rd";
     static $pdo;

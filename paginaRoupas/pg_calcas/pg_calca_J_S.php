@@ -24,7 +24,24 @@ include "../../includes/menu.php"
 
     <div class="row">
         <div class="card col-md-5 m-3">
-            <img src="../../roupas/calcas/Calça_Jeans_Spider.jpg" alt="Calca">
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../../roupas/calcas/Calça_Jeans_Spider.jpg" class="img-fluid" alt="Calca"></div>
+                    <div class="carousel-item">
+                    <img src="../../roupas/calcas/Calça_Jeans_Spider_costa.png"  class="img-fluid" alt="Calca"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </div>
 
         <div class="col-md-5 m-3">
@@ -59,7 +76,7 @@ include "../../includes/menu.php"
             <div class="row mb-3">
 
                 <div class="col-md-5">
-                    <button class="btn" type="button" style="background:var(--accent-gold); color:black"><i class="bi bi-bag"></i> comprar agora</button>
+                    <a class="btn" type="button" style="background:var(--accent-gold); color:black" href="../../compra/carrinho.php"><i class="bi bi-bag"></i> comprar agora</a>
                 </div>
 
                 <div class="col-md-6">

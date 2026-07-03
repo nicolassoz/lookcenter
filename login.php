@@ -2,8 +2,9 @@
 <!-- pagina de login onde o usuario realiza o login-->
 
 <?php 
+include "classes/Usuario.php";
 // adicionar a parte de cima do site
-include "includes/menu.php"
+include "includes/menu.php";
 ?>
 
 <!DOCTYPE html>

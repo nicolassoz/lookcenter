@@ -68,15 +68,15 @@ class Usuario
 
     public static function EfetuarLogin(string $email, string $senha):array
     {
-        $sql = "SELECT * FROM usuarios WHERE email = :email AND ativo = b'1'";
+        $sql = "SELECT * FROM usuarios WHERE email = email AND ativo = b'1'";
         $cmd = obterPdo()->prepare($sql);
         $cmd->bindValue(":email", $email);
         $cmd->execute();
         $dados = $cmd->fetch(PDO::FETCH_ASSOC);
-
         if($dados && password_verify($senha, $dados['senha']))
         {
             return $dados;
+            
         }
         else
         {

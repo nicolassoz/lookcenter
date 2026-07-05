@@ -1,7 +1,9 @@
 <!-- pagina de login onde o usuario realiza o login-->
 
 <?php
-
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(E_ALL);
 
 session_start(); // iniciar a sessão ou atualizar a sessão aberta
 
@@ -25,8 +27,8 @@ if($_SERVER['REQUEST_METHOD']==="POST")
             }
             
             $usuario = Usuario::EfetuarLogin($email, $senha);
-            var_dump($usuario);
-            exit;
+            // var_dump($usuario);
+            // exit;
             if(count($usuario)>0)
                 {
                     $_SESSION['usuario_id'] = $usuario['id'];

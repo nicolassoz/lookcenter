@@ -1,6 +1,5 @@
 <?php
 include_once "config/conexao.php";
-include_once "classes/Imagem.php";
 
 class Produto
 {

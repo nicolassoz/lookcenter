@@ -11,11 +11,13 @@ class Cliente
     private DateTime $data_nasc;
     private DateTime $data_cad;
     private bool $ativo;
+    private int $usuario_id;
     private PDO $pdo;    
 
     public function __construct()
     {
         $this->pdo = obterPdo();
+        $this->data_cad = new DateTime();
     }
 
     public function getId()
@@ -88,9 +90,19 @@ class Cliente
         $this->ativo = $ativo;
     }
 
+    public function getUsuarioId()
+    {
+        return $this->usuario_id;
+    }
+
+    public function setUsuarioId(int $usuario_id)
+    {
+        $this->usuario_id = $usuario_id;
+    }
+
     public function Inserir():bool
     {
-        $sql = "INSERT INTO clientes (nome, cpf, telefone, email, data_nasc, ativo) values (:nome, :cpf, :telefone, :email, :data_nasc, :ativo)";
+        $sql = "INSERT INTO clientes (nome, cpf, telefone, email, data_nasc, data_cad, ativo, usuario_id) values (:nome, :cpf, :telefone, :email, :data_nasc, :data_cad, :ativo, :usuario_id)";
 
         $cmd = $this->pdo->prepare($sql);
 
@@ -98,8 +110,10 @@ class Cliente
         $cmd->bindValue(":cpf", $this->cpf);
         $cmd->bindValue(":telefone", $this->telefone);
         $cmd->bindValue(":email", $this->email);
-        $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));        
-        $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);     
+        $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));  
+        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d'));      
+        $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);  
+        $cmd->bindValue(":usuario_id", $this->usuario_id);
 
         if($cmd->execute())
         {
@@ -112,7 +126,7 @@ class Cliente
     public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE clientes set nome = :nome, cpf = :cpf, telefone = :telefone, email = :email, data_nasc = :data_nasc, ativo = :ativo WHERE id = :id";
+        $sql = "UPDATE clientes set nome = :nome, cpf = :cpf, telefone = :telefone, email = :email, data_nasc = :data_nasc, ativo = :ativo, usuario_id = :usuario_id WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
 
@@ -123,7 +137,8 @@ class Cliente
         $cmd->bindValue(":email", $this->email);
         $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));   
         $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);   
-           
+        $cmd->bindValue(":usuario_id", $this->usuario_id, PDO::PARAM_INT);
+   
         return $cmd->execute();
     }
 
@@ -152,6 +167,7 @@ class Cliente
             $this->setDataNasc(new DateTime($dados['data_nasc']));
             $this->setDataCad(new DateTime($dados['data_cad']));
             $this->setAtivo((bool)$dados['ativo']);
+            $this->setUsuarioId((int)$dados['usuario_id']);
             return true;
         }
         return false;

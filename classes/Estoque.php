@@ -4,9 +4,9 @@ include_once "config/conexao.php";
 class Estoque
 {
     private int $id;
-    private int $produto_id;
+    private int $id_produto;
     private int $quantidade;
-    private DateTime $data_ult_mov;
+    private DateTime $data_ultimo_movimento;
     private PDO $pdo;
 
     public function __construct()
@@ -19,13 +19,13 @@ class Estoque
         return $this->id;
     }
 
-    public function getProdutoId()
+    public function getIdProduto()
     {
-        return $this->produto_id;
+        return $this->id_produto;
     }
-    public function setProdutoId(int $produto_id)
+    public function setIdProduto(int $id_produto)
     {
-        $this->produto_id = $produto_id;
+        $this->id_produto = $id_produto;
     }
 
     public function getQuantidade()
@@ -37,24 +37,24 @@ class Estoque
         $this->quantidade = $quantidade;
     }
 
-    public function getDataUltMov()
+    public function getDataUltimoMovimento()
     {
-        return $this->data_ult_mov;
+        return $this->data_ultimo_movimento;
     }
-    public function setDataUltMov(DateTime $data_ult_mov)
+    public function setDataUltimoMovimento(DateTime $data_ultimo_movimento)
     {
-        $this->data_ult_mov = $data_ult_mov;
+        $this->data_ultimo_movimento = $data_ultimo_movimento;
     }
 
     public function Inserir():bool
     {
-        $sql = "INSERT INTO estoque (produto_id, quantidade, data_ult_mov) values (:produto_id, :quantidade, :data_ult_mov)";
+        $sql = "INSERT INTO estoques (id_produto, quantidade, data_ultimo_movimento) values (:id_produto, :quantidade, :data_ultimo_movimento)";
 
         $cmd = $this->pdo->prepare($sql);
 
-        $cmd->bindValue(":produto_id", $this->produto_id);
+        $cmd->bindValue(":id_produto", $this->id_produto);
         $cmd->bindValue(":quantidade", $this->quantidade);
-        $cmd->bindValue(":data_ult_mov", $this->data_ult_mov);  
+        $cmd->bindValue( ":data_ultimo_movimento", $this->data_ultimo_movimento->format('Y-m-d H:i:s') );
 
         if($cmd->execute())
         {
@@ -67,15 +67,14 @@ class Estoque
     public function Atualizar():bool
     {
         if(!$this->id) return false;
-        $sql = "UPDATE estoques set produto_id = :produto_id, quantidade = :quantidade, data_ult_mov = :data_ult_mov WHERE id = :id";
+        $sql = "UPDATE estoques set id_produto = :id_produto, quantidade = :quantidade, data_ultimo_movimento = :data_ultimo_movimento WHERE id = :id";
 
         $cmd = $this->pdo->prepare($sql);
 
         $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);
-        $cmd->bindValue(":produto_id", $this->produto_id);
+        $cmd->bindValue(":id_produto", $this->id_produto);
         $cmd->bindValue(":quantidade", $this->quantidade);
-        $cmd->bindValue(":data_ult_mov", $this->data_ult_mov);  
-           
+        $cmd->bindValue(":data_ultimo_movimento",$this->data_ultimo_movimento->format('Y-m-d H:i:s'));           
         return $cmd->execute();
     }
 
@@ -97,10 +96,9 @@ class Estoque
             $dados = $cmd->fetch(PDO::FETCH_ASSOC);
 
             $this->id = (int)$dados['id'];
-            $this->setProdutoId($dados['produto_id']);
+            $this->setIdProduto($dados['id_produto']);
             $this->setQuantidade($dados['quantidade']);
-            $this->setDataUltMov($dados['data_ult_mov']);
-            
+            $this->setDataUltimoMovimento(new DateTime($dados['data_ultimo_movimento']));            
             return true;
         }
         return false;

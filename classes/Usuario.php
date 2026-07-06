@@ -82,7 +82,7 @@ class Usuario
         }
         else
         {
-            return $dados = [];    
+            return [];    
         }
     }
 
@@ -126,7 +126,7 @@ class Usuario
             $this->setEmail($dados['email']);
             $this->setSenha($dados['senha']);
             $this->setNivelId($dados['nivel_id']);
-            $this->setAtivo(ord($dados['ativo']) == 1 ? true : false);
+            $this->setAtivo((bool)$dados['ativo']);
 
             return true;
         }
@@ -150,7 +150,7 @@ class Usuario
             $this->setEmail($dados['email']);
             $this->setSenha($dados['senha']);
             $this->setNivelId($dados['nivel_id']);
-            $this->setAtivo(ord($dados['ativo']) == 1 ? true : false);
+            $this->setAtivo((bool)$dados['ativo']);
 
             return true;
         }
@@ -172,14 +172,14 @@ class Usuario
         return $cmd->execute();
     }
 
-    public function AtualizarSenha(string $senhaHash):bool
+    public function AtualizarSenha(string $senha):bool
     {
         if(!$this->id) return false;
 
         $sql = "UPDATE usuarios SET senha = :senha WHERE id = :id";
         $cmd = $this->pdo->prepare($sql);
 
-        $cmd->bindValue(":senha", password_hash($senhaHash, PASSWORD_DEFAULT));
+        $cmd->bindValue(":senha", password_hash($senha, PASSWORD_DEFAULT));
         $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);
 
         return $cmd->execute();

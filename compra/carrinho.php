@@ -18,9 +18,177 @@ include "../includes/menu.php";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
 
+    <style>
+        /* Painel Principal de Pedidos */
+        .orders-panel {
+            background-color: #111;
+            border: 1px solid var(--primary-gold);
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .orders-panel h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .orders-panel p {
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Itens da Lista de Pedidos */
+        .order-item {
+            border: 1px solid #ffd90050;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            transition: 0.2s;
+        }
+
+        .order-item:hover {
+            border-color: #818181ff;
+        }
+
+        .order-info h6 {
+            margin-bottom: 3px;
+            font-size: 0.95rem;
+            color: var(--light-gray);
+        }
+
+        .order-info span {
+            font-size: 0.8rem;
+            color: var(--light-gray);
+        }
+
+        .order-details-link {
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .order-details-link:hover {
+            text-decoration: underline;
+        }
+
+        .order-price {
+            font-weight: bold;
+            font-size: 0.95rem;
+            color: var(--light-gray);
+        }
+
+        .order-payment {
+            font-size: 0.8rem;
+            color: var(--light-gray);
+        }
+
+        /* Status Badges */
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .status-entregue {
+            background-color: rgba(25, 135, 84, 0.5);
+            color: #ffffffff;
+        }
+
+        .status-andamento {
+            background-color: rgba(13, 110, 253, 0.5);
+            color: #ffffffff;
+        }
+
+        .status-novo {
+            background-color: rgba(255, 217, 0, 0.66);
+            color: #ffffffff;
+        }
+
+        .status-cancelado {
+            background-color: rgba(247, 2, 2, 0.7);
+            color: #ffffffff;
+        }
+
+        .arrow-icon {
+            color: var(--primary-gold);
+            font-size: 0.9rem;
+        }
+
+        /* Paginação */
+        .pagination-btn {
+            border: 1px solid var(--primary-gold);
+            color: var(--accent-gold);
+            background: transparent;
+            font-size: 0.85rem;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .pagination-btn:hover {
+            background-color: var(--accent-gold);
+            color: #000;
+        }
+
+        .page-number {
+            color: var(--light-gray);
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 0.9rem;
+        }
+
+        .page-number.active {
+            background-color: var(--accent-gold);
+            color: #000;
+            padding: 3px 9px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .se {
+            color: #ffca28;
+        }
+    </style>
+
 </head>
 <body>
 
+    <h2 style="color: #ffca28;">seu carrinho</h2>
+    <p>revise os os itens antes de continuar.</p>
+
+        <div class="col-lg-12 col-md-8">
+            <div class="orders-panel">
+
+            <p>(img de camisa) camiseta graffiti oversized R$159,90 (lixeira)</p>
+            <p>cor: preto (quantidade de peça ex: (-1+))</p>
+            <p>tamanho: p</p>
+
+            <p>(img de camisa) camisa preta R$189,90 (lixeira)</p>
+            <p>cor: preto (quantidade de peça ex: (-1+))</p>
+            <p>tamanho: m</p>
+                        
+            </div>
+        </div>
+
+    <h2 style="color: #ffca28;">resumo de pedido</h2>
+
+        <div class="col-lg-12 col-md-8">
+            <div class="orders-panel">
+
+            <p>subtotal (2 items)  R$349,80</p>
+            <p>desconto - R$0,00</p>
+            <p>frete calcular</p>
+            <p>_______</p>
+            <p>total R$349,80</p>
+            <a class="btn" type="button" style="background:var(--accent-gold); color:black" href="#"><i class="bi bi-bag"></i> comprar agora</a>
+
+            <p>ambiente seguro. seus dados estão protegido</p>
+                        
+            </div>
+        </div>
 
     <!-- area do carrinho (offcanva) -->
     <?php include "../includes/offcar.php" ?>

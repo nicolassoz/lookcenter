@@ -3,7 +3,7 @@ include_once "config/conexao.php";
 
 class Endereco
 {
-    private int $id;
+    private int $id_endereco;
     private int $cliente_id;
     private string $cep;
     private string $logradouro;
@@ -21,7 +21,7 @@ class Endereco
 
     public function getId()
     {
-        return $this->id;
+        return $this->id_endereco;
     }
 
     public function getClienteId()
@@ -121,7 +121,7 @@ class Endereco
 
         if($cmd->execute())
         {
-            $this->id = (int)$this->pdo->lastInsertId();
+            $this->id_endereco = (int)$this->pdo->lastInsertId();
             return true;
         }
         return false;
@@ -135,15 +135,16 @@ class Endereco
 
     public function BuscarPorId(int $id):bool
     {
-        $sql = "SELECT * FROM enderecos WHERE id = :id";
+        $sql = "SELECT * FROM enderecos WHERE id_endereco = :id_endereco";
         $cmd = obterPdo()->prepare($sql);
-        $cmd->bindValue(":id",$id);
+        $cmd->bindValue(":id_endereco", $id, PDO::PARAM_INT);
+        
         $cmd->execute();
         if($cmd->rowCount() > 0)
         {
             $dados = $cmd->fetch(PDO::FETCH_ASSOC);
            
-            $this->id = (int)$dados['id'];
+            $this->id_endereco = (int)$dados['id_endereco'];
             $this->setClienteId((int)$dados['cliente_id']);
             $this->setCep($dados['cep']);
             $this->setLogradouro($dados['logradouro']);
@@ -159,14 +160,15 @@ class Endereco
 
     public function Atualizar():bool
     {
-        if(!$this->id) return false;
+        if(!$this->id_endereco) return false;
         $sql = "UPDATE enderecos
                 set cliente_id = :cliente_id, cep = :cep, logradouro = :logradouro, 
                 numero = :numero, complemento = :complemento, bairro = :bairro, cidade = :cidade, uf = :uf
-                WHERE id = :id";
+                WHERE id_endereco = :id_endereco";
 
         $cmd = $this->pdo->prepare($sql);
-        $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);        $cmd->bindValue(":cliente_id", $this->cliente_id, PDO::PARAM_INT);   
+        $cmd->bindValue(":id_endereco", $this->id_endereco, PDO::PARAM_INT);        
+        $cmd->bindValue(":cliente_id", $this->cliente_id, PDO::PARAM_INT);   
         $cmd->bindValue(":cep", $this->cep);   
         $cmd->bindValue(":logradouro", $this->logradouro);
         $cmd->bindValue(":numero", $this->numero);
@@ -180,11 +182,11 @@ class Endereco
 
     public function Excluir():bool
     {
-        if(!$this->id) return false;
+        if(!$this->id_endereco) return false;
 
-        $sql = "DELETE FROM enderecos WHERE id = :id";
+        $sql = "DELETE FROM enderecos WHERE id_endereco = :id_endereco";
         $cmd = $this->pdo->prepare($sql);
-        $cmd->bindValue(":id", $this->id, PDO::PARAM_INT);
+        $cmd->bindValue(":id_endereco", $this->id_endereco, PDO::PARAM_INT);
 
         return $cmd->execute();
     }

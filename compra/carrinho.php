@@ -382,7 +382,7 @@ include "../includes/menu.php";
                     </div>
             </div>
             <div class="col-md-6 mt-2">
-                <a class="btn" type="button" style="background:trasparet; color:var(--accent-gold); border:1px solid; color: #ffca28;" href="#"><i class="bi bi-arrow-left"></i> continuar comprando</a>
+                <a class="btn" type="button" style="background:trasparet; color:var(--accent-gold); border:1px solid; color: #ffca28;" href="../colecao.php"><i class="bi bi-arrow-left"></i> continuar comprando</a>
             </div>
 
             <div class="col-md-2 mt-2">

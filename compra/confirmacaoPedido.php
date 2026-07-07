@@ -288,53 +288,34 @@ include "../includes/menu.php";
 
         <div class="row">
             <div class="col-md-8">
-                <h2 style="color: #ffca28;">seu carrinho</h2>
-                <p style="color: white;">revise os os itens antes de continuar.</p>
 
                 <div class="col-lg-12">
                     <div class="orders-panel">
                         <div class="row">
-                            <div class="col-md-2">
-                                <img src="../roupas/camisas/Camisa_Jersey_Dragão_frente.jpg" class="img-fluid" alt="Camisa">
+                            <i class="bi bi-check-circle text-center" style="color: green; font-size:50px;"></i>
+                            <h2 class="mt-2 text-center" style="color: #d4a017; font-size:30px;">Pedido confirmado!</h2>
+                            <p class="text-center">seu pedido foi realizado com sucesso.</p>
+                            <p class="text-center">Enviamos os detalhes para o e-mail(aparecer o email do usuario ex:joao@gmail.com)</p>
+                            <div class="orders-panel text-start mb-3" style="border: #5555558e solid;">
+                                <div class="row">
+                                    <i class="bi bi-file-text col-md-1" style="color:#d4a017; font-size:30px;"></i>
+                                    <p class="col-md-5">Número do pedido <br> LC25052578</p>
+                                    <p class="col-md-6 text-end border-start">Data do pedido <br> 25/05/2026 - 21:45</p>
                                     
+                                </div>
                             </div>
-                                
-                            <div class=" col-md-9">
-                                <div class="row">
-                                    <p class="col-md-6" style="font-size: 18px;">Camisa polo jersey Dragon</p>
-                                    <p class="col-md-5 text-end" style="color: #ffca28; font-size: 16px;">R$ 159,90 </p>
-                                    <a class="btn btn-outline-danger col-md-1 justify-content-center" type="button" href="#"><i class="bi bi-trash"></i></a>
-                                
-                                    <p>cor: Branco </p>
-                                    <p class="col-md-9">tamanho: P</p>
-                                    <div class="quantidade">
-                                        <button type="button" onclick="diminuir()">-</button>
-                                        <input type="text" id="qtd" value="1" readonly>
-                                        <button type="button" onclick="aumentar()">+</button>
+                            <i class="bi bi-truck col-md-1 ms-2" style="color: #ffca28; font-size:40px;"></i>
+                            <div class="col-md-9">
+                                <div class="row">        
+                                    <p class="" style="color: #ffca28;">O que acontece agora?</p>
+                                    <p>Seu pedido está sendo peparado e em breve será enviado.</p>
+                                    <p>Você receberá atualizações por e-mail e poderá acompanha o status do seu pedido em <a style="color: #ffca28;" href="../perfil.php">"Meus Pedidos"</a>.</p>
+                                    <div class="mt-2">
+                                        <a class="btn col-md-5" type="button" style="background:var(--accent-gold); color:black" href="../arPedidos.php">acompanhar pedido<i class="bi bi-arrow-right"></i></a>
+                                        <a class="btn col-md-5" type="button" style="background:trasparet; color:var(--accent-gold); border:1px solid; color: #ffca28;" href="../index.php"> voltar para a loja</a>
                                     </div>
                                 </div>
                             </div>
-
-                            <span class="border-bottom"></span>
-                            <br>
-
-                            <div class="col-md-2 mt-3">
-                                <img src="../roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" class="img-fluid" alt="Camisa">
-                            </div>
-                            <div class=" col-md-9 mt-3">
-                                <div class="row">
-                                    <p class="col-md-6" style="font-size: 18px;">CAMISA POLO JERSEY</p>
-                                    <p class="col-md-5 text-end" style="color: #ffca28; font-size: 16px;">R$ 159,90 </p>
-                                    <a class="btn btn-outline-danger col-md-1 justify-content-center" type="button" href="#"><i class="bi bi-trash"></i></a>
-                                    <p>cor: Branco</p>
-                                    <p class="col-md-9">tamanho: m</p>
-                                    <div class="quantidade">
-                                        <button type="button" onclick="dimi()">-</button>
-                                        <input type="text" id="qtd1" value="1" readonly>
-                                        <button type="button" onclick="aume()">+</button>
-                                    </div>
-                                </div>
-                            </div> 
                         </div>               
                     </div>
                 </div>
@@ -345,6 +326,47 @@ include "../includes/menu.php";
 
                     <div class="col-lg-12 col-md-8 mt-4">
                         <div class="orders-panel">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="../roupas/camisas/Camisa_Jersey_Dragão_frente.jpg" class="img-fluid" alt="Camisa">
+                                        
+                                </div>
+                                    
+                                <div class=" col-md-8">
+                                    <div class="row">
+                                        <p class="col-md-7" style="font-size: 14px;">Camisa polo jersey Dragon</p>
+                                        <p class="col-md-5 text-end" style="color: #ffca28; font-size: 16px;">R$ 159,90 </p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>cor: Branco </p>
+                                            <p>1x</p>
+                                        </div>    
+                                        <p class="col-md-9">tamanho: P</p>
+                                        
+                                    </div>
+                                </div>
+
+                                <br>
+
+                                <div class="col-md-4 mt-3">
+                                    <img src="../roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" class="img-fluid" alt="Camisa">
+                                </div>
+                                <div class=" col-md-8 mt-3">
+                                    <div class="row">
+                                        <p class="col-md-7" style="font-size: 14px;">CAMISA POLO JERSEY</p>
+                                        <p class="col-md-5 text-end" style="color: #ffca28; font-size: 16px;">R$ 159,90 </p>
+                                        <div class="d-flex justify-content-between">
+                                            <p>cor: Branco </p>
+                                            <p>1x</p>
+                                        </div>
+                                        <p class="col-md-9">tamanho: m</p>
+                                        
+                                    </div>
+                                </div> 
+                            </div>               
+                            
+                            <span class="border-bottom"></span>
+                                <br>
+                        
                             <div class="row">
                                 <div class="col-8">
                                     <p>subtotal (2 itens)</p>
@@ -379,21 +401,6 @@ include "../includes/menu.php";
                             </div>        
                         </div>
                     </div>
-            </div>
-            <div class="col-md-6 mt-2">
-                <a class="btn" type="button" style="background:trasparet; color:var(--accent-gold); border:1px solid; color: #ffca28;" href="#"><i class="bi bi-arrow-left"></i> continuar comprando</a>
-            </div>
-
-            <div class="col-md-2 mt-2">
-                <a class="btn btn-outline-danger" type="button" href="#"><i class="bi bi-trash"></i> limpar carrinho</a>
-            </div>
-            
-            <h5 class="mt-5" style="color: #ffca28;">tem um cupom de desconto?</h2>
-            <div class="col-4">
-                <div class="input-group col-3">
-                    <input class="form-control" id="senhaLogin" placeholder="digite seu cupom">
-                    <a class="btn" type="button" style="background:trasparet; color:var(--accent-gold); border:1px solid; color: #ffca28;" href="#">aplicar</a>
-                </div>
             </div>
         </div>
 </div>

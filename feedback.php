@@ -58,7 +58,7 @@ include "includes/menu.php";
                 <div class="card-body">
                     <p></p>
                     <p style="color: var(--light-gray)">Nome</p>
-                    <input type="password" class="form-control" id="senhaLogin" placeholder="Ex: joão souza">
+                    <input class="form-control" id="senhaLogin" placeholder="Ex: joão souza">
                     <p  class="mt-2" style="color: var(--light-gray)">Email</p>
                     <input type="email" class="form-control" id="emailLogin" placeholder="Ex: email.123@gmail.com">
 

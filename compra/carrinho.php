@@ -305,13 +305,13 @@ include "../includes/menu.php";
                                     <p class="col-md-5 text-end" style="color: #ffca28; font-size: 16px;">R$ 159,90 </p>
                                     <a class="btn btn-outline-danger col-md-1 justify-content-center" type="button" href="#"><i class="bi bi-trash"></i></a>
                                 
-                                    <p class="col-md-9">cor: Branco </p>
+                                    <p>cor: Branco </p>
+                                    <p class="col-md-9">tamanho: P</p>
                                     <div class="quantidade">
                                         <button type="button" onclick="diminuir()">-</button>
                                         <input type="text" id="qtd" value="1" readonly>
                                         <button type="button" onclick="aumentar()">+</button>
                                     </div>
-                                    <p>tamanho: P</p>
                                 </div>
                             </div>
 
@@ -326,13 +326,13 @@ include "../includes/menu.php";
                                     <p class="col-md-6" style="font-size: 18px;">CAMISA POLO JERSEY</p>
                                     <p class="col-md-5 text-end" style="color: #ffca28; font-size: 16px;">R$ 159,90 </p>
                                     <a class="btn btn-outline-danger col-md-1 justify-content-center" type="button" href="#"><i class="bi bi-trash"></i></a>
-                                    <p class="col-md-9">cor: Branco</p>
+                                    <p>cor: Branco</p>
+                                    <p class="col-md-9">tamanho: m</p>
                                     <div class="quantidade">
-                                        <button type="button" onclick="diminuir()">-</button>
-                                        <input type="text" id="qtd" value="1" readonly>
-                                        <button type="button" onclick="aumentar()">+</button>
+                                        <button type="button" onclick="dimi()">-</button>
+                                        <input type="text" id="qtd1" value="1" readonly>
+                                        <button type="button" onclick="aume()">+</button>
                                     </div>
-                                    <p>tamanho: m</p>
                                 </div>
                             </div> 
                         </div>               
@@ -374,7 +374,7 @@ include "../includes/menu.php";
                                 <div class="col-4 text-end">
                                     <p class="mt-3" style="color: #ffca28; font-size:20px;"> R$ 349,80</p>
                                 </div>
-                                <a class="btn" type="button" style="background:var(--accent-gold); color:black" href="#"> continuar para endereço <i class="bi bi-arrow-right"></i></a>
+                                <a class="btn" type="button" style="background:var(--accent-gold); color:black" href="enderecoCompra.php"> continuar para endereço <i class="bi bi-arrow-right"></i></a>
 
                                 <p class="mt-3"><i class="bi bi-lock" style="color: #ffca28;"></i> ambiente seguro. seus dados estão protegido</p>
                             </div>        
@@ -415,6 +415,18 @@ function aumentar() {
 function diminuir() {
     if (parseInt(qtd.value) > 1) {
         qtd.value = parseInt(qtd.value) - 1;
+    }
+}
+
+const qtd1 = document.getElementById("qtd1");
+
+function aume() {
+    qtd1.value = parseInt(qtd1.value) + 1;
+}
+
+function dimi() {
+    if (parseInt(qtd1.value) > 1) {
+        qtd1.value = parseInt(qtd1.value) - 1;
     }
 }
 </script>

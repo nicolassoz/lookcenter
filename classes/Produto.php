@@ -17,9 +17,10 @@ class Produto
     public function __construct()
     {
        $this->pdo = obterPdo();
+       $this->data_cad = new DateTime();
     }
 
-    public function getId_Produto()
+    public function getIdProduto()
     {
         return $this->id_produto;
     }
@@ -98,8 +99,8 @@ class Produto
 
     public function Inserir():bool
     {
-        $sql = "INSERT INTO produtos (nome, descricao, preco, categoria_id, estoque_minimo, desconto, descontinuado)
-         values (:nome, :descricao, :preco, :categoria_id, :estoque_minimo, :desconto, :descontinuado)";
+        $sql = "INSERT INTO produtos (nome, descricao, preco, categoria_id, estoque_minimo, desconto, data_cad, descontinuado)
+         values (:nome, :descricao, :preco, :categoria_id, :estoque_minimo, :desconto, :data_cad, :descontinuado)";
 
         $cmd = $this->pdo->prepare($sql);
         $cmd->bindValue(":nome", $this->nome);
@@ -108,8 +109,9 @@ class Produto
         $cmd->bindValue(":categoria_id", $this->categoria_id);
         $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
         $cmd->bindValue(":desconto", $this->desconto);
-        $cmd->bindValue(":descontinuado", $this->descontinuado, PDO::PARAM_BOOL);
-
+        $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d'));
+        $cmd->bindValue(":descontinuado",$this->descontinuado ? 1 : 0,
+        PDO::PARAM_INT);
         if($cmd->execute())
         {
             $this->id_produto = (int)$this->pdo->lastInsertId();
@@ -148,11 +150,11 @@ class Produto
         return false;
     }
 
-    public function BuscarPorId(int $id_produto):bool
+    public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM produtos WHERE id_produto = :id_produto";
         $cmd = obterPdo()->prepare($sql);
-        $cmd->bindValue(":id_produto",$id_produto);
+        $cmd->bindValue(":id_produto", $id, PDO::PARAM_INT);
         $cmd->execute();
         $dados = $cmd->fetch(PDO::FETCH_ASSOC);
 
@@ -185,8 +187,9 @@ class Produto
         $cmd->bindValue(":preco", $this->preco);
         $cmd->bindValue(":categoria_id", $this->categoria_id);
         $cmd->bindValue(":estoque_minimo", $this->estoque_minimo);
-        $cmd->bindValue(":data_cad", $this->data_cad);
-        $cmd->bindValue(":descontinuado", $this->descontinuado, PDO::PARAM_BOOL);  
+        $cmd->bindValue(":desconto", $this->desconto);
+        $cmd->bindValue(":descontinuado",$this->descontinuado ? 1 : 0,
+        PDO::PARAM_INT);  
         
         return $cmd->execute();
     }

@@ -100,13 +100,13 @@ class Usuario
 
 
     /*
-    * Realiza a autenticação de um usuário.
-    *
-    * Busca um usuário pelo e-mail informado e compara a senha fornecida
-    * com a senha armazenada no banco de dados.
-    *
-    * Retorna os dados do usuário caso a autenticação seja válida ou um
-    * array vazio.
+     * Realiza a autenticação de um usuário.
+     *
+     * Busca um usuário pelo e-mail informado e compara a senha fornecida
+     * com a senha armazenada no banco de dados.
+     *
+     * Retorna os dados do usuário caso a autenticação seja válida ou um
+     * array vazio.
     */
     public static function EfetuarLogin(string $email, string $senha):array
     {
@@ -132,15 +132,15 @@ class Usuario
 
 
     /*
-    * Insere um novo usuário no banco de dados.
-    *
-    * O método grava os dados do usuário na tabela `usuarios`.
+     * Insere um novo usuário no banco de dados.
+     *
+     * O método grava os dados do usuário na tabela `usuarios`.
 
-    * Antes de armazenar a senha, ela é criptografada utilizando
-    * a função password_hash() com o algoritmo PASSWORD_DEFAULT.
+     * Antes de armazenar a senha, ela é criptografada utilizando
+     * a função password_hash() com o algoritmo PASSWORD_DEFAULT.
 
-    * Após a inserção, o atributo `$id` recebe o identificador
-    * gerado automaticamente pelo banco de dados.
+     * Após a inserção, o atributo `$id` recebe o identificador
+     * gerado automaticamente pelo banco de dados.
     */
     public function Inserir():bool
     {
@@ -161,10 +161,10 @@ class Usuario
     
 
     /*
-    * Lista todos os usuários cadastrados.
-    *
-    * Os registros são retornados em ordem decrescente de ID,
-    * exibindo primeiro os usuários mais recentemente cadastrados.
+     * Lista todos os usuários cadastrados.
+     *
+     * Os registros são retornados em ordem decrescente de ID,
+     * exibindo primeiro os usuários mais recentemente cadastrados.
     */
     public static function Listar():array
     {
@@ -174,10 +174,10 @@ class Usuario
 
 
     /*
-    * Busca um usuário pelo endereço de e-mail.
-    *
-    * Caso o usuário seja encontrado, os atributos do objeto são
-    * preenchidos com os dados retornados pelo banco.
+     * Busca um usuário pelo endereço de e-mail.
+     *
+     * Caso o usuário seja encontrado, os atributos do objeto são
+     * preenchidos com os dados retornados pelo banco.
     */
     public function BuscarPorEmail(string $email):bool
     {
@@ -205,11 +205,11 @@ class Usuario
 
 
     /*
-    * Busca um usuário pelo seu ID.
-    *
-    * Caso o registro seja encontrado, os atributos do objeto
-    * são preenchidos com as informações obtidas no banco.
-    *
+     * Busca um usuário pelo seu ID.
+     *
+     * Caso o registro seja encontrado, os atributos do objeto
+     * são preenchidos com as informações obtidas no banco.
+     *
     */
     public function BuscarPorId(int $id):bool
     {
@@ -237,10 +237,10 @@ class Usuario
 
 
     /*
-    * Atualiza os dados de um usuário já cadastrado.
-    *
-    * O método altera apenas o nome, e-mail, nível de acesso e status de ativação do usuário. 
-    * A senha não é alterada por este método.
+     * Atualiza os dados de um usuário já cadastrado.
+     *
+     * O método altera apenas o nome, e-mail, nível de acesso e status de ativação do usuário. 
+     * A senha não é alterada por este método.
     */
     public function Atualizar():bool
     {
@@ -259,10 +259,10 @@ class Usuario
 
 
     /*
-    * Atualiza a senha de um usuário.
-    *
-    * A nova senha é criptografada utilizando password_hash()
-    * antes de ser armazenada no banco de dados.
+     * Atualiza a senha de um usuário.
+     *
+     * A nova senha é criptografada utilizando password_hash()
+     * antes de ser armazenada no banco de dados.
     */
     public function AtualizarSenha(string $senha):bool
     {
@@ -278,11 +278,11 @@ class Usuario
     }
 
 
-    /**
-    * Exclui um usuário do banco de dados.
-    *
-    * A exclusão é realizada utilizando o ID armazenado
-    * no objeto.
+    /*
+     * Exclui um usuário do banco de dados.
+     *
+     * A exclusão é realizada utilizando o ID armazenado
+     * no objeto.
     */
     public function Excluir():bool
     {

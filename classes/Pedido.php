@@ -46,49 +46,62 @@ class Pedido
         return $this->id;
     }
 
-
     //Retorna o identificador do cliente
     public function getClienteId()
     {
         return $this->cliente_id;
     }
 
-    //
+    //Define o identificador do cliente
     public function setClienteId(int $cliente_id)
     {
         $this->cliente_id = $cliente_id;
     }
 
-    //
+    //Retorna a data do pedido
     public function getDataPedido()
     {
         return $this->data_pedido;
     }
 
-    //
+    //Define a data do pedido
     public function setDataPedido(DateTime $data_pedido)
     {
         $this->data_pedido = $data_pedido;
     }
 
+    //Retorna o status atual do pedido
     public function getStatus()
     {
         return $this->status;
     }
+
+    //Define o status do pedido
     public function setStatus(string $status)
     {
         $this->status = $status;
     }
 
+    //Retorna o desconto aplicado ao pedido
     public function getDesconto()
     {
         return $this->desconto;
     }
+
+    //Define o desconto do pedido
     public function setDesconto(?float $desconto)
     {
         $this->desconto = $desconto;
     }
 
+
+    /*
+     * Insere um novo pedido no banco de dados.
+     *
+     * Após a inserção, o ID gerado é armazenado no objeto.
+     *
+     * Retorna true em caso de sucesso ou false em caso de falha.
+     */
     public function Inserir():bool
     {
         $sql = "INSERT INTO pedidos (usuario_id, cliente_id, status, desconto)
@@ -106,12 +119,27 @@ class Pedido
         return false;
     }    
 
+
+    /*
+     * Lista todos os pedidos cadastrados.
+     *
+     * Os registros são retornados em ordem decrescente de ID.
+     *
+     */
     public static function Listar():array
     {
         $cmd = obterPdo()->query("select * from pedidos order by id desc");
         return $cmd->fetchAll(PDO::FETCH_ASSOC);
     }
 
+
+    /*
+     * Busca um pedido pelo seu identificador.
+     *
+     * Caso encontrado, os dados são carregados no objeto.
+     *
+     * Retorna true se encontrado ou false caso contrário.
+     */
     public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM pedidos WHERE id = :id";
@@ -132,6 +160,14 @@ class Pedido
         return false;
     }
 
+
+    /*
+     * Atualiza as informações do pedido.
+     *
+     * Apenas o status e o desconto podem ser alterados.
+     *
+     * Retorna true em caso de sucesso ou false caso o pedido não possua ID ou ocorra falha na atualização.
+     */
     public function Atualizar():bool
     {
         if(!$this->id) return false;
@@ -144,6 +180,12 @@ class Pedido
         return $cmd->execute();
     }
 
+
+    /*
+     * Exclui o pedido do banco de dados.
+     *
+     * Retorna true em caso de sucesso ou false caso o pedido não possua ID ou ocorra falha na exclusão.
+     */
     public function Excluir():bool
     {
         if(!$this->id) return false;

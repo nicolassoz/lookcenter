@@ -3,10 +3,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include_once "config/conexao.php";
-include_once "classes/Produto.php";
+include_once "classes/Pedido.php";
 
-// $lista = Produto::Listar();
+$lista = Pedido::Listar();
 
-// echo "<pre>";
-// print_r($lista);
-// echo "</pre>";
+echo "<pre>";
+print_r($lista);
+echo "</pre>";

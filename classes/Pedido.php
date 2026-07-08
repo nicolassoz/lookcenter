@@ -7,9 +7,6 @@ class Pedido
     //Identificador único do pedido
     private int $id;
 
-    //Identificador do usuário responsável pelo pedido
-    private int $usuario_id;
-
     //Identificador do cliente ao qual o pedido pertence
     private int $cliente_id;
 
@@ -32,39 +29,43 @@ class Pedido
     private PDO $pdo;
 
 
-
+    /**
+     * Construtor da classe.
+     *
+     * Inicializa a conexão com o banco de dados que será utilizada
+     * pelos métodos de manipulação dos pedidos.
+     */
     public function __construct()
     {
        $this->pdo = obterPdo();
     }
     
+    //Retorna o identificador do usuário
     public function getId()
     {
         return $this->id;
     }
 
-    public function getUsuarioId()
-    {
-        return $this->usuario_id;
-    }
-    public function setUsuarioId(int $usuario_id)
-    {
-        $this->usuario_id = $usuario_id;
-    }
 
+    //Retorna o identificador do cliente
     public function getClienteId()
     {
         return $this->cliente_id;
     }
+
+    //
     public function setClienteId(int $cliente_id)
     {
         $this->cliente_id = $cliente_id;
     }
 
+    //
     public function getDataPedido()
     {
         return $this->data_pedido;
     }
+
+    //
     public function setDataPedido(DateTime $data_pedido)
     {
         $this->data_pedido = $data_pedido;
@@ -94,7 +95,6 @@ class Pedido
         values (:usuario_id, :cliente_id, :status, :desconto)";
 
         $cmd = $this->pdo->prepare($sql);
-        $cmd->bindValue(":usuario_id", $this->usuario_id);
         $cmd->bindValue(":cliente_id", $this->cliente_id);
         $cmd->bindValue(":status", $this->status);
         $cmd->bindValue(":desconto", $this->desconto);
@@ -123,9 +123,8 @@ class Pedido
             $dados = $cmd->fetch(PDO::FETCH_ASSOC);
            
             $this->id = $dados['id'];
-            $this->setUsuarioId($dados['usuario_id']);
             $this->setClienteId($dados['cliente_id']);
-            $this->setDataPedido($dados['data_pedido']);
+            $this->setDataPedido(new DateTime($dados['data_pedido']));
             $this->setStatus($dados['status']);
             $this->setDesconto($dados['desconto']);
             return true;

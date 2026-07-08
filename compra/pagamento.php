@@ -301,74 +301,172 @@ include "../includes/menu.php";
                                 <a class="btn " type="button" style="background:trasparet; color:var(--accent-gold); border:1px solid; color: #ffca28;" href="carrinho.php"><i class="bi bi-pen"></i> editar endereço</a>
                             </div>
                                 
-                            <div class="col-md-9">
+                            <div class="col-md-12 mt-3">
                                 <div class="row">
                                     <div class="form-check">
-                                        <div class="order-item d-flex align-items-center justify-content-between"
+                                        <div class="order-item d-flex align-items-center"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#detalhesPedido1"
                                             role="button"
                                             aria-expanded="false">
                                             <!-- id pedido com dia e hora -->
 
-                                             <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                            <label class="form-check-label" for="radioDefault1"> 
-                                            </label>
+                                            <div class="m-2">
+                                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                                <label class="form-check-label" for="radioDefault1"></label>
+                                            </div>
                                             
                                             <div class="order-info">
-                                                <h6>Pedido #LC12345</h6>
-                                                <span>20/05/2024 às 14:32</span>
+                                                <h6>Cartão de Crédito</h6>
+                                                <span>Pague com seu cartão de crédito.</span>
                                             </div>
-                                            <div>
-                                                <!-- quantidade de peças -->
-                                                <span class="d-block" style="font-size: 0.9rem; color: var(--light-gray);">3 itens</span>
-                                                <span class="order-details-link">Ver detalhes</span>
-                                            </div>
-                                            <div>
-                                                <!-- valor e forma de pagamento -->
-                                                <div class="order-price">R$ 459,90</div>
-                                                <div class="order-payment">Pix</div>
-                                            </div>
-                                            <div>
-                                                <!-- status do pedido, os status são(novo, Em andamento, Entregue e cancelado) -->
-                                                <span class="status-badge status-entregue">Entregue</span>
-                                            </div>
-                                            <div>
-                                                <span class="arrow-icon"><i class="fa-solid fa-chevron-down"></i></span>
-                                            </div>
+                                            
                                         </div>
 
                                         <div class="collapse" id="detalhesPedido1">
                                             <!-- todas as peças do pedido -->
-                                            <div class="p-3 mx-2 mb-2" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
-                                                <h6 style="color: var(--accent-gold); font-size: 0.95rem;">Produtos deste pedido:</h6>
-                                                <ul class="list-unstyled mb-3" style="color: var(--light-gray);">
-                                                    <li><i class="fa-solid fa-circle font-xs me-2" style="font-size: 6px; vertical-align: middle;"></i> 1x Camiseta Over Void Preta - G (R$ 159,90)</li>
-                                                    <li><i class="fa-solid fa-circle font-xs me-2" style="font-size: 6px; vertical-align: middle;"></i> 1x Calça Cargo Street Preta - 42 (R$ 220,00)</li>
-                                                    <li><i class="fa-solid fa-circle font-xs me-2" style="font-size: 6px; vertical-align: middle;"></i> 1x Boné Strapback Classic - Único (R$ 80,00)</li>
-                                                </ul>
-                                                <div class="row pt-2" style="border-top: 1px solid #222;">
-                                                    <div class="col-md-6">
-                                                        <!-- endereço do cliente para entrega -->
-                                                        <span class="d-block se">Endereço de Entrega:</span>
-                                                        <span style="color: white;">Rua das Flores, 123 - Centro, São Paulo - SP</span>
-                                                    </div>
-                                                    <div class="col-md-6 text-md-end mt-2 mt-md-0">
-                                                        <!-- codigo para os correios -->
-                                                        <span class="d-block" style="color: white;">Código de Rastreio:</span>
-                                                        <a href="#" style="color: var(--accent-gold); text-decoration: none;"><i class="fa-solid fa-truck me-1"></i> BR123456789BR</a>
-                                                    </div>
+                                            <div class="p-3 mx-2 mb-2 row" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
+                                                <div class="col-md-12 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Numero do cartão</h6>
+                                                    <input type="text" class="form-control" id="numCart" placeholder="0000 0000 0000 0000">
                                                 </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Nome no cartão</h6>
+                                                    <input type="text" class="form-control" id="nomeCart" placeholder="João Silva">
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Validade</h6>
+                                                    <input type="text" class="form-control" id="valiCart" placeholder="MM/AA">
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">CVC</h6>
+                                                    <input type="text" class="form-control" id="cvc" placeholder="123">
+                                                </div>  
                                             </div>
                                         </div>
-
-                                        
                                     </div>
                                     
-                                    <div class="form-check" style="color:white;">
-                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                        <label class="form-check-label" for="radioDefault1">usar outro endereço</label>
+                                    <div class="form-check">
+                                        <div class="order-item d-flex align-items-center"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#detalhesPedido2"
+                                            role="button"
+                                            aria-expanded="false">
+                                            <!-- id pedido com dia e hora -->
+
+                                            <div class="m-2">
+                                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                                <label class="form-check-label" for="radioDefault1"></label>
+                                            </div>
+                                            
+                                            <div class="order-info">
+                                                <h6>Pix</h6>
+                                                <span>Pague a vista com pix e confirme seu pedido na hora.</span>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="collapse" id="detalhesPedido2">
+                                            <!-- todas as peças do pedido -->
+                                            <div class="p-3 mx-2 mb-2 row" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
+                                                <div class="col-md-12 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">1. escaneie o QR Code com o app do seu banco</h6>
+                                                    <p>abra o aplicativo do seu banco, escolha a opção pix e escaneie o código ao lado</p>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">2. ou copie o código Pix</h6>
+                                                    <input type="text" class="form-control" id="nomeCart" placeholder="codigo pix aleatorio">
+                                                </div>  
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="form-check">
+                                        <div class="order-item d-flex align-items-center"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#detalhesPedido3"
+                                            role="button"
+                                            aria-expanded="false">
+                                            <!-- id pedido com dia e hora -->
+
+                                            <div class="m-2">
+                                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                                <label class="form-check-label" for="radioDefault1"></label>
+                                            </div>
+                                            
+                                            <div class="order-info">
+                                                <h6>Boleto Báncario</h6>
+                                                <span>Pague a vista com boleto. O prazo de compensação pode levar até 3 dias úteis.</span>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="collapse" id="detalhesPedido3">
+                                            <!-- todas as peças do pedido -->
+                                            <div class="p-3 mx-2 mb-2 row" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
+                                                <div class="col-md-12 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Numero do cartão</h6>
+                                                    <input type="text" class="form-control" id="numCart" placeholder="0000 0000 0000 0000">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Nome no cartão</h6>
+                                                    <input type="text" class="form-control" id="nomeCart" placeholder="João Silva">
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Validade</h6>
+                                                    <input type="text" class="form-control" id="valiCart" placeholder="MM/AA">
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">CVC</h6>
+                                                    <input type="text" class="form-control" id="cvc" placeholder="123">
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <div class="order-item d-flex align-items-center"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#detalhesPedido4"
+                                            role="button"
+                                            aria-expanded="false">
+                                            <!-- id pedido com dia e hora -->
+
+                                            <div class="m-2">
+                                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                                <label class="form-check-label" for="radioDefault1"></label>
+                                            </div>
+                                            
+                                            <div class="order-info">
+                                                <h6>Carteira Digital</h6>
+                                                <span>Pague com sua carteira digital.</span>
+                                            </div>
+                                            
+                                        </div>
+
+                                        <div class="collapse" id="detalhesPedido4">
+                                            <!-- todas as peças do pedido -->
+                                            <div class="p-3 mx-2 mb-2 row" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
+                                                <div class="col-md-12 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Numero do cartão</h6>
+                                                    <input type="text" class="form-control" id="numCart" placeholder="0000 0000 0000 0000">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Nome no cartão</h6>
+                                                    <input type="text" class="form-control" id="nomeCart" placeholder="João Silva">
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Validade</h6>
+                                                    <input type="text" class="form-control" id="valiCart" placeholder="MM/AA">
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">CVC</h6>
+                                                    <input type="text" class="form-control" id="cvc" placeholder="123">
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>               

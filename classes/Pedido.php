@@ -1,15 +1,37 @@
 <?php
 include_once "config/conexao.php";
 
+//Classe responsável pelo gerenciamento dos pedidos do sistema
 class Pedido 
 {
+    //Identificador único do pedido
     private int $id;
+
+    //Identificador do usuário responsável pelo pedido
     private int $usuario_id;
+
+    //Identificador do cliente ao qual o pedido pertence
     private int $cliente_id;
+
+    //Data e hora em que o pedido foi realizado
     private DateTime $data_pedido;
+
+    /**
+    * Situação atual do pedido.
+    * Exemplo: Pendente, Em andamento, Concluído ou Cancelado.
+    */
     private string $status;
+
+    /*
+    * Valor do desconto aplicado ao pedido.
+    * Pode ser nulo caso não exista desconto.
+    */
     private ?float $desconto = null;
+
+    //Objeto responsável pela conexão com o banco de dados
     private PDO $pdo;
+
+
 
     public function __construct()
     {

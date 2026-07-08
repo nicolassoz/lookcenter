@@ -437,7 +437,7 @@ include "includes/menu.php";
         </form>
     </div>
         <!-- mandar para uma pagina onde o adm poderar gerenciar os pedidos -->
-    <div class="row mt-3">
+    <div class="row mt-3 d-flex justify-content-between">
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">
                 <div class="m-2">
@@ -447,17 +447,7 @@ include "includes/menu.php";
                 </div>
             </form>
         </div>
-        <!-- mandar para uma pagina onde o adm poderar ver os usuarios -->
-        <div class="col col-md-3 text-center" >
-            <form class="card" style="color: var(--light-gray);">
-                <div class="m-2">
-                    <h5><i class="bi bi-people" style="color:#ffca28;"> </i>clientes</h5>
-                    <p>veja e gerencie seus clientes.</p>
-                    <p></p>
-                    <button class="btn btn-outline-warning btn-sm m-2">gerenciar</button>
-                </div>
-            </form>
-        </div>
+        
         <!-- mandar para uma pagina onde o adm poderar gerenciar os cupons -->
         <div class="col col-md-3 text-center" >
             <form class="card" style="color: var(--light-gray);">

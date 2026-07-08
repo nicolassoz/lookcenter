@@ -443,7 +443,7 @@ include "includes/menu.php";
                 <div class="m-2">
                     <h5><i class="bi bi-box-seam" style="color:#ffca28;"> </i>produtos</h5>
                     <p>gerencie os produtos da sua loja.</p>
-                    <button class="btn btn-outline-warning btn-sm m-2">gerenciar</button>
+                    <a class="btn btn-outline-warning btn-sm m-2" href="painelAdm/gerPecas.php">gerenciar</a>
                 </div>
             </form>
         </div>
@@ -454,7 +454,7 @@ include "includes/menu.php";
                 <div class="m-2">
                     <h5><i class="bi bi-tag" style="color:#ffca28;"> </i>cupons</h5>
                     <p>crie e gerencie cupons de desconto.</p>
-                    <button class="btn btn-outline-warning btn-sm">gerenciar</button>
+                    <a class="btn btn-outline-warning btn-sm" href="painelAdm/gerCupons.php">gerenciar</a>
                 </div>
             </form>
         </div>
@@ -464,7 +464,7 @@ include "includes/menu.php";
                 <div class="m-2">
                     <h5><i class="bi bi-graph-up-arrow" style="color:#ffca28;"> </i>relatorios</h5>
                     <p>acompanhe o desempenho da sua loja.</p>
-                    <button class="btn btn-outline-warning btn-sm">acessar</button>
+                    <a class="btn btn-outline-warning btn-sm" href="painelAdm/relatorios.php">acessar</a>
                 </div>
             </form>
         </div>

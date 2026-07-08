@@ -411,32 +411,6 @@ include "../includes/menu.php";
 </body>
 </html>
 
-<script>
-    const qtd = document.getElementById("qtd");
-
-function aumentar() {
-    qtd.value = parseInt(qtd.value) + 1;
-}
-
-function diminuir() {
-    if (parseInt(qtd.value) > 1) {
-        qtd.value = parseInt(qtd.value) - 1;
-    }
-}
-
-const qtd1 = document.getElementById("qtd1");
-
-function aume() {
-    qtd1.value = parseInt(qtd1.value) + 1;
-}
-
-function dimi() {
-    if (parseInt(qtd1.value) > 1) {
-        qtd1.value = parseInt(qtd1.value) - 1;
-    }
-}
-</script>
-
 <!-- adicionar o footer, a parte de baixo do site -->
 <?php 
 include "../includes/footer.php";

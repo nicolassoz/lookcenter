@@ -6,7 +6,7 @@ class Pedido
     private int $id;
     private int $usuario_id;
     private int $cliente_id;
-    private string $data_pedido;
+    private DateTime $data_pedido;
     private string $status;
     private ?float $desconto = null;
     private PDO $pdo;
@@ -43,7 +43,7 @@ class Pedido
     {
         return $this->data_pedido;
     }
-    public function setDataPedido(string $data_pedido)
+    public function setDataPedido(DateTime $data_pedido)
     {
         $this->data_pedido = $data_pedido;
     }

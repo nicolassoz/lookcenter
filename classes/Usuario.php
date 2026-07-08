@@ -118,8 +118,8 @@ class Usuario
         // var_dump($dados);
         // exit;
 
-        //if($dados && password_verify($senha, $dados['senha']))
-        if($dados && $senha === $dados['senha'])
+        if($dados && password_verify($senha, $dados['senha']))
+        //if($dados && $senha === $dados['senha'])
         {
             return $dados;
             

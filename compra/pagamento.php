@@ -369,13 +369,23 @@ include "../includes/menu.php";
                                         <div class="collapse" id="detalhesPedido2">
                                             <!-- todas as peças do pedido -->
                                             <div class="p-3 mx-2 mb-2 row" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
-                                                <div class="col-md-12 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">1. escaneie o QR Code com o app do seu banco</h6>
+                                                <div class="col-md-9 mb-3">
+                                                    <h6 style="color: #ffca28; font-size: 0.95rem;">1. escaneie o QR Code com o app do seu banco</h6>
                                                     <p>abra o aplicativo do seu banco, escolha a opção pix e escaneie o código ao lado</p>
                                                 </div>
-                                                <div class="col-md-6 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">2. ou copie o código Pix</h6>
-                                                    <input type="text" class="form-control" id="nomeCart" placeholder="codigo pix aleatorio">
+                                                <div class="col-md-3">
+                                                    <img src="../assets/img/QRcode.png" class="img-fluid" alt="qrCode">
+                                                    <p class="mb-0 mt-2">Código espira em:</p>
+                                                    <div class="text-center">
+                                                        <span style="color: #ffca28; font-size:15px;">14:58</span>
+                                                    </div>
+                                                </div>
+                                                    <h6 style="color: #ffca28; font-size: 0.95rem;">2. ou copie o código Pix</h6>
+                                                <div class="col-md-9 mb-3">
+                                                    <input type="text" class="form-control" id="codPix" placeholder="codigo pix aleatorio">
+                                                </div>
+                                                <div class="col-md-3 mb-3">
+                                                    <a class="btn" type="button" style="background:trasparet; color:var(--accent-gold); border:1px solid; color: #ffca28;" href="#"><i class="bi bi-copy"></i> Copiar</a>
                                                 </div>  
                                             </div>
                                         </div>
@@ -404,22 +414,27 @@ include "../includes/menu.php";
                                         <div class="collapse" id="detalhesPedido3">
                                             <!-- todas as peças do pedido -->
                                             <div class="p-3 mx-2 mb-2 row" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
-                                                <div class="col-md-12 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">Numero do cartão</h6>
-                                                    <input type="text" class="form-control" id="numCart" placeholder="0000 0000 0000 0000">
+                                                <div class="col-md-1 mb-3">
+                                                    <i class="bi bi-file-earmark-text" style="color: #ffca28; font-size:50px;"></i>
                                                 </div>
-                                                <div class="col-md-6 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">Nome no cartão</h6>
-                                                    <input type="text" class="form-control" id="nomeCart" placeholder="João Silva">
+                                                <div class="col-md-8 mb-3">
+                                                    <h6 style="color: #ffca28; font-size: 0.95rem;">1. Gere o boleto</h6>
+                                                    <p>clique no botão ao lado para gerar o boleto bancário.</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a class="btn" type="button" style="background:var(--accent-gold); color:black" href="confirmacaoPedido.php"><i class="bi bi-download"></i> Gerar Boleto</a>
+                                                </div>
+                                                <div class="col-md-8 ms-5">
+                                                    <h6 style="color: #ffca28; font-size: 0.95rem;">2.  Pague até o vencimento</h6>
+                                                    <p>Você pode pagar em qualquer banco, lotérica, aplicativo de banco ou internet banking.</p>
                                                 </div>
                                                 <div class="col-md-3 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">Validade</h6>
-                                                    <input type="text" class="form-control" id="valiCart" placeholder="MM/AA">
+                                                    <p style="color: white; font-size: 0.95rem;">Vencimento</p>
+                                                    <p style="color: #ffca28;">28/05/2026</p>
+                                                    <p style="color: white; font-size: 0.95rem;">Valor do boleto</p>
+                                                    <p style="color: #ffca28;">R$ 349,80</p>
                                                 </div>
-                                                <div class="col-md-3 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">CVC</h6>
-                                                    <input type="text" class="form-control" id="cvc" placeholder="123">
-                                                </div>  
+                                                    <h6 style="color: #ffca28; font-size: 0.95rem;"><i class="bi bi-info-circle"></i> O prazo de compensação pode levar até 3 dias úteis.</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -448,21 +463,23 @@ include "../includes/menu.php";
                                             <!-- todas as peças do pedido -->
                                             <div class="p-3 mx-2 mb-2 row" style="background-color: #161616; border: 1px solid #222; border-top: none; border-radius: 0 0 8px 8px; font-size: 0.9rem;">
                                                 <div class="col-md-12 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">Numero do cartão</h6>
-                                                    <input type="text" class="form-control" id="numCart" placeholder="0000 0000 0000 0000">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Escolha sua carteira digital.</h6>
                                                 </div>
-                                                <div class="col-md-6 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">Nome no cartão</h6>
-                                                    <input type="text" class="form-control" id="nomeCart" placeholder="João Silva">
+                                                <div class="col-md-2 mb-3">
+                                                    <h6 style="color: white; font-size: 25px;"><i class="bi bi-apple"></i>Play</h6>
                                                 </div>
-                                                <div class="col-md-3 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">Validade</h6>
-                                                    <input type="text" class="form-control" id="valiCart" placeholder="MM/AA">
+                                                <div class="col-md-2 mb-3">
+                                                    <h6 style="color: white; font-size: 25px;"><i class="bi bi-google"></i>Play</h6>
                                                 </div>
-                                                <div class="col-md-3 mb-3">
-                                                    <h6 style="color: white; font-size: 0.95rem;">CVC</h6>
-                                                    <input type="text" class="form-control" id="cvc" placeholder="123">
-                                                </div>  
+                                                <div class="col-md-2 mb-3">
+                                                    <h6 style="color: white; font-size: 20px;">Mercado Pago</h6>
+                                                </div>
+                                                <div class="col-md-1 mb-3">
+                                                    <i class="bi bi-phone" style="color: white; font-size:50px;"></i>
+                                                </div>
+                                                <div class="col-md-5 mb-3">
+                                                    <h6 style="color: white; font-size: 0.95rem;">Você será redirecionado para sua carteira digital para finaliza o pagamento com segurança.</h6>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

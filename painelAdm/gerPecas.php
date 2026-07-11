@@ -157,35 +157,106 @@ include "../includes/menu.php";
 <body>
 <!-- titulo -->
 <div class="container mt-3">
+    <div class="d-flex justify-content-between">
+        <h2 style="color: #ffca28;">gerenciamento de produtos</h2>
+        <a href="../painelAdm.php" class="btn btn-outline-danger"><i class="fa-solid fa-chevron-left me-1"></i> voltar</a>
+    </div>    
     <div class="orders-panel">
-        
-        <input type="text" class="form-control" id="numCart" placeholder=" Buscar produto...">
+        <div class="row">
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="numCart" placeholder=" Buscar produto...">
+            </div>    
 
-        <p class="mb-0" style="color: var(--light-gray)">Status</p> 
-        <select id="inputState" class="form-select">
-            <option selected>Todos</option>
-        </select>
+            <div class="col-md-2">
+                <p class="mb-0" style="color: var(--light-gray)">Status</p> 
+                <select id="inputState" class="form-select">
+                    <option selected>Todos</option>
+                </select>
+            </div>    
 
-        <p class="mb-0" style="color: var(--light-gray)">Ordenar por</p> 
-        <select id="inputState" class="form-select">
-            <option selected>Mais recentes</option>
-        </select>
+            <div class="col-md-3">
+                <p class="mb-0" style="color: var(--light-gray)">Ordenar por</p> 
+                <select id="inputState" class="form-select">
+                    <option selected>Mais recentes</option>
+                </select>
+            </div>    
 
-        <p class="mb-0" style="color: var(--light-gray)">estoque</p> 
-        <select id="inputState" class="form-select">
-            <option selected>todos</option>
-        </select>
+            <div class="col-md-3">
+                <p class="mb-0" style="color: var(--light-gray)">estoque</p> 
+                <select id="inputState" class="form-select">
+                    <option selected>todos</option>
+                </select>
+            </div>
 
-        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--primary-gold);">filtrar</button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">mais recente</a></li>
-                <li><a class="dropdown-item" href="#">mais antigo</a></li>
-                <li><a class="dropdown-item" href="#">em 3 meses</a></li>
-                <li><a class="dropdown-item" href="#">em 6 meses</a></li>
-                <li><a class="dropdown-item" href="#">em 1 ano</a></li>
-            </ul>
+            <div class="col-md-1">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--primary-gold);">filtrar</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">mais recente</a></li>
+                        <li><a class="dropdown-item" href="#">mais antigo</a></li>
+                        <li><a class="dropdown-item" href="#">em 3 meses</a></li>
+                        <li><a class="dropdown-item" href="#">em 6 meses</a></li>
+                        <li><a class="dropdown-item" href="#">em 1 ano</a></li>
+                    </ul>
+            </div>
 
+                <table class="table table-dark mt-2">
+                <thead>
+                    <tr>
+                    <th scope="col">produto</th>
+                    <th scope="col">preço</th>
+                    <th scope="col">estoque</th>
+                    <th scope="col">status</th>
+                    <th scope="col">ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td class="d-flex">
+                        <div class="col-md-1">
+                            <img src="../roupas/camisas/Camisa_Jersey_Blunt_Querubins_frente.jpg" class="img-fluid" alt="Camisa">
+                        </div> <p>CAMISA POLO JERSEY</p><br>
+                    </td>
+                    <td>R$ 179,90</td>
+                    <td>35</td>
+                    <td>ativo</td>
+                    <td><a href="#" class=""><i class="bi bi-pen" style="color: #ffca28;"></i></a> <a href="#"><i class="bi bi-eye" style="color:white"></i></a> <a href="#"><i class="bi bi-trash" style="color: red;"></i></a></td>
+                    </tr>
 
+                    <tr>
+                    <td class="d-flex">
+                        <div class="col-md-1">
+                            <img src="../roupas/camisas/Camisa_Jersey_Dragão_frente.jpg" class="img-fluid" alt="Camisa">
+                        </div> <p>Camisa polo jersey Dragon</p></td>
+                    <td>R$ 159,90</td>
+                    <td>38</td>
+                    <td>ativo</td>
+                    <td> <a href="#" class=""><i class="bi bi-pen" style="color: #ffca28;"></i></a> <a href="#"><i class="bi bi-eye" style="color:white"></i></a> <a href="#"><i class="bi bi-trash" style="color: red;"></i></a> </td>
+                    </tr>
+
+                    <tr>
+                    <td class="d-flex">
+                        <div class="col-md-1">
+                            <img src="../roupas/camisas/Camisa_Polo_Tripside_Tribal_frente.jpg" class="img-fluid" alt="Camisa">
+                        </div><p>Camisa Polo Tribal 1977</p></td>
+                    <td>R$ 189,90</td>
+                    <td>30</td>
+                    <td>ativo</td>
+                    <td> <a href="#" class=""><i class="bi bi-pen" style="color: #ffca28;"></i></a> <a href="#"><i class="bi bi-eye" style="color:white"></i></a> <a href="#"><i class="bi bi-trash" style="color: red;"></i></a> </td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <a href="#" class="pagination-btn"><i class="fa-solid fa-chevron-left me-1"></i> Anterior</a>
+                        <div class="d-flex align-items-center">
+                                <a href="#" class="page-number active">1</a>
+                                <a href="#" class="page-number">2</a>
+                                <a href="#" class="page-number">3</a>
+                            <a href="#" class="page-number">4</a>
+                        </div>
+                    <a href="#" class="pagination-btn">Próximo <i class="fa-solid fa-chevron-right ms-1"></i></a>
+                </div>
+        </div>
     </div>
     
 </div>

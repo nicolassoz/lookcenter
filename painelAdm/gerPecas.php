@@ -159,6 +159,7 @@ include "../includes/menu.php";
 <div class="container mt-3">
     <div class="d-flex justify-content-between">
         <h2 style="color: #ffca28;">gerenciamento de produtos</h2>
+        <a href="#" class="pagination-btn">+ Nova Peça</a>
         <a href="../painelAdm.php" class="btn btn-outline-danger"><i class="fa-solid fa-chevron-left me-1"></i> voltar</a>
     </div>    
     <div class="orders-panel">

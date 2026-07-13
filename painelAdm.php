@@ -159,7 +159,7 @@ include "includes/menu.php";
 <div class="container mt-3">
     <div class="row">
         <div class="col-md-11">
-            <h2  style="color: var(--primary-gold)">Olá Administrador!</h2>
+            <h2 style="color: var(--primary-gold)">Olá Administrador <strong><?= $_SESSION['nome']?></strong></h2>
             <p class="footer-text">Bem vindo ao painel da loja.</p>
         </div>
         

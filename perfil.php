@@ -28,7 +28,9 @@
                         <li class="nav-item "><a class="nav-link" href="arPreferencias.php">Preferências</a></li>
             </ul> 
         </div>
-
+        <div class="col-md-6 ms-2">
+            <h2 style="color: var(--primary-gold)">Olá <strong><?= $_SESSION['nome']?> bem vindo a sua area de perfil.</strong></h2>
+        </div>
     </div>
 </div>
 

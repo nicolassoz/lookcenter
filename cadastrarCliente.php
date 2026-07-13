@@ -36,7 +36,12 @@ if(!$telefone || strlen($telefone) < 8)
         header("location: cadastro.php?erro=Telefone inválido.");
         exit();
     }
-if(!$endereco || strlen($endereco) < 5)
+if(!$cpf && strlen($cpf) != 11)
+    {
+         header("location: contratar.php?erro=Cpf inválido. Digite 11 números.");
+            exit();
+    }
+if(!$logradouro || strlen($logradouro) < 5)
     {
         header("location: cadastro.php?erro=Endereço invelido.");
         exit();

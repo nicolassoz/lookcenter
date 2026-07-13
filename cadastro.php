@@ -92,7 +92,7 @@ include "includes/menu.php"
             <!-- campo para inserir o senha -->
             <div class="col-md-4 mb-3" >
                  <label  style="color: var(--light-gray)">Senha</label>
-                <input type="password" name="senha_atual" class="form-control" id="enderecoCad">
+                <input type="password" name="senha" class="form-control" id="enderecoCad">
             </div>
 
             <!-- campo para confirma a senha -->

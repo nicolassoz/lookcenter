@@ -144,7 +144,7 @@ class Produto
     {
         $this->descontinuado = $descontinuado;
     }
-
+    
     /*Insere um novo produto no banco de dados.
      * 
      * Após a inserção, armazena o identificador gerado automaticamente.
@@ -174,12 +174,28 @@ class Produto
         return false;
     }    
 
+
+    /**
+     * Lista todos os produtos cadastrados.
+     *
+     * Os registros são retornados em ordem decrescente
+     * pelo identificador do produto.
+     *
+    */
     public static function Listar():array
     {
         $cmd = obterPdo()->query("select * from produtos order by id_produto desc");
         return $cmd->fetchAll(PDO::FETCH_ASSOC);
     }
 
+
+    /**
+     * Busca um produto pelo nome.
+     *
+     * Caso encontrado, os dados são carregados
+     * nos atributos do objeto.
+     *
+    */
     public function BuscarPorNome(string $nome):bool
     {
         $sql = "SELECT * FROM produtos WHERE nome = :nome";
@@ -204,6 +220,14 @@ class Produto
         return false;
     }
 
+
+    /**
+     * Busca um produto pelo identificador.
+     *
+     * Caso encontrado, os dados são carregados
+     * nos atributos do objeto.
+     *
+    */
     public function BuscarPorId(int $id):bool
     {
         $sql = "SELECT * FROM produtos WHERE id_produto = :id_produto";
@@ -228,6 +252,13 @@ class Produto
         return false;
     }
 
+
+    /**
+     * Atualiza os dados do produto no banco de dados.
+     *
+     * O produto deve possuir um identificador válido.
+     *
+    */
     public function Atualizar():bool
     {
         if(!$this->id_produto) return false;
@@ -248,6 +279,13 @@ class Produto
         return $cmd->execute();
     }
 
+
+    /**
+     * Exclui o produto do banco de dados.
+     *
+     * O produto deve possuir um identificador válido.
+     *
+    */
     public function Excluir():bool
     {
         if(!$this->id_produto) return false;

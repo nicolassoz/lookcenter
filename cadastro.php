@@ -32,7 +32,7 @@ include "includes/menu.php"
     <h2 class="text-center mb-5" style="color: var(--primary-gold)">Faça seu Cadastro</h2>
 
     <!-- card de cadastro -->
-    <form class="card" method="POST">
+    <form class="card" method="POST" action="cadastrarCliente.php">
 
         <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token'] ?>">
 
@@ -70,7 +70,7 @@ include "includes/menu.php"
             <!-- campo para inserir o endereço -->
             <div class="col-md-4 mb-3" >
                  <label  style="color: var(--light-gray)">logradouro</label>
-                <input type="text" name="endereço" class="form-control" id="logradouroCad" placeholder="Ex: rua. itaquera">
+                <input type="text" name="endereco" class="form-control" id="logradouroCad" placeholder="Ex: rua. itaquera">
             </div>
 
             <div class="col-md-2 mb-3" >

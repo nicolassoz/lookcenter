@@ -51,12 +51,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 73,43</p>
 
             <p>Calça jeans bem larga (baggy) na cor off-white, com múltiplos bolsos cargo funcionais nas pernas, tiras com fivelas e costuras escuras contrastantes.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Branco</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -69,8 +64,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

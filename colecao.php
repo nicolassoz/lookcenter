@@ -89,8 +89,6 @@ include "includes/menu.php"
                         <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                         <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                        <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-                        <label class="btn btn-outline-light" for="sizeGG">GG</label>
                     </div>
                 </div>
 

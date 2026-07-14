@@ -34,12 +34,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 83,33</p>
 
             <p>Moletom fechado (canguru) preto com uma estampa frontal centralizada em formato de tag de pichação/graffiti na cor branca. Visual de forte inspiração urbana clássica.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Preto</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -52,8 +47,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

@@ -52,12 +52,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 40,00</p>
 
             <p>Bermuda jeans oversized (abaixo do joelho) em tom cinza escuro/grafite com detalhes frontais que imitam raios ou relâmpagos pintados em branco em ambas as pernas.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Cinza</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -70,8 +65,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

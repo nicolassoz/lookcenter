@@ -49,6 +49,12 @@ include "includes/menu.php"
                 <input type="text" name="cpf" class="form-control" id="cpfCad" placeholder="Ex: 111.111.111-11">
             </div>
 
+            <!-- campo para inserir a data de nascimento -->
+            <div class="col-md-2 mb-3">
+                <label  style="color: var(--light-gray)">data de nascimento</label>
+                <input type="text" name="nasc" class="form-control" id="nascCad" placeholder="Ex: 01012011">
+            </div>
+
             <!-- campo para inserir o email -->
             <div class="col-md-4 mb-3">
                 <label  style="color: var(--light-gray)">Email</label>
@@ -73,6 +79,7 @@ include "includes/menu.php"
                 <input type="text" name="endereco" class="form-control" id="logradouroCad" placeholder="Ex: rua. itaquera">
             </div>
 
+            <!-- campo para inserir o numero da residencia -->
             <div class="col-md-2 mb-3" >
                  <label  style="color: var(--light-gray)">numero</label>
                 <input type="text" name="numero" class="form-control" id="numeCad" placeholder="Ex: 123">
@@ -84,6 +91,7 @@ include "includes/menu.php"
                 <input type="text" name="complemento" class="form-control" id="compCad" placeholder="bloco A, ap 11">
             </div>
 
+            <!-- campo para inserir o bairro -->
             <div class="col-md-4 mb-3" >
                  <label  style="color: var(--light-gray)">Bairro</label>
                 <input type="text" name="bairro" class="form-control" id="bairroCad" placeholder="Ex: itaquera">

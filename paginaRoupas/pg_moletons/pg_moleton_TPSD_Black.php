@@ -34,12 +34,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 80,00</p>
 
             <p>Moletom aberto com zíper (zip-up) preto. Possui o logotipo "TPSD" no peito ladeado por duas grandes estampas simétricas prateadas em estilo tribal futurista.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Preto</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -52,8 +47,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

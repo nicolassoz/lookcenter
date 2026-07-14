@@ -52,12 +52,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 39,96</p>
 
             <p>Bermuda cargo preta de estilo streetwear, com modelagem solta e tecido leve. Possui estampa branca na perna e bolso lateral.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+            
             <p>COR: Preto</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -70,8 +65,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

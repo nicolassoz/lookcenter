@@ -53,12 +53,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 59,96</p>
 
             <p>Camisa polo estilo jersey branca com gola preta contrastante, estampa corrida de querubins em rosa e logotipo central preto</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Branco</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -71,8 +66,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

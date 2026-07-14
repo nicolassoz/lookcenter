@@ -53,12 +53,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 80,00</p>
 
             <p>Camiseta preta com um pequeno logo oval prateado no peito e uma grande estampa realista nas costas de um anjo/cupido arqueiro em cima de uma plataforma flutuante.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Preto</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -71,8 +66,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

@@ -53,12 +53,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 46,63</p>
 
             <p>Camiseta preta com design diferenciado onde a palavra "Com" começa na frente da barra e termina com "pton" cobrindo a parte traseira, em letras góticas brancas gigantes.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Preto</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -71,8 +66,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

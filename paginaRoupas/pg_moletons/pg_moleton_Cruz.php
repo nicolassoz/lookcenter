@@ -51,12 +51,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 63,00</p>
 
             <p>Moletom canguru preto com estampa centralizada "TPSD" sobreposta a uma cruz prateada/cinza no peito. A parte de trás traz a mesma identidade com a escrita "TPSD" gigante em letras brancas e um crucifixo trabalhado em tons de cinza.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Preto</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -69,8 +64,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

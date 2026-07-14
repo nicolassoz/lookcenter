@@ -53,12 +53,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 43,10</p>
 
             <p>Camiseta roxa vibrante com estampa lateral de dragão em tom sobre tom na frente e um grande gráfico abstrato/cyber com linhas vermelhas nas costas.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+            
             <p>COR: Roxo</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -71,8 +66,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

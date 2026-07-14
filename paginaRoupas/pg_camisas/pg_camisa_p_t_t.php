@@ -53,12 +53,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 63,30</p>
 
             <p>'Camisa polo preta minimalista na frente com pequeno logo e uma grande estampa traseira em estilo tribal com a escrita "TOPSIDE est. 1977" em branco.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: preto</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -71,8 +66,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

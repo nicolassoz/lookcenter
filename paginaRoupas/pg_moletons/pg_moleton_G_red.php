@@ -51,12 +51,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 69,66</p>
 
             <p>Moletom canguru branco com capuz e cordões pretos. Destaca-se pelas estampas em vermelho de espinhos e caveiras ao longo das mangas e por uma grande adaga com crânios estilizados cobrindo as costas.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Branco</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -69,8 +64,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

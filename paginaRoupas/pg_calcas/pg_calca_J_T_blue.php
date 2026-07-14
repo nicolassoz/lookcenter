@@ -51,12 +51,7 @@ include "../../includes/menu.php"
             <p>ou 3x de 63,30</p>
 
             <p>'Calça jeans azul-média com modelagem bem folgada, estampada com uma grande arte tribal em tom azul-claro que percorre toda a lateral da perna.</p>
-            <ul>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-                <li>???</li>
-            </ul>
+
             <p>COR: Azul</p>
             <p class="mb-0">TAMANHO:</p>
             <div class="size-options mb-3">
@@ -69,8 +64,6 @@ include "../../includes/menu.php"
                 <input type="checkbox" class="btn-check" id="sizeG" autocomplete="off">
                 <label class="btn btn-outline-light" for="sizeG">G</label>
 
-                <input type="checkbox" class="btn-check" id="sizeGG" autocomplete="off">
-            <label class="btn btn-outline-light" for="sizeGG">GG</label>
             </div>
 
             <div class="row mb-3">

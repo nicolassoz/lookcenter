@@ -165,7 +165,7 @@ class Cliente
         $cmd->bindValue(":cpf", $this->cpf);
         $cmd->bindValue(":telefone", $this->telefone);
         $cmd->bindValue(":email", $this->email);
-        $cmd->bindValue(":data_nasc", $this->data_nasc->format('Y-m-d'));  
+        $cmd->bindValue(":data_nasc", $this->data_nasc->format('d-m-Y'));  
         $cmd->bindValue(":data_cad", $this->data_cad->format('Y-m-d'));      
         $cmd->bindValue(":ativo", $this->ativo, PDO::PARAM_BOOL);  
         $cmd->bindValue(":usuario_id", $this->usuario_id);
